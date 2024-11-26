@@ -1,0 +1,132 @@
+/* Header */
+
+
+
+/* Footer */
+footer {
+  background-color: #000A30;
+  .footer-inner {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 55px 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 70px 0;
+    .footer-area1 {
+      max-width: 830px;
+      display: flex;
+      gap: 20px 65px;
+      > div {
+        > div {
+          margin-bottom: 25px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    .footer-area2 {
+      max-width: 700px;
+      width: 100%;
+      .news-letter {
+        font-weight: 600;
+        margin-bottom: 33px;
+      }
+      > dl {
+        margin-bottom: 28px;
+        dt {
+          font-weight: 600;
+          margin-bottom: 14px
+        }
+        dd {
+          display: flex;
+          gap: 0 45px;
+          input {
+            font-size: 15px;
+            border: 1px solid #707070;
+            border-radius: 9px;
+            box-sizing: border-box;
+            padding: 15px 16px;
+            max-width: 500px;
+            width: 100%;
+            &::placeholder {
+              color: #C2C6D1;
+            }
+          }
+          button {
+            flex-shrink: 0;
+            height: 50px;
+            width: 231px;
+            background-color: #00B8F5;
+            font-size: 18px;
+            border: none;
+            padding: 0;
+            color: #fff;
+            font-weight: 600;
+            border-radius: 28px;
+          }
+        }
+      }
+
+      .links {
+        display: flex;
+        gap: 10px 30px;
+        flex-wrap: wrap;
+        > dl {
+          display: flex;
+          gap: 0 30px;
+          > dd {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0 30px;
+            a {
+              color: #fff;
+              &.sitemap {
+                color: #FFFF0C;
+              }
+            }
+          }
+        }
+      }
+
+      .copyright {
+        margin-top: 23px;
+        font-size: 15px;
+        color: #C1C1C1;
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  footer {
+    .footer-inner {
+      .footer-area1 {
+        flex-wrap: wrap;
+      }
+      .footer-area2 {
+        max-width: none;
+        > dl {
+          dd {
+            gap: 0 10px;
+            button {
+              width: 130px;
+            }
+          }
+        }
+        .links {
+          > dl {
+            > dd {
+              gap: 10px 30px;
+            }
+          }
+          > span {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
