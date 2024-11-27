@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "@/app/(pages)/globals.css";
-import "@/app/assets/common.scss"
-// import "@/app/assets/sub.scss"
+import "@/assets/common.scss"
 
 const pretendard = localFont({
   src: "../fonts/Pretendard-Regular.woff",

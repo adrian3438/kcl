@@ -1,0 +1,75 @@
+main {
+  /* 메인 배너 */
+  .section-01 {
+    .banner-area {
+      position: relative;
+      .banner-text {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 100%;
+        > div {
+          max-width: 1600px;
+          margin: 0 auto;
+          > div {
+            max-width: 1275px;
+            padding: 39.5px 59.5px 39.5px 59.5px;
+            box-sizing: border-box;
+            background-color: rgba(3, 3, 3, 0.4);
+            border-radius: 20px;
+            > p {
+              color: #fff;
+              font-size: 65px;
+              font-weight: bold;
+              line-height: 78px;
+            }
+            > div {
+              margin-top: 10px;
+              a {
+                display: inline-block;
+                width: 203px;
+                height: 63px;
+                line-height: 63px;
+                text-align: center;
+                color: #fff;
+                font-size: 20px;
+                border-radius: 30px;
+                font-weight: 600;
+                &.btn-01 {
+                  background-color: #017FFF;
+                  margin-right: 26px;
+
+                }
+                &.btn-02 {
+                  background-color: #01BAFF;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    /* 스와이퍼 커스터마이징 */
+    .swiper-pagination {
+      text-align: left;
+      padding-left: 100px;
+      bottom: 30px;
+      .swiper-pagination-bullet-active {
+        background-color: #C9C8C8;
+      }
+      .swiper-pagination-bullet {
+        width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 14px));
+        height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 14px));
+      }
+    }
+
+    /* 스와이퍼 이미지 속성 정리 */
+    img {
+      width: 100%;
+      height: auto;
+      vertical-align: top
+    }
+  }
+}

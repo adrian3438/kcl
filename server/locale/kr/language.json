@@ -6,7 +6,6 @@
     "header_1_4": "History",
     "header_1_5": "Locations & Partners",
     "header_1_6": "Certificates",
-
     "header_2": "PRODUCTS",
     "header_2_1": "Forged Ball Valve",
     "header_2_2": "Casted Ball Valve",
@@ -17,16 +16,12 @@
     "header_2_7": "Post Indicator",
     "header_2_8": "Gate Valve",
     "header_2_9": "Knife Gate Valve",
-
     "header_3": "PROJECTS",
-
     "header_4": "MEDIA",
     "header_4_1": "Blog",
     "header_4_2": "Catalog",
     "header_4_3": "3D Modeling",
-
     "header_5": "CONTACT US",
-
 
     "footer_1": "KCL Valve",
     "footer_2": "(Gojan-dong , ACE Tower) #711, 54, Gojan-Ro, Danwon-Gu, Ansan-Si, Gyeonggi-Do, Korea",
@@ -44,5 +39,10 @@
     "footer_14": "X",
     "footer_15": "FACEBOOK",
     "footer_16": "YOUTUBE",
-    "footer_17": "Copyright © 2024 KCL Valve Co., Ltd All Rights Reserved."
+    "footer_17": "Copyright © 2024 KCL Valve Co., Ltd All Rights Reserved.",
+
+    "main_01": "",
+
+
+    "language": "kr"
 }
