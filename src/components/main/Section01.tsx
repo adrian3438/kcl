@@ -137,6 +137,7 @@ export default function Section01({language}: Props) {
                     </div>
                 </SwiperSlide>
             </Swiper>
+            <span/>
         </section>
     )
 }

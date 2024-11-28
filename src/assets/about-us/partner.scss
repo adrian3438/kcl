@@ -1,0 +1,43 @@
+.partner {
+  > ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px 0;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 110px;
+    li {
+      flex-basis: 25%;
+      text-align: center;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+.partner-map {
+  img {
+    vertical-align: top;
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .partner {
+    > ul {
+      li {
+        flex-basis: 33%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .partner {
+    > ul {
+      li {
+        flex-basis: 100%;
+      }
+    }
+  }
+}

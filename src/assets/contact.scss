@@ -1,0 +1,269 @@
+.inquiry {
+  padding: 89px 0 200px;
+  .content-header {
+    h2 {
+      font-size: 45px;
+      font-weight: bold;
+      color: #0F3553;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 22px;
+      color: #FC0A0A
+    }
+  }
+
+  form {
+    margin-top: 75px;
+    fieldset {
+      legend {
+        color: #000;
+        font-size: 34px;
+        font-weight: 600;
+        margin-bottom: 40px;
+        span {
+          display: inline-block;
+          margin-right: 10px;
+          width: 51px;
+          height: 51px;
+          border-radius: 9px;
+          text-align: center;
+          background-color: #0971D9;
+          color: #fff;
+          font-size: 22px;
+          line-height: 51px;
+          vertical-align: middle;
+        }
+        i {
+          font-size: 22px;
+          color: #FC0A0A;
+        }
+      }
+      &.customer-info {
+        margin-bottom: 125px;
+        > div {
+          max-width: 1418px;
+          margin: 0 auto;
+          display: flex;
+          gap: 30px 3.5%;
+          flex-wrap: wrap;
+          > div {
+            width: 31%;
+            label {
+              color: #555;
+              display: block;
+              font-size: 24px;
+              font-weight: 600;
+              margin-bottom: 20px;
+            }
+            input {
+              font-size: 20px;
+              color: #555;
+              font-weight: 400;
+              outline: none;
+              border: 1px solid #707070;
+              border-radius: 11px;
+              padding: 27px 20px;
+              width: 100%;
+              box-sizing: border-box;
+              ::placeholder {
+                font-size: 18px;
+                color: #ddd;
+              }
+            }
+          }
+        }
+      }
+      &.service-info {
+        margin-bottom: 125px;
+        > div {
+          max-width: 1418px;
+          margin: 0 auto;
+          display: flex;
+          gap: 30px 2%;
+          flex-wrap: wrap;
+          label {
+            width: 18.4%;
+            span {
+              text-align: center;
+              color: #070707;
+              font-size: 20px;
+              font-weight: 600;
+              display: block;
+              border: 1px solid #707070;
+              border-radius: 11px;
+              box-sizing: border-box;
+              padding: 27px 0;
+            }
+            input {
+              display: none;
+              margin-right: 10px;
+              vertical-align: top;
+              &:checked + span {
+                background-color: #0971D9;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+      &.inquiry-detail {
+        margin-bottom: 125px;
+        .text-box {
+          input {
+            font-size: 20px;
+            font-weight: 500;
+            color: #555;
+            line-height: 34px;
+            margin-bottom: 15px;
+            outline: none;
+            padding: 0 20px;
+            box-sizing: border-box;
+            width: 100%;
+            border: 1px solid #ddd;
+            height: 74px;
+            border-radius: 5px;
+            ::placeholder {
+              font-size: 20px;
+              line-height: 34px;
+              font-weight: 500;
+              color: #999
+            }
+          }
+          textarea {
+            font-size: 20px;
+            color: #555;
+            line-height: 34px;
+            outline: none;
+            padding: 20px;
+            box-sizing: border-box;
+            width: 100%;
+            border: 1px solid #ddd;
+            height: 300px;
+            border-radius: 5px;
+            ::placeholder {
+              font-size: 20px;
+              color: #999
+            }
+          }
+        }
+        .file-box {
+          max-width: 1418px;
+          margin: 0 auto;
+          position: relative;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+          > div {
+            input[type="file"] {
+              position: absolute;
+              width: 0;
+              height: 0;
+              padding: 0;
+              overflow: hidden;
+              border: 0;
+              border: none;
+            }
+            label {
+              display: inline-block;
+              border: 1px solid #707070;
+              color: #060606;
+              font-size: 20px;
+              padding: 25px 46px 25px 112px;
+              border-radius: 11px;
+              font-weight: 600;
+              background: url("/images/sub/contact/upload.png") no-repeat 39.5px 50%;
+            }
+            input[type="text"] {
+              margin-left: 20px;
+              border: none;
+              color: #555;
+              font-size: 18px;
+            }
+          }
+          > p {
+            color: #060606;
+            padding: 4px 0 4px 33px;
+            background: url("/images/sub/contact/warning.png") no-repeat 0 50%;
+          }
+        }
+      }
+      &.agree {
+        margin-bottom: 130px;
+        padding-left: 40px;
+        position: relative;
+        label {
+          font-size: 20px;
+          line-height: 28px;
+          font-weight: 600;
+          color: #444;
+          display: block;
+          margin-bottom: 20px;
+          input {
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+        }
+        div {
+          color: #666;
+          line-height: 30px;
+        }
+      }
+    }
+    .submit {
+      text-align: center;
+      > button {
+        border:none;
+        padding: 29px 56px;
+        color: #fff;
+        font-size: 28px;
+        background-color: #2C76B7;
+        border-radius: 46px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .inquiry {
+    form {
+      fieldset {
+        &.customer-info {
+          > div {
+            justify-content: space-between;
+            > div {
+              width: 48%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .inquiry {
+    form {
+      fieldset {
+        &.customer-info {
+          > div {
+            > div {
+              width: 100%;
+            }
+          }
+        }
+        &.service-info {
+          > div {
+            gap: 30px 0;
+            label {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

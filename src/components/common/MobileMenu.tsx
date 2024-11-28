@@ -44,7 +44,7 @@ export default function MobileMenu({language}: Props) {
                             <li><Link href="#">- {language?.header_1_3}</Link></li>
                             <li><Link href="#">- {language?.header_1_4}</Link></li>
                             <li><Link href="#">- {language?.header_1_5}</Link></li>
-                            <li><Link href="#">- {language?.header_1_6}</Link></li>
+                            <li><Link href="/about-us/certificates">- {language?.header_1_6}</Link></li>
                         </ul>
                     </li>
                     <li className={menuNumber === 2 ? 'on' : ''}>
@@ -72,7 +72,7 @@ export default function MobileMenu({language}: Props) {
                         </ul>
                     </li>
                     <li>
-                        <Link href="#">{language.header_5}</Link>
+                        <Link href="/contact">{language.header_5}</Link>
                     </li>
                 </ul>
             </nav>
