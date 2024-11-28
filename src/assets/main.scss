@@ -14,7 +14,7 @@ main {
           margin: 0 auto;
           > div {
             max-width: 1275px;
-            padding: 39.5px 59.5px 39.5px 59.5px;
+            padding: 39.5px 59.5px;
             box-sizing: border-box;
             background-color: rgba(3, 3, 3, 0.4);
             border-radius: 20px;
@@ -27,6 +27,7 @@ main {
             > div {
               margin-top: 10px;
               a {
+                box-shadow: 0 4px 7.8px 1px rgba(0, 0, 0, 0.45);
                 display: inline-block;
                 width: 203px;
                 height: 63px;
@@ -70,6 +71,276 @@ main {
       width: 100%;
       height: auto;
       vertical-align: top
+    }
+  }
+
+  /* 2nd Section */
+  .section-02 {
+    padding: 25px 0;
+    margin: 0 30px;
+    display: flex;
+    gap: 25px;
+    overflow: hidden;
+    > div {
+      > div {
+        position: relative;
+        > a {
+          position: absolute;
+          left: 40px;
+          bottom: 40px;
+          color: #fff;
+          padding-left: 30px;
+          background: url("/images/main/video-arrow.png") no-repeat 0 100%;
+          &:hover {
+            p {
+              &:last-child {
+                text-decoration: underline;
+              }
+            }
+          }
+          p {
+            &:first-child {
+              font-size: 45px;
+              font-weight: bold;
+            }
+            &:last-child {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+      &:first-child {
+        width: 60%;
+        .main-video-01 {
+          width: 100%;
+          vertical-align: top;
+        }
+        .main-video-02 {
+          margin-top: 25px;
+          width: 100%;
+          vertical-align: top;
+        }
+      }
+      &:last-child {
+        width: 40%;
+        overflow: hidden;
+        .main-video-03 {
+          width: 306.4%;
+          height: 100%;
+          vertical-align: top;
+          position: relative;
+          z-index: -1;
+          transform: translateX(-33.7%);
+        }
+      }
+    }
+  }
+
+  .section-06 {
+    position: relative;
+    > img {
+      width: 100%;
+      height: auto;
+    }
+    > div {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      transform: translateY(-50%);
+      padding: 0 20px;
+      box-sizing: border-box;
+      > div {
+        max-width: 1273px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px 44px;
+        > div {
+          background-color: rgba(44, 20, 199, 0.4);
+          color: #fff;
+          font-size: 65px;
+          font-weight: bold;
+          line-height: 78px;
+          text-align: center;
+          border-radius: 20px;
+          padding: 80px 0;
+          flex-basis: 395px;
+        }
+      }
+    }
+  }
+
+  .main-section {
+    position: relative;
+    img {
+      width: 100%;
+      height: auto;
+      vertical-align: top
+    }
+    .section-text {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 100%;
+      > div {
+        max-width: 1600px;
+        margin: 0 auto;
+        > div {
+          max-width: 1275px;
+          padding: 39.5px 59.5px 39.5px 59.5px;
+          box-sizing: border-box;
+          background-color: rgba(3, 3, 3, 0.4);
+          border-radius: 20px;
+          > p {
+            color: #fff;
+            font-size: 65px;
+            font-weight: bold;
+            &.section-title {
+              line-height: 78px;
+            }
+            &.section-text-01 {
+              font-size: 30px;
+              line-height: 36px;
+            }
+            &.section-text-02 {
+              font-size: 30px;
+              color: #F6F600;
+              line-height: 36px;
+            }
+          }
+          > div {
+            margin-top: 10px;
+            a {
+              display: inline-block;
+              box-shadow: 0 4px 7.8px 1px rgba(0, 0, 0, 0.45);
+              height: 63px;
+              padding: 0 30px;
+              line-height: 63px;
+              text-align: center;
+              color: #fff;
+              font-size: 20px;
+              border-radius: 30px;
+              font-weight: 600;
+              &.btn-01 {
+                background-color: #017FFF;
+                margin-right: 26px;
+
+              }
+              &.btn-02 {
+                background-color: #01BAFF;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  main {
+    .section-06 {
+      > div {
+        > div {
+          > div {
+            font-size: 40px;
+            line-height: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  main {
+    .section-01 {
+      .swiper-pagination {
+        padding-left: 20px;
+        bottom: 10px;
+      }
+      .banner-area {
+        .banner-text {
+          > div {
+            > div {
+              padding: 69.5px 19.5px 39.5px;
+              > p {
+                font-size: 30px;
+                line-height: 30px;
+              }
+              > div {
+                a {
+                  width: 140px;
+                  font-size: 15px;
+                  height: 50px;
+                  line-height: 50px;
+                  &.btn-01 {
+                    margin-right: 10px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .section-02 {
+      flex-wrap: wrap;
+      > div {
+        &:first-child {
+          width: 100%;
+        }
+        &:last-child {
+          width: 100%;
+        }
+      }
+    }
+
+    .section-06 {
+      > div {
+        > div {
+          > div {
+            padding: 40px 0;
+            font-size: 20px;
+            line-height: 40px;
+          }
+        }
+      }
+    }
+
+    .main-section {
+      .section-text {
+        > div {
+          > div {
+            padding: 0 19.5px;
+
+            > p {
+              font-size: 25px;
+              &.section-title {
+                line-height: 35px;
+              }
+              &.section-text-01 {
+                font-size: 15px;
+                line-height: 24px;
+              }
+              &.section-text-02 {
+                font-size: 15px;
+                line-height: 24px;
+              }
+            }
+            > div {
+              a {
+                font-size: 18px;
+                height: 40px;
+                line-height: 40px;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
