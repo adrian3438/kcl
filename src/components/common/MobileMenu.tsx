@@ -57,11 +57,11 @@ export default function MobileMenu({language}: Props) {
                             <li><Link href="#">- {language?.header_2_5}</Link></li>
                             <li><Link href="#">- {language?.header_2_6}</Link></li>
                             <li><Link href="#">- {language?.header_2_7}</Link></li>
-                            <li><Link href="#">- {language?.header_2_8}</Link></li>
+                            <li><Link href="#">- {language?.header_2_9}</Link></li>
                         </ul>
                     </li>
                     <li>
-                        <Link href="#">{language.header_3}</Link>
+                    <Link href="#">{language.header_3}</Link>
                     </li>
                     <li className={menuNumber === 3 ? 'on' : ''}>
                         <button onClick={() => handleMobileMenu(3)}>{language.header_4}</button>

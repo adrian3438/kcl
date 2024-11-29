@@ -25,7 +25,7 @@ export default function Contact({language}: Props) {
         adAgree: "N"
     })
     const [isCheck, setCheck] = useState<boolean>(false)
-    const [isAdCheck, setAdCheck] = useState<boolean>(false)
+    // const [isAdCheck, setAdCheck] = useState<boolean>(false)
     const [fileName, setFileName] = useState<string>('')
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [preview, setPreview] = useState<any>(null);
@@ -103,7 +103,7 @@ export default function Contact({language}: Props) {
                 formData.append('attachedFile', data?.attachedFile)
             }
             formData.append('privacyAgree', isCheck ? 'Y' : 'N')
-            formData.append('advertiseAgree', isAdCheck ? 'Y' : 'N');
+            // formData.append('advertiseAgree', isAdCheck ? 'Y' : 'N');
             const response = await api.post(`/user/inquiry/setInquiry.php`, formData)
             if (response?.data?.result === true) {
                 alert(response?.data?.resultMsg);

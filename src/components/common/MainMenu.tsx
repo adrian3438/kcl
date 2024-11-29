@@ -48,7 +48,6 @@ export default function MainMenu({language, headerLeave}: Props) {
                         <li><Link href="#">{language?.header_2_5}</Link></li>
                         <li><Link href="#">{language?.header_2_6}</Link></li>
                         <li><Link href="#">{language?.header_2_7}</Link></li>
-                        <li><Link href="#">{language?.header_2_8}</Link></li>
                         <li><Link href="#">{language?.header_2_9}</Link></li>
                     </ul>
                 </li>
