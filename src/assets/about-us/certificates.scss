@@ -1,0 +1,25 @@
+.location {
+  display: flex;
+  margin-bottom: 50px;
+  > li {
+    padding-left: 30px;
+    margin-left: 20px;
+    position: relative;
+    color: #194B7E;
+    font-size: 20px;
+    &:after {
+      content: ">";
+      display: block;
+      position: absolute;
+      top: -1px;
+      left: 0;
+    }
+    &:first-child {
+      margin: 0;
+      padding: 0;
+      &:after {
+        display: none;
+      }
+    }
+  }
+}

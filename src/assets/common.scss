@@ -389,7 +389,6 @@ footer {
   padding: 0 20px;
   max-height: 1040px;
   aspect-ratio: 1920 / 1040;
-  //background-size: auto 100%;
   position: relative;
   .banner-text {
     position: absolute;
@@ -419,6 +418,7 @@ footer {
     }
   }
 }
+
 //Sub 컨텐츠 영역 공통 스타일
 .container {
   max-width: 1600px;
@@ -461,5 +461,3 @@ footer {
     }
   }
 }
-
-//타이틀 영역 Style2

@@ -1,0 +1,112 @@
+.history {
+  padding-top: 100px;
+  margin-bottom: 100px;
+  background: url("/images/sub/history/line.png") repeat-y 50% 0;
+  > div {
+    display: flex;
+    > div {
+      width: 50%;
+      margin-bottom: 100px;
+      > dl {
+        > dt {
+          color: #194B7E;
+          font-size: 35px;
+          font-weight: bold;
+          margin-bottom: 80px;
+        }
+        > dd {
+          color: #194B7E;
+          font-size: 22px;
+          > ul {
+            > li {
+              position: relative;
+              padding-left: 40px;
+              margin-top: 5px;
+              &:first-child {
+                margin-top: 0;
+              }
+              > span {
+                position: absolute;
+                top: 0;
+                left: 0;
+              }
+            }
+          }
+        }
+      }
+      > p {
+        margin-top: 50px;
+        max-width: 600px;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+    &:nth-child(odd) {
+      justify-content: flex-end;
+      > div {
+        padding-left: 29px;
+        background:url("/images/sub/history/history-circle.png") no-repeat 0 0;
+        > dl {
+          padding-left: 90px;
+        }
+        > p {
+          padding-left: 90px;
+        }
+      }
+    }
+    &:nth-child(even) {
+      > div {
+        padding-left: 27px;
+        background:url("/images/sub/history/history-circle.png") no-repeat 100% 0;
+        > dl {
+          padding-right: 90px;
+        }
+        > p {
+          padding-right: 90px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+}
+@media screen and (max-width: 767px) {
+  .history {
+    background: url("/images/sub/history/line.png") repeat-y 28px 0;
+    > div {
+      > div {
+        width: auto;
+      }
+      &:nth-child(odd) {
+        > div {
+          padding-left: 29px;
+          background:url("/images/sub/history/history-circle.png") no-repeat 0 0;
+          > dl {
+            padding-left: 40px;
+          }
+          > p {
+            padding-left: 40px;
+          }
+        }
+      }
+      &:nth-child(even) {
+        > div {
+          padding-right: 0;
+          padding-left: 29px;
+          background:url("/images/sub/history/history-circle.png") no-repeat 0 0;
+          > dl {
+            padding-left: 40px;
+            padding-right: 0;
+          }
+          > p {
+            padding-left: 40px;
+            padding-right: 0;
+          }
+        }
+      }
+    }
+  }
+}

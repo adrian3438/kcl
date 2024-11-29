@@ -31,8 +31,8 @@ export default function MainMenu({language, headerLeave}: Props) {
             <ul className={`depth2 ${depth2Visible ? 'on' : ''}`}>
                 <li>
                     <ul>
-                        <li><Link href="#">{language?.header_1_1}</Link></li>
-                        <li><Link href="#">{language?.header_1_2}</Link></li>
+                        <li><Link href="/about-us/management-solution">{language?.header_1_1}</Link></li>
+                        <li><Link href="/about-us/company-concept">{language?.header_1_2}</Link></li>
                         <li><Link href="#">{language?.header_1_3}</Link></li>
                         <li><Link href="/about-us/history">{language?.header_1_4}</Link></li>
                         <li><Link href="/about-us/partner">{language?.header_1_5}</Link></li>

@@ -1,3 +1,4 @@
+import "@/assets/about-us/certificates.scss";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import {fetchLanguage} from "@/util/fetchLanguage";
@@ -8,7 +9,14 @@ export default async function Certificates({searchParams : {lang}} : any) {
         <>
             <Header language={language}/>
             <div className="container">
-                <div className="sub-banner" style={{background: "url(/images/sub/sub-banner-bg-03.png) no-repeat 50% 0"}}>
+                <ul className="location">
+                    <li>{language?.header_1}</li>
+                    <li>{language?.header_1_6}</li>
+                </ul>
+                <div className="title-area1">
+                    <h2>{language?.partner_04}</h2>
+                </div>
+                <div className="certificates">
 
                 </div>
             </div>

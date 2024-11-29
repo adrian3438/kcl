@@ -40,7 +40,7 @@ export default function MobileMenu({language}: Props) {
                         <button onClick={() => handleMobileMenu(1)}>{language?.header_1}</button>
                         <ul>
                             <li><Link href="#">- {language?.header_1_1}</Link></li>
-                            <li><Link href="#">- {language?.header_1_2}</Link></li>
+                            <li><Link href="/about-us/company-concept">- {language?.header_1_2}</Link></li>
                             <li><Link href="#">- {language?.header_1_3}</Link></li>
                             <li><Link href="#">- {language?.header_1_4}</Link></li>
                             <li><Link href="#">- {language?.header_1_5}</Link></li>
@@ -72,7 +72,7 @@ export default function MobileMenu({language}: Props) {
                         </ul>
                     </li>
                     <li>
-                        <Link href="/contact">{language.header_5}</Link>
+                        <Link href="/Contact">{language.header_5}</Link>
                     </li>
                 </ul>
             </nav>
