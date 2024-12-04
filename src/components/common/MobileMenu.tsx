@@ -39,11 +39,11 @@ export default function MobileMenu({language}: Props) {
                     <li className={menuNumber === 1 ? 'on' : ''}>
                         <button onClick={() => handleMobileMenu(1)}>{language?.header_1}</button>
                         <ul>
-                            <li><Link href="#">- {language?.header_1_1}</Link></li>
+                            <li><Link href="/about-us/management-solution">- {language?.header_1_1}</Link></li>
                             <li><Link href="/about-us/company-concept">- {language?.header_1_2}</Link></li>
-                            <li><Link href="#">- {language?.header_1_3}</Link></li>
-                            <li><Link href="#">- {language?.header_1_4}</Link></li>
-                            <li><Link href="#">- {language?.header_1_5}</Link></li>
+                            <li><Link href="/about-us/greeting">- {language?.header_1_3}</Link></li>
+                            <li><Link href="/about-us/history">- {language?.header_1_4}</Link></li>
+                            <li><Link href="/about-us/partner">- {language?.header_1_5}</Link></li>
                             <li><Link href="/about-us/certificates">- {language?.header_1_6}</Link></li>
                         </ul>
                     </li>
@@ -61,13 +61,13 @@ export default function MobileMenu({language}: Props) {
                         </ul>
                     </li>
                     <li>
-                    <Link href="#">{language.header_3}</Link>
+                    <Link href="/projects">{language.header_3}</Link>
                     </li>
                     <li className={menuNumber === 3 ? 'on' : ''}>
                         <button onClick={() => handleMobileMenu(3)}>{language.header_4}</button>
                         <ul>
-                            <li><Link href="#">- {language.header_4_1}</Link></li>
-                            <li><Link href="#">- {language.header_4_2}</Link></li>
+                            <li><Link href="/media/blog">- {language.header_4_1}</Link></li>
+                            <li><Link href="/media/catalog">- {language.header_4_2}</Link></li>
                             <li><Link href="#">- {language.header_4_3}</Link></li>
                         </ul>
                     </li>

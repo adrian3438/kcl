@@ -24,7 +24,7 @@ export default function MainMenu({language, headerLeave}: Props) {
             <ul className="depth1">
                 <li onMouseOver={() => handleMouseover()}><Link href="#">{language?.header_1}</Link></li>
                 <li onMouseOver={() => handleMouseover()}><Link href="#">{language?.header_2}</Link></li>
-                <li onMouseOver={() => handleMouseover()}><Link href="#">{language?.header_3}</Link></li>
+                <li onMouseOver={() => handleMouseover()}><Link href="/projects">{language?.header_3}</Link></li>
                 <li onMouseOver={() => handleMouseover()}><Link href="#">{language?.header_4}</Link></li>
                 <li onMouseOver={() => handleMouseover()}><Link href="/contact">{language?.header_5}</Link></li>
             </ul>
@@ -33,7 +33,7 @@ export default function MainMenu({language, headerLeave}: Props) {
                     <ul>
                         <li><Link href="/about-us/management-solution">{language?.header_1_1}</Link></li>
                         <li><Link href="/about-us/company-concept">{language?.header_1_2}</Link></li>
-                        <li><Link href="#">{language?.header_1_3}</Link></li>
+                        <li><Link href="/about-us/greeting">{language?.header_1_3}</Link></li>
                         <li><Link href="/about-us/history">{language?.header_1_4}</Link></li>
                         <li><Link href="/about-us/partner">{language?.header_1_5}</Link></li>
                         <li><Link href="/about-us/certificates">{language?.header_1_6}</Link></li>
@@ -54,8 +54,8 @@ export default function MainMenu({language, headerLeave}: Props) {
                 <li>&nbsp;</li>
                 <li>
                     <ul>
-                        <li><Link href="#">{language?.header_4_1}</Link></li>
-                        <li><Link href="#">{language?.header_4_2}</Link></li>
+                        <li><Link href="/media/blog">{language?.header_4_1}</Link></li>
+                        <li><Link href="/media/catalog">{language?.header_4_2}</Link></li>
                         <li><Link href="#">{language?.header_4_3}</Link></li>
                     </ul>
                 </li>
