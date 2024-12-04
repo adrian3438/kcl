@@ -12,7 +12,7 @@ export default async function BlogDetail({language, id}: Props) {
 
     return (
         <div className="container">
-            <div className="news-detail">
+            <div className="blog-detail">
                 <div className="content-header">
                     <h2>{language.news_text_01}</h2>
                     <p><span>{language.news_text_02}</span> <br/>{language.news_text_03}</p>
@@ -41,9 +41,6 @@ export default async function BlogDetail({language, id}: Props) {
                                 {!newsDetailData?.next[0]?.nextSubject || newsDetailData?.next[0]?.nextSubject === '' ? "다음 글이 없습니다." : newsDetailData?.next[0]?.nextSubject}
                             </Link>
                         </div>
-                    </div>
-                    <div className="btn-box">
-                        <button>이전</button>
                     </div>
                 </div>
             </div>

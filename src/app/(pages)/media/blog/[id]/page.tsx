@@ -1,4 +1,4 @@
-import "@/assets/contact.scss";
+import "@/assets/media/blog.scss";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import {fetchLanguage} from "@/util/fetchLanguage";

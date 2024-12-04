@@ -19,9 +19,10 @@ export default function BlogList({language, page}: Props) {
     const fetchNews = async () => {
         const response = await api.get(
             `/user/promotion/getContentsList.php?contentType=1&businessDivisionType=0&userLang=${
-                language.language === 'kr' ? 'EN' : 'KR'
+                language.language === 'kr' ? 'KR' : 'EN'
             }&page=${page || 1}&size=9&sortColumn=date&sortOrder=desc`
         );
+        console.log(response.data);
         setNewsList(response?.data?.List || []);
         setTotalCount(response?.data?.totalCnt || 0);
     };
@@ -42,93 +43,9 @@ export default function BlogList({language, page}: Props) {
             </div>
             <section className="blog-list">
                 <ul>
-                    <li>
-                        <Link href="#">
-                            <p className="image-area">
-                                <Image
-                                    src=""
-                                    alt="Sample"
-                                    width={590}
-                                    height={707}
-                                />
-                            </p>
-                            <div className="info">
-                                <p className="title">
-                                    Title
-                                </p>
-                                <div className="detail">
-                                    test
-                                </div>
-                                <p className="read">READ MORE &gt;</p>
-                            </div>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="#">
-                            <p className="image-area">
-                                <Image
-                                    src=""
-                                    alt="Sample"
-                                    width={590}
-                                    height={707}
-                                />
-                            </p>
-                            <div className="info">
-                                <p className="title">
-                                    Title
-                                </p>
-                                <div className="detail">
-                                    test
-                                </div>
-                                <p className="read">READ MORE &gt;</p>
-                            </div>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="#">
-                            <p className="image-area">
-                                <Image
-                                    src=""
-                                    alt="Sample"
-                                    width={590}
-                                    height={707}
-                                />
-                            </p>
-                            <div className="info">
-                                <p className="title">
-                                    Title
-                                </p>
-                                <div className="detail">
-                                    test
-                                </div>
-                                <p className="read">READ MORE &gt;</p>
-                            </div>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="#">
-                            <p className="image-area">
-                                <Image
-                                    src=""
-                                    alt="Sample"
-                                    width={590}
-                                    height={707}
-                                />
-                            </p>
-                            <div className="info">
-                                <p className="title">
-                                    Title
-                                </p>
-                                <div className="detail">
-                                    test
-                                </div>
-                                <p className="read">READ MORE &gt;</p>
-                            </div>
-                        </Link>
-                    </li>
                     {newsList?.map((item: any, index: number) => (
                         <li key={index}>
-                            <Link href={`/promotion-center/news/${item.ID}`}>
+                            <Link href={`/media/blog/${item.ID}`}>
                                 <p className="image-area">
                                     <Image
                                         src={item.thumnailFile ? item.thumnailFile : "/images/@temp/blog-list-sample.png"}
@@ -137,10 +54,15 @@ export default function BlogList({language, page}: Props) {
                                         height={558}
                                     />
                                 </p>
-                                <div className="info-area">
-                                    <p className="date">{item.createDate}</p>
+                                <div className="info">
+                                    <p className="title">
+                                        {item.promSubject}
+                                    </p>
+                                    <div className="detail">
+                                        {item?.description}
+                                    </div>
+                                    <p className="read">READ MORE &gt;</p>
                                 </div>
-                                <div className="title-area">{item.promSubject}</div>
                             </Link>
                         </li>
                     ))}

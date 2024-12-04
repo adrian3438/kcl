@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-    baseURL : 'https://marineplaza.org/kcl-api/controller',
+    baseURL : 'https://marineplaza.org/kclvalve-api/controller',
 })
 
 export default instance;
