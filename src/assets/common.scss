@@ -1,3 +1,30 @@
+/* Font */
+@font-face {
+  font-family: 'Pretendard-Medium';
+  src: url("../app/fonts/Pretendard-Medium.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard-Bold';
+  src: url("../app/fonts/Pretendard-Bold.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard-SemiBold';
+  src: url("../app/fonts/Pretendard-SemiBold.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard-ExtraBold';
+  src: url("../app/fonts/Pretendard-ExtraBold.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 /* Header */
 header {
   position: fixed;
@@ -425,6 +452,15 @@ footer {
   max-width: 1600px;
   width: 100%;
   padding: 130px 20px 0;
+  box-sizing: border-box;
+  margin: 0 auto;
+  min-height: 300px;
+}
+
+.container2 {
+  max-width: 1600px;
+  width: 100%;
+  padding: 118.5px 20px 0;
   box-sizing: border-box;
   margin: 0 auto;
   min-height: 300px;

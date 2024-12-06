@@ -50,18 +50,18 @@ export default function MobileMenu({language}: Props) {
                     <li className={menuNumber === 2 ? 'on' : ''}>
                         <button onClick={() => handleMobileMenu(2)}>{language.header_2}</button>
                         <ul>
-                            <li><Link href="#">- {language?.header_2_1}</Link></li>
-                            <li><Link href="#">- {language?.header_2_2}</Link></li>
-                            <li><Link href="#">- {language?.header_2_3}</Link></li>
-                            <li><Link href="#">- {language?.header_2_4}</Link></li>
-                            <li><Link href="#">- {language?.header_2_5}</Link></li>
-                            <li><Link href="#">- {language?.header_2_6}</Link></li>
-                            <li><Link href="#">- {language?.header_2_7}</Link></li>
-                            <li><Link href="#">- {language?.header_2_9}</Link></li>
+                            <li><Link href="/product/forged-ball-valve">- {language?.header_2_1}</Link></li>
+                            <li><Link href="/product/casted-ball-valve">- {language?.header_2_2}</Link></li>
+                            <li><Link href="/product/plug-valve">- {language?.header_2_3}</Link></li>
+                            <li><Link href="/product/casting-valve">- {language?.header_2_4}</Link></li>
+                            <li><Link href="/product/butterfly-valve">- {language?.header_2_5}</Link></li>
+                            <li><Link href="/product/control-valve">- {language?.header_2_6}</Link></li>
+                            <li><Link href="/product/post-indicator-gate-valve">- {language?.header_2_7}</Link></li>
+                            <li><Link href="/product/knife-gate-valve">- {language?.header_2_9}</Link></li>
                         </ul>
                     </li>
                     <li>
-                    <Link href="/projects">{language.header_3}</Link>
+                        <Link href="/projects">{language.header_3}</Link>
                     </li>
                     <li className={menuNumber === 3 ? 'on' : ''}>
                         <button onClick={() => handleMobileMenu(3)}>{language.header_4}</button>

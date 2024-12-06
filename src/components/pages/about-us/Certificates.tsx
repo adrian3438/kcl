@@ -34,8 +34,8 @@ export default function Certificates({language}: Props) {
                             </dt>
                             <dd>
                                 <ul>
-                                    <li>{language?.certificates_04_02}<Link href="#">{language?.certificates_btn_01}</Link></li>
-                                    <li>{language?.certificates_04_03}<Link href="#">{language?.certificates_btn_01}</Link></li>
+                                    <li>{language?.certificates_04_02}<Link href="#">{language?.certificates_btn_02}</Link></li>
+                                    <li>{language?.certificates_04_03}<Link href="#">{language?.certificates_btn_02}</Link></li>
                                     <li>{language?.certificates_04_04}<Link href="#">{language?.certificates_btn_02}</Link></li>
                                     <li>{language?.certificates_04_05}<Link href="#">{language?.certificates_btn_02}</Link></li>
                                 </ul>
