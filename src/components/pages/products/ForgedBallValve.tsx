@@ -9,7 +9,7 @@ interface Props {
 }
 
 export default function ForgedBallValve({language}: Props) {
-    const [status, setStatus] = useState<number>(0)
+    const [status, setStatus] = useState<number>(0);
 
     return (
         <div>

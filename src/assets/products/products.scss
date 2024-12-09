@@ -102,6 +102,22 @@
       }
 
       .text-area-detail {
+        .text-area-sub-tab {
+          margin: 0 0 50px;
+          border-bottom: 2px solid #D9D6D6;
+          display: inline-block;
+          button {
+            padding: 5px 9px 5px;
+            border: none;
+            background: none;
+            font-size: 15px;
+            cursor: pointer;
+            &.active {
+              border-bottom: 5px solid #00CBFF;
+            }
+          }
+        }
+
         .image-area {
           display: none;
           > p {
@@ -122,6 +138,14 @@
             &:first-child {
               margin-top: 0;
             }
+            > dl {
+              display: flex;
+              gap: 20px 80px;
+              dt {
+                max-width: 180px;
+                width: 100%;
+              }
+            }
             > button {
               border: none;
               padding: 0;
@@ -130,6 +154,19 @@
               color: #194B7E;
               cursor: pointer;
               font-family: "Pretendard-Bold", sans-serif;
+            }
+            > p {
+              margin-bottom: 45px;
+              border: none;
+              padding: 0;
+              background: none;
+              font-size: 20px;
+              color: #194B7E;
+              cursor: pointer;
+              font-family: "Pretendard-Bold", sans-serif;
+            }
+            > img {
+              margin-top: 40px;
             }
           }
         }
