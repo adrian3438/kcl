@@ -1,0 +1,33 @@
+.model-container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 87px 0 130px;
+  .model-canvas {
+    height: 80vh !important;
+    display: none !important;
+    &.active {
+      display: block !important;
+    }
+  }
+
+  .model-control {
+    display: flex;
+    justify-content: center;
+    > div {
+      display: flex;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 20px;
+      padding: 10px;
+      color: #fff;
+      align-items: center;
+      button {
+        border: none;
+        background: none;
+        padding: 0 20px;
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+}

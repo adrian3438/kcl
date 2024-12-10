@@ -17,6 +17,7 @@
     "@react-three/gltfjsx": "^4.3.4",
     "@reduxjs/toolkit": "^2.3.0",
     "@types/gsap": "^1.20.2",
+    "@types/three": "^0.170.0",
     "@vimeo/player": "^2.24.0",
     "axios": "^1.7.7",
     "cross-env": "^7.0.3",
@@ -36,7 +37,6 @@
     "three": "^0.168.0"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/jquery": "^3.5.32",
     "@types/node": "^20",
     "@types/react": "^18",
@@ -47,6 +47,7 @@
     "eslint": "^8",
     "eslint-config-next": "14.2.18",
     "i": "^0.3.7",
-    "npm": "^10.9.0"
+    "npm": "^10.9.0",
+    "typescript": "^5"
   }
 }
