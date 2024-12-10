@@ -131,6 +131,14 @@
           }
         }
         > ul {
+          &.control-valve {
+            > li {
+              margin-top: 14px;
+              > dl {
+                align-items: center;
+              }
+            }
+          }
           > li {
             color: #194B7E;
             line-height: 30px;
@@ -144,6 +152,24 @@
               dt {
                 max-width: 180px;
                 width: 100%;
+                font-family: "Pretendard-Bold", sans-serif;
+              }
+              dd {
+                min-width: 366px;
+                > strong {
+                  font-family: "Pretendard-Bold", sans-serif;
+                }
+                > a {
+                  display: inline-block;
+                  padding: 12px 87px 12px 27px;
+                  border: 1px solid #ABB2B9;
+                  color: #ABB2B9;
+                  font-size: 26px;
+                  font-weight: normal;
+                  background: url("/images/sub/certificates/download.png") no-repeat calc(100% - 17.5px) 50%;
+                  border-radius: 8px;
+                  box-sizing: border-box;
+                }
               }
             }
             > button {
@@ -182,6 +208,9 @@
         background: url("/images/sub/certificates/download.png") no-repeat calc(100% - 17.5px) 50%;
         border-radius: 8px;
         box-sizing: border-box;
+        &.margin-button {
+          margin-left: 10px;
+        }
       }
     }
     .image-area {
@@ -193,6 +222,94 @@
         img {
           vertical-align: top;
         }
+      }
+    }
+  }
+  > .text-table {
+    display: block;
+    margin: 150px 0 0;
+    > a {
+      display: inline-block;
+      margin-top: 85px;
+      padding: 12px 87px 12px 27px;
+      border: 1px solid #ABB2B9;
+      color: #ABB2B9;
+      font-size: 26px;
+      font-weight: normal;
+      background: url("/images/sub/certificates/download.png") no-repeat calc(100% - 17.5px) 50%;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+    .table-btn {
+      margin: 0 0 50px;
+      border-bottom: 2px solid #D9D6D6;
+      display: inline-block;
+      button {
+        padding: 5px 9px 5px;
+        border: none;
+        background: none;
+        font-size: 15px;
+        cursor: pointer;
+        &.active {
+          border-bottom: 5px solid #00CBFF;
+        }
+      }
+    }
+    > .paragraph-area {
+      > p {
+        color: #194B7E;
+        line-height: 27px;
+      }
+    }
+    > .table-area {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      table {
+        border: 1px solid #cecece;
+        text-align: center;
+        font-size: 16px;
+        tbody {
+          th {
+            vertical-align: middle;
+            padding: 10px 20px;
+            background-color: #f6f6f6;
+            border: 1px solid #cecece;
+          }
+          td {
+            vertical-align: middle;
+            padding: 10px 20px;
+            border: 1px solid #cecece;
+            &.bg {
+              background-color: #f6f6f6;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .post-indicated-gate-valve-text {
+    margin-top: 67px;
+    line-height: 30px;
+    color: #194B7E;
+    dt {
+      font-family: "Pretendard-Bold", sans-serif;
+    }
+  }
+
+  .knife-valve-image {
+    display: block;
+    margin-top: 200px;
+    > p {
+      max-width: 1100px;
+      margin: 67px auto 0;
+      &:first-child {
+        margin-top: 0;
+      }
+      img {
+        width: 100%;
+        height: auto;
       }
     }
   }

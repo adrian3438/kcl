@@ -1,21 +1,66 @@
+import "@/assets/products/products.scss";
 import {fetchLanguage} from "@/util/fetchLanguage";
 import Footer from "@/components/common/Footer";
 import Header from "@/components/common/Header";
+import ProductSwiper from "@/components/pages/products/ProductSwiper";
+import ProductContact from "@/components/pages/products/ProductContact";
+import CastingValve from "@/components/pages/products/CastingValve";
 
 
-export default async function CastingValve({searchParams: {lang}}: any) {
+export default async function CastingValvePage({searchParams: {lang}}: any) {
     const language = await fetchLanguage(lang);
+
+    const productImageList = [
+        "/images/sub/products/casting/kcl-casting-valve-1.jpg",
+        "/images/sub/products/casting/kcl-casting-valve-2.jpg",
+        "/images/sub/products/casting/kcl-casting-valve-3.jpg",
+        "/images/sub/products/casting/kcl-casting-valve-4.jpg",
+        "/images/sub/products/casting/kcl-casting-valve-6.jpg",
+        "/images/sub/products/casting/kcl-casting-valve-7.jpg",
+        "/images/sub/products/casting/kcl-casting-valve-8.jpg",
+        "/images/sub/products/casting/kcl-casting-valve-9.jpg",
+        "/images/sub/products/casting/kcl-casting-valve-10.jpg",
+        "/images/sub/products/casting/kcl-casting-valve-11.jpg",
+    ];
+
     return (
         <>
             <Header language={language}/>
-            <div className="sub-banner4" style={{background: "url(/images/sub/sub-banner-bg-03.png) no-repeat 37% 0", backgroundSize: "auto 100%"}}>
+            <div className="sub-banner4" style={{background: "url(/images/sub/products/product-bg-04.png) no-repeat 50% 0", backgroundSize: "100% auto"}}>
                 <div className="banner-text">
                     <div>
-                        <p className="banner-text-title">{language?.partner_01}</p>
-                        <p className="banner-text-01">{language?.partner_02}</p>
-                        <p className="banner-text-02">{language?.partner_03}</p>
+                        <p className="banner-text-title">{language?.product_04_01}</p>
+                        <p className="banner-text-01">{language?.product_04_02}</p>
+                        <div>
+                            <div>
+                                <p>{language?.product_04_04}</p>
+                                <p>{language?.product_04_05}</p>
+                            </div>
+                            <div>
+                                <p>{language?.product_04_06}</p>
+                                <p>{language?.product_04_07}</p>
+                            </div>
+                            <div>
+                                <p>{language?.product_04_08}</p>
+                                <p>{language?.product_04_09}</p>
+                            </div>
+                            <div>
+                                <p>{language?.product_04_10}</p>
+                                <p>{language?.product_04_11}</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div className="container2">
+                <section className="product-section1">
+                    <h2>{language?.product_04_12}</h2>
+                    <CastingValve language={language}/>
+                </section>
+
+                <ProductSwiper productImageList={productImageList}/>
+
+                <ProductContact language={language}/>
             </div>
             <Footer language={language}/>
         </>
