@@ -60,7 +60,7 @@ export default function ButterflyValve({language}: Props) {
                                 </dl>
                             </li>
                             <li>
-                            <dl>
+                                <dl>
                                     <dt>{language?.product_05_34}</dt>
                                     <dd>{language?.product_05_35}</dd>
                                 </dl>
@@ -85,7 +85,7 @@ export default function ButterflyValve({language}: Props) {
                             </li>
                         </ul>
                     </div>
-                    <Link href="#">{language?.product_05_btn_02}</Link>
+                    <Link href="/file/butterflyall-141106.pdf" target="_blank">{language?.product_05_btn_02}</Link>
                 </div>
                 <div className="image-area">
                     <p><Image src="/images/sub/products/butterfly/butterfly-valve-01.png" alt="" width={872} height={651}/></p>

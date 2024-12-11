@@ -78,8 +78,8 @@ export default function CastingValve({language}: Props) {
                             </li>
                         </ul>
                     </div>
-                    <Link href="#">{language?.product_04_btn_02}</Link>
-                    <Link href="#" className="margin-button">{language?.product_04_btn_03}</Link>
+                    <Link href="/file/castingvalvega-gl-ch.pdf" target="_blank">{language?.product_04_btn_02}</Link>
+                    <Link href="/file/castingballvalve-technical-data.pdf" target="_blank" className="margin-button">{language?.product_04_btn_03}</Link>
                 </div>
                 <div className="image-area">
                     <p><Image src="/images/sub/products/casting/casting-valve-01.png" alt="" width={405} height={784}/></p>

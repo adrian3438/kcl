@@ -168,7 +168,7 @@ export default function CastedBallValve({language}: Props) {
                         </ul>
                     </div>
                 )}
-                <Link href="#">{language?.product_01_btn_03}</Link>
+                <Link href="/file/CastingBallValve.pdf" target="_blank">{language?.product_01_btn_03}</Link>
             </div>
             <div className="image-area">
                 <p><Image src="/images/sub/products/casted/casted-ball-valve-01.png" alt="" width={588} height={784}/></p>

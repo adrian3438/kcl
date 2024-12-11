@@ -128,9 +128,9 @@ export default function KnifeGateValve({language}: Props) {
                             </ul>
                         )}
                     </div>
-                    {subStatus === 0 && <Link href="#">{language?.product_08_btn_02}</Link>}
-                    {subStatus === 1 && <Link href="#">{language?.product_08_btn_02}</Link>}
-                    {subStatus === 2 && <Link href="#">{language?.product_08_btn_02}</Link>}
+                    {subStatus === 0 && <Link href="/file/knife-gate_softseatkgv.pdf" target="_blank">{language?.product_08_btn_02}</Link>}
+                    {subStatus === 1 && <Link href="/file/knife-gate_metalseatkgv.pdf" target="_blank">{language?.product_08_btn_02}</Link>}
+                    {/*{subStatus === 2 && <Link href="#">{language?.product_08_btn_02}</Link>}*/}
 
                 </div>
                 <div className="image-area">

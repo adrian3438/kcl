@@ -82,7 +82,7 @@ export default function PlugValve2({language}: Props) {
                         </ul>
                     </div>
                 )}
-                <Link href="#">{language?.product_03_btn_03}</Link>
+                <Link href="/file/non-lubricated-teflon-sleeved-plug-valves-kclvalve.pdf" target="_blank">{language?.product_03_btn_03}</Link>
             </div>
             <div className="image-area">
                 <p><Image src="/images/sub/products/plug/plug-valve-02.png" alt="" width={586} height={440}/></p>

@@ -23,7 +23,7 @@ export default async function ManagementSolution({searchParams : {lang}} : any) 
                             <p>{language?.solution_04}<br/>{language?.solution_05}</p>
                             <p>{language?.solution_06}</p>
                             <div>
-                                <Link href="#">{language?.solution_07}</Link>
+                                <Link href="/contact">{language?.solution_07}</Link>
                             </div>
                         </div>
                         <div className="image-area">
@@ -69,7 +69,7 @@ export default async function ManagementSolution({searchParams : {lang}} : any) 
                             <p>{language?.solution_21}</p>
                             <p>{language?.solution_22}<br/>{language?.solution_23}</p>
                             <div>
-                                <Link href="#">{language?.solution_24}</Link>
+                                <Link href="/projects">{language?.solution_24}</Link>
                             </div>
                         </div>
                         <div className="image-area">

@@ -22,7 +22,8 @@ main {
             > p {
               color: #fff;
               font-size: 65px;
-              font-weight: bold;
+              //font-weight: bold;
+              font-family: 'Pretendard-ExtraBold', sans-serif;
               line-height: 78px;
             }
             > div {
@@ -208,7 +209,7 @@ main {
           > p {
             color: #fff;
             font-size: 65px;
-            font-weight: bold;
+            font-family: 'Pretendard-Bold', sans-serif;
             &.section-title {
               line-height: 78px;
             }

@@ -74,7 +74,7 @@ export default function Main({language}: Props) {
                             <p className="section-text-01">{language?.main_01_23}</p>
                             <p className="section-text-02">{language?.main_01_24}</p>
                             <div>
-                                <Link href="#" className="btn-01">{language?.main_01_25}</Link>
+                                <Link href="/about-us/management-solution" className="btn-01">{language?.main_01_25}</Link>
                             </div>
                         </div>
                     </div>
@@ -88,7 +88,7 @@ export default function Main({language}: Props) {
                             <p className="section-title">{language?.main_01_26}</p>
                             <p className="section-text-01">{language?.main_01_27}</p>
                             <div>
-                                <Link href="#" className="btn-01">{language?.main_01_28}</Link>
+                                <Link href="/projects" className="btn-01">{language?.main_01_28}</Link>
                             </div>
                         </div>
                     </div>
@@ -102,7 +102,7 @@ export default function Main({language}: Props) {
                             <p className="section-title">{language?.main_01_29}</p>
                             <p className="section-text-01">{language?.main_01_30}</p>
                             <div>
-                                <Link href="#" className="btn-01">{language?.main_01_31}</Link>
+                                <Link href="/media/blog" className="btn-01">{language?.main_01_31}</Link>
                             </div>
                         </div>
                     </div>
@@ -128,14 +128,14 @@ export default function Main({language}: Props) {
                 </div>
             </section>
             <section className="section-07 main-section">
-                <Image src="/images/main/section-04-bg.png" alt="" width={1922} height={1087}/>
+                <Image src="/images/main/section-07-bg.png" alt="" width={1922} height={1087}/>
                 <div className="section-text">
                     <div>
                         <div>
                             <p className="section-title">{language?.main_01_35}</p>
                             <p className="section-text-01">{language?.main_01_36}</p>
                             <div>
-                                <Link href="#" className="btn-01">{language?.main_01_37}</Link>
+                                <Link href="/media/3d-modeling" className="btn-01">{language?.main_01_37}</Link>
                             </div>
                         </div>
                     </div>

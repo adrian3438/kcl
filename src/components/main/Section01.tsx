@@ -32,8 +32,7 @@ export default function Section01({language}: Props) {
                                 <div>
                                     <p>{language?.main_01_01}</p>
                                     <div>
-                                        <Link href="#" className="btn-01">{language?.main_01_02}</Link>
-                                        <Link href="#" className="btn-02">{language?.main_01_03}</Link>
+                                        <Link href="/contact" className="btn-01">{language?.main_01_02}</Link>
                                     </div>
                                 </div>
                             </div>
@@ -48,8 +47,7 @@ export default function Section01({language}: Props) {
                                 <div>
                                     <p>{language?.main_01_04}</p>
                                     <div>
-                                        <Link href="#" className="btn-01">{language?.main_01_05}</Link>
-                                        <Link href="#" className="btn-02">{language?.main_01_06}</Link>
+                                        <Link href="/contact" className="btn-01">{language?.main_01_05}</Link>
                                     </div>
                                 </div>
                             </div>
@@ -64,8 +62,7 @@ export default function Section01({language}: Props) {
                                 <div>
                                     <p>{language?.main_01_07}</p>
                                     <div>
-                                        <Link href="#" className="btn-01">{language?.main_01_08}</Link>
-                                        <Link href="#" className="btn-02">{language?.main_01_09}</Link>
+                                        <Link href="/contact" className="btn-01">{language?.main_01_08}</Link>
                                     </div>
                                 </div>
                             </div>
@@ -80,8 +77,7 @@ export default function Section01({language}: Props) {
                                 <div>
                                     <p>{language?.main_01_10}</p>
                                     <div>
-                                        <Link href="#" className="btn-01">{language?.main_01_11}</Link>
-                                        <Link href="#" className="btn-02">{language?.main_01_12}</Link>
+                                        <Link href="/contact" className="btn-01">{language?.main_01_11}</Link>
                                     </div>
                                 </div>
                             </div>
@@ -96,8 +92,7 @@ export default function Section01({language}: Props) {
                                 <div>
                                     <p>{language?.main_01_13}</p>
                                     <div>
-                                        <Link href="#" className="btn-01">{language?.main_01_14}</Link>
-                                        <Link href="#" className="btn-02">{language?.main_01_15}</Link>
+                                        <Link href="/contact" className="btn-01">{language?.main_01_14}</Link>
                                     </div>
                                 </div>
                             </div>
@@ -112,8 +107,7 @@ export default function Section01({language}: Props) {
                                 <div>
                                     <p>{language?.main_01_16}</p>
                                     <div>
-                                        <Link href="#" className="btn-01">{language?.main_01_17}</Link>
-                                        <Link href="#" className="btn-02">{language?.main_01_18}</Link>
+                                        <Link href="/contact" className="btn-01">{language?.main_01_17}</Link>
                                     </div>
                                 </div>
                             </div>
@@ -128,8 +122,7 @@ export default function Section01({language}: Props) {
                                 <div>
                                     <p>{language?.main_01_19}</p>
                                     <div>
-                                        <Link href="#" className="btn-01">{language?.main_01_20}</Link>
-                                        <Link href="#" className="btn-02">{language?.main_01_21}</Link>
+                                        <Link href="/contact" className="btn-01">{language?.main_01_20}</Link>
                                     </div>
                                 </div>
                             </div>

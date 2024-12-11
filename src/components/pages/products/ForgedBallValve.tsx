@@ -112,7 +112,7 @@ export default function ForgedBallValve({language}: Props) {
                         </ul>
                     </div>
                 )}
-                <Link href="#">{language?.product_01_btn_03}</Link>
+                <Link href="/file/ForgedBallValve.pdf" target="_blank">{language?.product_01_btn_03}</Link>
             </div>
             <div className="image-area">
                 <p><Image src="/images/sub/products/forged/forged-ball-valve-01.png" alt="" width={586} height={619}/></p>

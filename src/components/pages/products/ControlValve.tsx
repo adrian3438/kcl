@@ -27,7 +27,7 @@ export default function ControlValve({language}: Props) {
                                 <dl>
                                     <dt>{language?.product_06_13}</dt>
                                     <dd>
-                                        <Link href="#">{language?.product_06_btn_03}</Link>
+                                        <Link href="/file/control-valves_v100.pdf" target="_blank">{language?.product_06_btn_03}</Link>
                                     </dd>
                                 </dl>
                             </li>
@@ -35,7 +35,7 @@ export default function ControlValve({language}: Props) {
                                 <dl>
                                     <dt>{language?.product_06_14}</dt>
                                     <dd>
-                                        <Link href="#">{language?.product_06_btn_03}</Link>
+                                        <Link href="/file/control-valves_v200.pdf" target="_blank">{language?.product_06_btn_03}</Link>
                                     </dd>
                                 </dl>
                             </li>
@@ -43,7 +43,7 @@ export default function ControlValve({language}: Props) {
                                 <dl>
                                     <dt>{language?.product_06_15}</dt>
                                     <dd>
-                                        <Link href="#">{language?.product_06_btn_03}</Link>
+                                        <Link href="/file/control-valves_v300.pdf" target="_blank">{language?.product_06_btn_03}</Link>
                                     </dd>
                                 </dl>
                             </li>
@@ -51,7 +51,7 @@ export default function ControlValve({language}: Props) {
                                 <dl>
                                     <dt>{language?.product_06_16}</dt>
                                     <dd>
-                                        <Link href="#">{language?.product_06_btn_03}</Link>
+                                        <Link href="/file/control-valves_a300.pdf" target="_blank">{language?.product_06_btn_03}</Link>
                                     </dd>
                                 </dl>
                             </li>
@@ -59,7 +59,7 @@ export default function ControlValve({language}: Props) {
                                 <dl>
                                     <dt>{language?.product_06_17}</dt>
                                     <dd>
-                                        <Link href="#">{language?.product_06_btn_03}</Link>
+                                        <Link href="/file/control-valves_v400.pdf" target="_blank">{language?.product_06_btn_03}</Link>
                                     </dd>
                                 </dl>
                             </li>
@@ -67,7 +67,7 @@ export default function ControlValve({language}: Props) {
                                 <dl>
                                     <dt>{language?.product_06_18}</dt>
                                     <dd>
-                                        <Link href="#">{language?.product_06_btn_03}</Link>
+                                        <Link href="/file/control-valves_d400.pdf" target="_blank">{language?.product_06_btn_03}</Link>
                                     </dd>
                                 </dl>
                             </li>
@@ -75,7 +75,7 @@ export default function ControlValve({language}: Props) {
                                 <dl>
                                     <dt>{language?.product_06_19}</dt>
                                     <dd>
-                                        <Link href="#">{language?.product_06_btn_03}</Link>
+                                        <Link href="/file/control-valves_v510.pdf" target="_blank">{language?.product_06_btn_03}</Link>
                                     </dd>
                                 </dl>
                             </li>
@@ -83,7 +83,7 @@ export default function ControlValve({language}: Props) {
                                 <dl>
                                     <dt>{language?.product_06_20}</dt>
                                     <dd>
-                                        <Link href="#">{language?.product_06_btn_03}</Link>
+                                        <Link href="/file/control-valves_v600.pdf" target="_blank">{language?.product_06_btn_03}</Link>
                                     </dd>
                                 </dl>
                             </li>
@@ -91,7 +91,7 @@ export default function ControlValve({language}: Props) {
                                 <dl>
                                     <dt>{language?.product_06_21}</dt>
                                     <dd>
-                                        <Link href="#">{language?.product_06_btn_03}</Link>
+                                        <Link href="/file/control-valves_v800.pdf" target="_blank">{language?.product_06_btn_03}</Link>
                                     </dd>
                                 </dl>
                             </li>
@@ -99,13 +99,12 @@ export default function ControlValve({language}: Props) {
                                 <dl>
                                     <dt>{language?.product_06_22}</dt>
                                     <dd>
-                                        <Link href="#">{language?.product_06_btn_03}</Link>
+                                        <Link href="/file/control-valves_v100200.pdf" target="_blank">{language?.product_06_btn_03}</Link>
                                     </dd>
                                 </dl>
                             </li>
                         </ul>
                     </div>
-                    {/*<Link href="#">{language?.product_06_btn_02}</Link>*/}
                 </div>
                 <div className="image-area">
                     <p><Image src="/images/sub/products/control/control-valve-01.png" alt="" width={457} height={819}/></p>
@@ -124,7 +123,7 @@ export default function ControlValve({language}: Props) {
                     {status === 2 && <p>{language?.product_06_28}</p>}
                     {status === 3 && <p>{language?.product_06_30}</p>}
                 </div>
-                <Link href="#">{language?.product_06_btn_02}</Link>
+                <Link href="/file/CONTROL(FINAL).pdf" target="_blank">{language?.product_06_btn_02}</Link>
             </div>
 
         </>
