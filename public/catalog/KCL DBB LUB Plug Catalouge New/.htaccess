@@ -1,0 +1,7 @@
+AddDefaultCharset utf-8
+<IfModule mod_mime.c>
+    AddType image/svg+xml .svg
+	AddType application/wasm .wasm
+	AddType application/zip .zip
+	AddType image/webp .webp
+</IfModule>
