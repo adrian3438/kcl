@@ -1,0 +1,1 @@
+positionForPages[4]={"page":4,"positions":[{"word":"SOFT SEAT KNIFE GATE VALVE","left":0.063335,"top":0.093230,"width":0.426077,"height":0.016510}]};

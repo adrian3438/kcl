@@ -1,0 +1,1 @@
+positionForPages[12]={"page":12,"positions":[{"word":"SOFT SEAT KNIFE GATE VALVE (150LB 10K)","left":0.063335,"top":0.093207,"width":0.606243,"height":0.019869},{"word":"KCL-KGV-150SS","left":0.400022,"top":0.729567,"width":0.204622,"height":0.013383}]};

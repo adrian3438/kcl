@@ -1,0 +1,1 @@
+positionForPages[10]={"page":10,"positions":[{"word":"SOFT SEAT KNIFE GATE VALVE ","left":0.063335,"top":0.093230,"width":0.427204,"height":0.016510},{"word":"Special","left":0.706859,"top":0.101795,"width":0.067067,"height":0.016567},{"word":" Type Dimension","left":0.775793,"top":0.101945,"width":0.167667,"height":0.016517}]};

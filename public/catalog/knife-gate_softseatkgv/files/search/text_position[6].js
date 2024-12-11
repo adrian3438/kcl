@@ -1,0 +1,1 @@
+positionForPages[6]={"page":6,"positions":[{"word":"SOFT SEAT KNIFE GATE VALVE ","left":0.063335,"top":0.093230,"width":0.427204,"height":0.016510},{"word":"Bonnetless","left":0.672858,"top":0.101620,"width":0.096156,"height":0.011742},{"word":" Type Dimension","left":0.769909,"top":0.101757,"width":0.154819,"height":0.015113}]};

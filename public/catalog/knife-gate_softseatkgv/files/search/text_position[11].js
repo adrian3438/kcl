@@ -1,0 +1,1 @@
+positionForPages[11]={"page":11,"positions":[{"word":"Special Type Dimension","left":0.706859,"top":0.101795,"width":0.236600,"height":0.016667}]};
