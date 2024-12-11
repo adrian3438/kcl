@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useRef } from "react"
+import api from "@/lib/api";
 // import $ from 'jquery';
 
 interface Props {
@@ -55,10 +56,10 @@ export default function Summernote ({
                     for (const file of files) {
                         const formData = new FormData()
                         formData.append('file', file)
-                        // const res = await axios.post('/admin/setToastFileUpload.php', formData)
-                        // if(res) {
-                        //     $('#summernote').summernote('insertImage', res.data.imageUrl)
-                        // }
+                        const res = await api.post('/admin/setToastFileUpload.php', formData);
+                        if(res) {
+                            $('#summernote').summernote('insertImage', res.data.imageUrl)
+                        }
                     }
                 },
                 // eslint-disable-next-line @typescript-eslint/no-unused-vars

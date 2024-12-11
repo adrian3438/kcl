@@ -22,10 +22,10 @@ export default function ContentsPage ({
     const managerInfo = useAppSelector((state) => state.userData.users.users)
 
     const [contentsType , setContentsType] = useState<[]>([])
-    const [businessType , setbusinessType] = useState<[]>([])
+    // const [businessType , setbusinessType] = useState<[]>([])
     const [data, setData] = useState<any>({
         // 컨텐츠 유형 , 사업영역 유형  , 검색키워드 , 제목
-        contentType : '1', businessType : '3', searchKeyword : [], subject : '',
+        contentType : '1', searchKeyword : [], subject : '',
         // 전시기간 , 전시장소 , 전시 사업분야 , 전시 웹사이트 , 발췌내용
         excerpt : '',
         // 컨텐츠 내용 , 썸네일 이미지 , 첨부 파일
@@ -52,7 +52,7 @@ export default function ContentsPage ({
                 formData.append('managerName', managerInfo?.name || '관리자')
             }
             formData.append('contentType' , data?.contentType)
-            formData.append('businessDivitionType', data?.businessType)
+            // formData.append('businessDivitionType', data?.businessType)
             if(data?.thumnailImage){
                 formData.append('thumnailImage', data?.thumnailImage);
             }
@@ -95,7 +95,8 @@ export default function ContentsPage ({
                         setData((prev:any) => ({...prev, contentType : data?.contentType, subject : data?.contentName,
                             facebook : data?.facebookUrl, linkedIn : data?.linkedinUrl, youtube : data?.youtubeUrl, twitter : data?.twitterUrl,
                             searchKeyword : fomatSearchKeyword, excerpt : data?.promExcerpt, description : data?.promDescription,
-                            businessType : data?.businessDivisionType, date: data?.mdate,
+                            date: data?.mdate,
+                            // businessType : data?.businessDivisionType
                         }))
                         setPreviewImage((prev:any) => ({...prev, thumnailImage : data?.thumnailImage}))
                     }else {
@@ -109,9 +110,9 @@ export default function ContentsPage ({
     useEffect(() => {
         async function fetchTypeList () {
             const res1 = await api.get(`/admin/code/getContentsTypeList.php`);
-            const res2 = await api.get(`/admin/code/getBusinessDivisionTypeList.php`);
+            // const res2 = await api.get(`/admin/code/getBusinessDivisionTypeList.php`);
             if(res1?.data?.result === true) {setContentsType(res1?.data?.List)}
-            if(res2?.data?.result === true) {setbusinessType(res2?.data?.List)}
+            // if(res2?.data?.result === true) {setbusinessType(res2?.data?.List)}
         }
         fetchTypeList()
     }, [])
@@ -182,7 +183,7 @@ export default function ContentsPage ({
                                 </div>
                             </td>
                         </tr>
-                        <tr>
+                        {/*<tr>
                             <th>사업영역 유형 <span className="star">*</span></th>
                             <td>
                                 <div className="selectContainer">
@@ -197,7 +198,7 @@ export default function ContentsPage ({
                                     </div>
                                 </div>
                             </td>
-                        </tr>
+                        </tr>*/}
                         <ImageUploadBox
                             title={'썸네일 이미지'}
                             name={'thumnailImage'}

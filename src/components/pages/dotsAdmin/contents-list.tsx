@@ -35,7 +35,6 @@ export default function ContentsListPage ({
     async function getList () {
         try{
             const response = await api.get(`/admin/contents/getContentsList.php?promLang=KR&contentsType=${contentsType}&businessDivisionType=${businessType}&page=${page}&size=${size}&keyword=${keyword}&sortColumn=promDate&sortOrder=${order}`)
-            console.log('response.data : ', response.data);
             if(response.data.result === true) {
                 setData(response.data.list);
                 setTotalCount(response.data.totalCnt);
@@ -105,9 +104,9 @@ export default function ContentsListPage ({
                                 contentsTypeId={contentsType}
                             />
 
-                            <ListBusinessTypeBox
+                            {/*<ListBusinessTypeBox
                                 businessTypeId={businessType}
-                            />
+                            />*/}
 
                             <ListSearchBox
                                 keyword={keyword}
