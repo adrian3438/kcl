@@ -1,0 +1,1 @@
+positionForPages[6]={"page":6,"positions":[{"word":"6","left":0.122356,"top":0.966467,"width":0.010067,"height":0.012350},{"word":"We supply various ranges of High Quality VALVES ","left":0.556480,"top":0.061668,"width":0.429725,"height":0.013999},{"word":"150LB POST INDICATOR VALVE SPECIFICATION ","left":0.128000,"top":0.109528,"width":0.719033,"height":0.018650}]};

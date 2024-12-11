@@ -1,0 +1,1 @@
+positionForPages[5]={"page":5,"positions":[{"word":"KCL\u2019s ","left":0.102535,"top":0.175538,"width":0.144926,"height":0.029125},{"word":"POST INDICATOR GATE VALVES","left":0.103212,"top":0.222286,"width":0.787335,"height":0.029344}]};

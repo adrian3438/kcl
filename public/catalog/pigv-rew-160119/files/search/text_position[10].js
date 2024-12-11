@@ -1,0 +1,1 @@
+positionForPages[10]={"page":10,"positions":[{"word":"10","left":0.122978,"top":0.966383,"width":0.021644,"height":0.012433},{"word":"We supply various ranges of High Quality VALVES ","left":0.556480,"top":0.061668,"width":0.429725,"height":0.013999},{"word":"EXPERIENCE GALLERY","left":0.128367,"top":0.109653,"width":0.325033,"height":0.018525}]};

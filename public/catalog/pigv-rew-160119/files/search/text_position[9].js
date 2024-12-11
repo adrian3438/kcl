@@ -1,0 +1,1 @@
+positionForPages[9]={"page":9,"positions":[{"word":"9","left":0.873326,"top":0.966467,"width":0.010044,"height":0.012350},{"word":"TEST FACILITY & PRODUCTION SCENE","left":0.046478,"top":0.109653,"width":0.581300,"height":0.018525}]};

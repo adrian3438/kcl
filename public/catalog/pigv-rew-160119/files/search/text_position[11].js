@@ -1,0 +1,1 @@
+positionForPages[11]={"page":11,"positions":[{"word":"AGENCIES","left":0.046178,"top":0.478819,"width":0.151233,"height":0.018525},{"word":"11","left":0.861867,"top":0.966383,"width":0.021289,"height":0.012250},{"word":"MAIN CLIENTS","left":0.048944,"top":0.109653,"width":0.218900,"height":0.018525}]};
