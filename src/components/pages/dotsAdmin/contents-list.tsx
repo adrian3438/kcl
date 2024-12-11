@@ -1,6 +1,6 @@
 'use client'
 import SelectContentsModifyBox from "@/components/DotsAdmin/Contents/SelectEditBox";
-import ListBusinessTypeBox from "@/components/DotsAdmin/List/ListBusinessTypeBox";
+// import ListBusinessTypeBox from "@/components/DotsAdmin/List/ListBusinessTypeBox";
 import ListContentsTypeBox from "@/components/DotsAdmin/List/ListContentsTypeBox";
 import ListFilter from "@/components/DotsAdmin/List/ListFilter";
 import ListSearchBox from "@/components/DotsAdmin/List/ListSearchBox";
