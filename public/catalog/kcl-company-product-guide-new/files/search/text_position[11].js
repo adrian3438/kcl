@@ -1,0 +1,1 @@
+positionForPages[11]={"page":11,"positions":[{"word":"www.kclvalve.com","left":0.780328,"top":0.088221,"width":0.132823,"height":0.007516}]};
