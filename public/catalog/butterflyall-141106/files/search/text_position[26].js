@@ -1,0 +1,1 @@
+positionForPages[26]={"page":26,"positions":[{"word":"W CLASS \u2013 TORQUE TO OPERATE","left":0.074444,"top":0.099311,"width":0.545830,"height":0.019800}]};

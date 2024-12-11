@@ -1,0 +1,1 @@
+positionForPages[21]={"page":21,"positions":[{"word":"T CLASS \u2013 INSTALLATION INSTRUCTION","left":0.287707,"top":0.099311,"width":0.642533,"height":0.018875}]};

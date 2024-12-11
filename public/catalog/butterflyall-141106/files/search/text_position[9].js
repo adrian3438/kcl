@@ -1,0 +1,1 @@
+positionForPages[9]={"page":9,"positions":[{"word":"R CLASS \u2013 CV VALUE CALCULATION","left":0.201341,"top":0.099311,"width":0.585926,"height":0.018875}]};

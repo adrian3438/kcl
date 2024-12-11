@@ -1,0 +1,1 @@
+positionForPages[16]={"page":16,"positions":[{"word":"T CLASS \u2013 600LB DIMENSION TABLE","left":0.074378,"top":0.099311,"width":0.578585,"height":0.018875}]};

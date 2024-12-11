@@ -1,0 +1,1 @@
+positionForPages[18]={"page":18,"positions":[{"word":"T CLASS \u2013 TORQUE TABLE TO OPERATE","left":0.074378,"top":0.099311,"width":0.655252,"height":0.019800}]};

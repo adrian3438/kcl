@@ -1,0 +1,1 @@
+positionForPages[7]={"page":7,"positions":[{"word":"RF CLASS \u2013 FLANGE TYPE RUBBER LINED BUTTERFLY VALVE","left":0.059067,"top":0.099311,"width":0.868159,"height":0.018875}]};

@@ -1,0 +1,1 @@
+positionForPages[20]={"page":20,"positions":[{"word":"T CLASS \u2013 ENGINEERING DATA","left":0.074378,"top":0.099311,"width":0.501385,"height":0.018875}]};

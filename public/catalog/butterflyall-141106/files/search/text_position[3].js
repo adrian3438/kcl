@@ -1,0 +1,1 @@
+positionForPages[3]={"page":3,"positions":[{"word":"R CLASS - RUBBER LINED BUTTERFLY VALVE","left":0.201341,"top":0.099311,"width":0.725159,"height":0.018875}]};

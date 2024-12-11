@@ -1,0 +1,1 @@
+positionForPages[31]={"page":31,"positions":[{"word":"RUBBER LINED BUTTERFLY VALVE","left":0.369378,"top":0.099786,"width":0.552900,"height":0.018400},{"word":" ","left":0.925078,"top":0.117736,"width":0.000000,"height":0.000000},{"word":"ACTUATORS","left":0.723578,"top":0.099311,"width":0.200833,"height":0.018875}]};

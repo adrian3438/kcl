@@ -1,0 +1,1 @@
+positionForPages[5]={"page":5,"positions":[{"word":"RW CLASS \u2013 WAFER TYPE RUBBER LINED BUTTERFLY VALVE","left":0.062800,"top":0.099311,"width":0.864325,"height":0.018875}]};

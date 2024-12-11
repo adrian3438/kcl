@@ -1,0 +1,1 @@
+positionForPages[19]={"page":19,"positions":[{"word":"T CLASS \u2013 BASIC CALCULATION OF CV VALUE","left":0.188337,"top":0.099311,"width":0.739170,"height":0.018875}]};

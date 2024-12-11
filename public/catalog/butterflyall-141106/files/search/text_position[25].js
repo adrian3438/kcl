@@ -1,0 +1,1 @@
+positionForPages[25]={"page":25,"positions":[{"word":"WF CLASS \u2013 FLANGE TYPE WATER WORKS BUTTERFLY VALVE","left":0.044889,"top":0.099311,"width":0.882055,"height":0.018875}]};

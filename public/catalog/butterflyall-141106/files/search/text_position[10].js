@@ -1,0 +1,1 @@
+positionForPages[10]={"page":10,"positions":[{"word":"R CLASS \u2013 INSTALLATION INSTRUCTION","left":0.076844,"top":0.099311,"width":0.643607,"height":0.018875}]};

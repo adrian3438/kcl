@@ -1,0 +1,1 @@
+positionForPages[30]={"page":30,"positions":[{"word":"OnOff \u2013 BUTTERFLY VALVE","left":0.075211,"top":0.099311,"width":0.424385,"height":0.018875}]};

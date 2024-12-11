@@ -1,0 +1,1 @@
+positionForPages[28]={"page":28,"positions":[{"word":"W CLASS \u2013 WATER WORKS BUTTERFLY VALVE","left":0.074444,"top":0.099311,"width":0.747730,"height":0.018875}]};

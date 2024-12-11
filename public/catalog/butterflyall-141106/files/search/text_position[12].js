@@ -1,0 +1,1 @@
+positionForPages[12]={"page":12,"positions":[{"word":"T CLASS \u2013 DOUBLE & TRIPLE OFFSET BUTTERFLY VALVE","left":0.062333,"top":0.099311,"width":0.753225,"height":0.018875}]};
