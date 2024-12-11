@@ -1,0 +1,1 @@
+positionForPages[5]={"page":5,"positions":[{"word":"Bonnetless Type Dimension","left":0.707593,"top":0.104295,"width":0.274111,"height":0.016667}]};

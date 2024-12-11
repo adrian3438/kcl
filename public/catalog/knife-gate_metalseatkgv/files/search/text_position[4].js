@@ -1,0 +1,1 @@
+positionForPages[4]={"page":4,"positions":[{"word":"METAL SEAT KNIFE GATE VALVE ","left":0.064374,"top":0.093230,"width":0.449064,"height":0.016510},{"word":"Bonnetless","left":0.707593,"top":0.104295,"width":0.105133,"height":0.012833},{"word":" Type Dimension","left":0.813704,"top":0.104445,"width":0.168000,"height":0.016517}]};

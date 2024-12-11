@@ -1,0 +1,1 @@
+positionForPages[18]={"page":18,"positions":[{"word":"ADJUSTABLE ORIFICE VALVE","left":0.062030,"top":0.093230,"width":0.399343,"height":0.016510}]};

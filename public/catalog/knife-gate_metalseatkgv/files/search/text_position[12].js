@@ -1,0 +1,1 @@
+positionForPages[12]={"page":12,"positions":[{"word":"METAL SEAT KNIFE GATE VALVE (300LB 20K)","left":0.064374,"top":0.093230,"width":0.628162,"height":0.019847},{"word":"KCL-KGV-300MS","left":0.400022,"top":0.704900,"width":0.207400,"height":0.013383}]};

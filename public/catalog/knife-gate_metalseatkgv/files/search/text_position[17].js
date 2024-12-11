@@ -1,0 +1,1 @@
+positionForPages[17]={"page":17,"positions":[{"word":"KCL Standards","left":0.123587,"top":0.197150,"width":0.110950,"height":0.009238},{"word":"KCL Standards","left":0.541846,"top":0.614567,"width":0.110950,"height":0.009238}]};

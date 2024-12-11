@@ -1,0 +1,1 @@
+positionForPages[19]={"page":19,"positions":[{"word":"SWING GATE VALVE","left":0.653557,"top":0.093230,"width":0.280498,"height":0.016510}]};

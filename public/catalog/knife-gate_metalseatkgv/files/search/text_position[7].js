@@ -1,0 +1,1 @@
+positionForPages[7]={"page":7,"positions":[{"word":"Bonnet Type Dimension","left":0.662852,"top":0.085222,"width":0.237267,"height":0.016517},{"word":"Bonnet+Gland Type Dimension","left":0.662852,"top":0.105072,"width":0.311926,"height":0.016667}]};

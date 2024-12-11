@@ -1,0 +1,1 @@
+positionForPages[15]={"page":15,"positions":[{"word":"ASH/AIR INTAKE VALVE","left":0.609215,"top":0.093230,"width":0.334848,"height":0.018868},{"word":"KCL Standards","left":0.123587,"top":0.498567,"width":0.110950,"height":0.009238}]};

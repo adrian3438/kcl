@@ -1,0 +1,1 @@
+positionForPages[16]={"page":16,"positions":[{"word":"DIVERTER VALVE","left":0.064374,"top":0.093475,"width":0.233773,"height":0.015998},{"word":"KCL Standards","left":0.570587,"top":0.605122,"width":0.110950,"height":0.009238},{"word":"KCL Standards","left":0.156180,"top":0.197372,"width":0.110950,"height":0.009238}]};

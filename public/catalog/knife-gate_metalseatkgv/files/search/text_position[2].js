@@ -1,0 +1,1 @@
+positionForPages[2]={"page":2,"positions":[{"word":"METAL SEAT KNIFE GATE VALVE","left":0.064374,"top":0.093230,"width":0.447937,"height":0.016510}]};

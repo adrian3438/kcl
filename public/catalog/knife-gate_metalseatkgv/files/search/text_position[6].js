@@ -1,0 +1,1 @@
+positionForPages[6]={"page":6,"positions":[{"word":"METAL SEAT KNIFE GATE VALVE ","left":0.064374,"top":0.093230,"width":0.449064,"height":0.016510},{"word":"Bonnet Type Dimension","left":0.662852,"top":0.085222,"width":0.237267,"height":0.016517},{"word":"Bonnet+Gland Type Dimension","left":0.662852,"top":0.105072,"width":0.311926,"height":0.016667}]};
