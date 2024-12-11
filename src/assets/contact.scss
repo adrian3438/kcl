@@ -83,7 +83,7 @@
           gap: 30px 2%;
           flex-wrap: wrap;
           label {
-            width: 18.4%;
+            width: 30.9%;
             span {
               text-align: center;
               color: #070707;
@@ -94,6 +94,7 @@
               border-radius: 11px;
               box-sizing: border-box;
               padding: 27px 0;
+              cursor: pointer;
             }
             input {
               display: none;

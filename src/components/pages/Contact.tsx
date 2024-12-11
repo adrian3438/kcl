@@ -149,23 +149,23 @@ export default function Contact({language}: Props) {
                         <legend><span>2</span> {language.inquiry_text_08} <i>*</i></legend>
                         <div>
                             <label>
-                                <input type="radio" id="serviceInfo01" name="type" value="" onChange={handleChange}/>
+                                <input type="radio" id="serviceInfo01" name="type" value="P" onChange={handleChange}/>
                                 <span>{language.inquiry_text_09}</span>
                             </label>
                             <label>
-                                <input type="radio" id="serviceInfo02" name="type" value="" onChange={handleChange}/>
+                                <input type="radio" id="serviceInfo02" name="type" value="T" onChange={handleChange}/>
                                 <span>{language.inquiry_text_10}</span>
                             </label>
-                            <label>
+                            {/*<label>
                                 <input type="radio" id="serviceInfo03" name="type" value="" onChange={handleChange}/>
                                 <span>{language.inquiry_text_11}</span>
                             </label>
                             <label>
                                 <input type="radio" id="serviceInfo04" name="type" value="" onChange={handleChange}/>
                                 <span>{language.inquiry_text_12}</span>
-                            </label>
+                            </label>*/}
                             <label>
-                                <input type="radio" id="serviceInfo05" name="type" value="" onChange={handleChange}/>
+                                <input type="radio" id="serviceInfo05" name="type" value="O" onChange={handleChange}/>
                                 <span>{language.inquiry_text_13}</span>
                             </label>
                         </div>
