@@ -1,0 +1,1 @@
+positionForPages[57]={"page":57,"positions":[{"word":"Petronas DBB Ball Project ( TAT Certificated By ","left":0.052732,"top":0.067150,"width":0.834347,"height":0.047919},{"word":"TUV )","left":0.050891,"top":0.124928,"width":0.084579,"height":0.047774}]};

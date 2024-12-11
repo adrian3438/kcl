@@ -1,0 +1,1 @@
+positionForPages[56]={"page":56,"positions":[{"word":"UAE Project ( All KCL Brand Export )","left":0.052732,"top":0.067150,"width":0.604388,"height":0.047919}]};

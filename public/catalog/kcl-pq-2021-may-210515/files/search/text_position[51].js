@@ -1,0 +1,1 @@
+positionForPages[51]={"page":51,"positions":[{"word":"Cryogenic Test Facility","left":0.051471,"top":0.070695,"width":0.444444,"height":0.050930},{"word":"-196","left":0.338648,"top":0.912323,"width":0.039669,"height":0.019210},{"word":" degrees Cryogenic Service Test","left":0.379035,"top":0.911573,"width":0.295347,"height":0.025863}]};

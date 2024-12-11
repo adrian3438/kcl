@@ -1,0 +1,1 @@
+positionForPages[60]={"page":60,"positions":[{"word":"KOREA Project ( SAMSUNG DISPLAY PROJECT)","left":0.052623,"top":0.067150,"width":0.745977,"height":0.047919}]};
