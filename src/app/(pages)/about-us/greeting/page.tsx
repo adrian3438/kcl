@@ -10,7 +10,7 @@ export default async function Greeting({searchParams : {lang}} : any) {
     return (
         <>
             <Header language={language}/>
-            <div className="sub-banner4" style={{background: "url(/images/sub/sub-banner-bg-04.png) no-repeat 50% 0", backgroundSize: "100% 100%"}}>
+            <div className="sub-banner5" style={{background: "url(/images/sub/sub-banner-bg-04.png) no-repeat 50% 0", backgroundSize: "100% 100%"}}>
                 <div className="banner-text">
                     <div>
                         <p className="banner-text-title">{language?.greeting_01}</p>
@@ -44,7 +44,7 @@ export default async function Greeting({searchParams : {lang}} : any) {
                     <p className="title-text3">{language?.greeting_14}</p>
                 </div>
             </div>
-            <div className="container2">
+            <div className="container4">
                 <div>
                     <section className="section-type-02">
                         <div className="text-area">
