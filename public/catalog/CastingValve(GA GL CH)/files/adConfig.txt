@@ -1,0 +1,1 @@
+{"haveAd":false,"bgColor":"#000","bgOpacity":1,"interval":0,"adPosition":0,"data":[]}
