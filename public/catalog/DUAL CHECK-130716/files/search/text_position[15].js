@@ -1,0 +1,1 @@
+positionForPages[15]={"page":15,"positions":[{"word":"BEST PRACTICE VALVE ","left":0.228049,"top":0.075985,"width":0.566708,"height":0.028814},{"word":"INSTALLATION","left":0.319269,"top":0.122652,"width":0.358095,"height":0.028814}]};

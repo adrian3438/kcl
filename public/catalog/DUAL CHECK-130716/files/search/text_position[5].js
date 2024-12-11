@@ -1,0 +1,1 @@
+positionForPages[5]={"page":5,"positions":[{"word":"AVAILABLE MATERIALS","left":0.202274,"top":0.099318,"width":0.568313,"height":0.028814}]};

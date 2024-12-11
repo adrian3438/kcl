@@ -1,0 +1,1 @@
+positionForPages[7]={"page":7,"positions":[{"word":"TIPICAL CONSTRUCTIONS","left":0.178969,"top":0.099318,"width":0.641578,"height":0.028814}]};

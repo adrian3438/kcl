@@ -1,0 +1,1 @@
+positionForPages[2]={"page":2,"positions":[{"word":"The Technical Leader of Valves\u2026","left":0.138922,"top":0.127731,"width":0.513333,"height":0.019875}]};

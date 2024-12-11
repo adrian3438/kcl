@@ -1,0 +1,1 @@
+positionForPages[4]={"page":4,"positions":[{"word":"DUAL PLATE CHECK VALVE TYPES","left":0.075068,"top":0.099318,"width":0.828962,"height":0.028814}]};

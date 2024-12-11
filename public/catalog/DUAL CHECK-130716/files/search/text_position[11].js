@@ -1,0 +1,1 @@
+positionForPages[11]={"page":11,"positions":[{"word":"FLANGED TYPE BFR","left":0.259383,"top":0.099318,"width":0.486866,"height":0.028814}]};

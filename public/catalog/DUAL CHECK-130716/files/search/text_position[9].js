@@ -1,0 +1,1 @@
+positionForPages[9]={"page":9,"positions":[{"word":"WAFER TYPE BR","left":0.299722,"top":0.099746,"width":0.402003,"height":0.027921}]};

@@ -1,0 +1,1 @@
+positionForPages[12]={"page":12,"positions":[{"word":"FLANGED TYPE BSR","left":0.258271,"top":0.099318,"width":0.489041,"height":0.028814},{"word":"FLANGED TYPE BSR","left":0.643547,"top":0.406713,"width":0.244141,"height":0.014494},{"word":"SOLID LUF TYPE BSR","left":0.635207,"top":0.775598,"width":0.256360,"height":0.014469}]};

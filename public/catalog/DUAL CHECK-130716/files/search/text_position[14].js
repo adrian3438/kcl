@@ -1,0 +1,1 @@
+positionForPages[14]={"page":14,"positions":[{"word":"HEAD LOSS-FOR WATER AT 60\u2109","left":0.098001,"top":0.097283,"width":0.803326,"height":0.031183}]};
