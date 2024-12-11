@@ -34,10 +34,10 @@ export default function Certificates({language}: Props) {
                             </dt>
                             <dd>
                                 <ul>
-                                    <li>{language?.certificates_04_02}<Link href="#">{language?.certificates_btn_02}</Link></li>
-                                    <li>{language?.certificates_04_03}<Link href="#">{language?.certificates_btn_02}</Link></li>
-                                    <li>{language?.certificates_04_04}<Link href="#">{language?.certificates_btn_02}</Link></li>
-                                    <li>{language?.certificates_04_05}<Link href="#">{language?.certificates_btn_02}</Link></li>
+                                    <li>{language?.certificates_04_02}<a href="/images/sub/certificates/iran-01.jpg" download>{language?.certificates_btn_02}</a></li>
+                                    <li>{language?.certificates_04_03}<a href="/images/sub/certificates/iran-02.jpg" download>{language?.certificates_btn_02}</a></li>
+                                    <li>{language?.certificates_04_04}<a href="/images/sub/certificates/iran-03.jpg" download>{language?.certificates_btn_02}</a></li>
+                                    <li>{language?.certificates_04_05}<a href="/images/sub/certificates/iran-04.jpg" download>{language?.certificates_btn_02}</a></li>
                                 </ul>
                             </dd>
                         </dl>
@@ -48,13 +48,13 @@ export default function Certificates({language}: Props) {
                             </dt>
                             <dd>
                                 <ul>
-                                    <li>{language?.certificates_05_02}<Link href="#">{language?.certificates_btn_02}</Link></li>
-                                    <li>{language?.certificates_05_03}<Link href="#">{language?.certificates_btn_02}</Link></li>
-                                    <li>{language?.certificates_05_04}<Link href="#">{language?.certificates_btn_02}</Link></li>
-                                    <li>{language?.certificates_05_05}<Link href="#">{language?.certificates_btn_02}</Link></li>
-                                    <li>{language?.certificates_05_06}<Link href="#">{language?.certificates_btn_02}</Link></li>
-                                    <li>{language?.certificates_05_07}<Link href="#">{language?.certificates_btn_02}</Link></li>
-                                    <li>{language?.certificates_05_08}<Link href="#">{language?.certificates_btn_02}</Link></li>
+                                    <li>{language?.certificates_05_02}<a href="/images/sub/certificates/uae-01.jpg" download>{language?.certificates_btn_02}</a></li>
+                                    <li>{language?.certificates_05_03}<a href="/images/sub/certificates/uae-02.jpg" download>{language?.certificates_btn_02}</a></li>
+                                    <li>{language?.certificates_05_04}<a href="/images/sub/certificates/uae-03.jpg" download>{language?.certificates_btn_02}</a></li>
+                                    <li>{language?.certificates_05_05}<a href="/images/sub/certificates/uae-04.jpg" download>{language?.certificates_btn_02}</a></li>
+                                    <li>{language?.certificates_05_06}<a href="/images/sub/certificates/uae-05.jpg" download>{language?.certificates_btn_02}</a></li>
+                                    <li>{language?.certificates_05_07}<a href="/images/sub/certificates/uae-06.jpg" download>{language?.certificates_btn_02}</a></li>
+                                    <li>{language?.certificates_05_08}<a href="/images/sub/certificates/uae-07.jpg" download>{language?.certificates_btn_02}</a></li>
                                 </ul>
                             </dd>
                         </dl>
@@ -65,7 +65,7 @@ export default function Certificates({language}: Props) {
                             </dt>
                             <dd>
                                 <ul>
-                                    <li>{language?.certificates_06_02}<Link href="#">{language?.certificates_btn_02}</Link></li>
+                                    <li>{language?.certificates_06_02}<a href="/images/sub/certificates/qatar-01.jpg" download>{language?.certificates_btn_02}</a></li>
                                 </ul>
                             </dd>
                         </dl>
@@ -76,7 +76,7 @@ export default function Certificates({language}: Props) {
                             </dt>
                             <dd>
                                 <ul>
-                                    <li>{language?.certificates_07_02}<Link href="#">{language?.certificates_btn_02}</Link></li>
+                                    <li>{language?.certificates_07_02}<a href="/images/sub/certificates/saudi-arabia-01.jpg" download>{language?.certificates_btn_02}</a></li>
                                 </ul>
                             </dd>
                         </dl>
@@ -87,7 +87,7 @@ export default function Certificates({language}: Props) {
                             </dt>
                             <dd>
                                 <ul>
-                                    <li>{language?.certificates_08_02}<Link href="#">{language?.certificates_btn_02}</Link></li>
+                                    <li>{language?.certificates_08_02}<a href="/images/sub/certificates/indonesia-01.jpg" download>{language?.certificates_btn_02}</a></li>
                                 </ul>
                             </dd>
                         </dl>
@@ -98,7 +98,7 @@ export default function Certificates({language}: Props) {
                             </dt>
                             <dd>
                                 <ul>
-                                    <li>{language?.certificates_09_02}<Link href="#">{language?.certificates_btn_02}</Link></li>
+                                    <li>{language?.certificates_09_02}<a href="/images/sub/certificates/malaysia-01.jpg" download>{language?.certificates_btn_02}</a></li>
                                 </ul>
                             </dd>
                         </dl>
@@ -112,8 +112,8 @@ export default function Certificates({language}: Props) {
                             </dt>
                             <dd>
                                 <ul>
-                                    <li>{language?.certificates_10_01}<Link href="#">{language?.certificates_btn_02}</Link></li>
-                                    <li>{language?.certificates_10_02}<Link href="#">{language?.certificates_btn_02}</Link></li>
+                                    <li>{language?.certificates_10_01}<a href="/images/sub/certificates/sgs-01.jpg" download>{language?.certificates_btn_02}</a></li>
+                                    <li>{language?.certificates_10_02}<a href="/images/sub/certificates/sgs-02.jpg" download>{language?.certificates_btn_02}</a></li>
                                 </ul>
                             </dd>
                         </dl>
@@ -123,7 +123,7 @@ export default function Certificates({language}: Props) {
                             </dt>
                             <dd>
                                 <ul>
-                                    <li>{language?.certificates_11_01}<Link href="#">{language?.certificates_btn_02}</Link></li>
+                                    <li>{language?.certificates_11_01}<a href="/images/sub/certificates/ce-01.jpg" download>{language?.certificates_btn_02}</a></li>
                                 </ul>
                             </dd>
                         </dl>
@@ -133,7 +133,7 @@ export default function Certificates({language}: Props) {
                             </dt>
                             <dd>
                                 <ul>
-                                    <li>{language?.certificates_12_01}<Link href="#">{language?.certificates_btn_02}</Link></li>
+                                    <li>{language?.certificates_12_01}<a href="/images/sub/certificates/iso-01.jpg" download>{language?.certificates_btn_02}</a></li>
                                 </ul>
                             </dd>
                         </dl>
@@ -143,9 +143,9 @@ export default function Certificates({language}: Props) {
                             </dt>
                             <dd>
                                 <ul>
-                                    <li>{language?.certificates_13_01}<Link href="#">{language?.certificates_btn_02}</Link></li>
-                                    <li>{language?.certificates_13_02}<Link href="#">{language?.certificates_btn_02}</Link></li>
-                                    <li>{language?.certificates_13_03}<Link href="#">{language?.certificates_btn_02}</Link></li>
+                                    <li>{language?.certificates_13_01}<a href="/images/sub/certificates/velosi-01.jpg" download>{language?.certificates_btn_02}</a></li>
+                                    <li>{language?.certificates_13_02}<a href="/images/sub/certificates/velosi-02.jpg" download>{language?.certificates_btn_02}</a></li>
+                                    <li>{language?.certificates_13_03}<a href="/images/sub/certificates/velosi-03.jpg" download>{language?.certificates_btn_02}</a></li>
                                 </ul>
                             </dd>
                         </dl>
@@ -155,18 +155,18 @@ export default function Certificates({language}: Props) {
                             </dt>
                             <dd>
                                 <ul>
-                                    <li>{language?.certificates_14_01}<Link href="#">{language?.certificates_btn_02}</Link></li>
-                                    <li>{language?.certificates_14_02}<Link href="#">{language?.certificates_btn_02}</Link></li>
-                                    <li>{language?.certificates_14_03}<Link href="#">{language?.certificates_btn_02}</Link></li>
-                                    <li>{language?.certificates_14_04}<Link href="#">{language?.certificates_btn_02}</Link></li>
-                                    <li>{language?.certificates_14_05}<Link href="#">{language?.certificates_btn_02}</Link></li>
-                                    <li>{language?.certificates_14_06}<Link href="#">{language?.certificates_btn_02}</Link></li>
-                                    <li>{language?.certificates_14_07}<Link href="#">{language?.certificates_btn_02}</Link></li>
-                                    <li>{language?.certificates_14_08}<Link href="#">{language?.certificates_btn_02}</Link></li>
-                                    <li>{language?.certificates_14_09}<Link href="#">{language?.certificates_btn_02}</Link></li>
-                                    <li>{language?.certificates_14_10}<Link href="#">{language?.certificates_btn_02}</Link></li>
-                                    <li>{language?.certificates_14_11}<Link href="#">{language?.certificates_btn_02}</Link></li>
-                                    <li>{language?.certificates_14_12}<Link href="#">{language?.certificates_btn_02}</Link></li>
+                                    <li>{language?.certificates_14_01}<a href="/images/sub/certificates/pts-01.jpg" download>{language?.certificates_btn_02}</a></li>
+                                    <li>{language?.certificates_14_02}<a href="/images/sub/certificates/pts-02.jpg" download>{language?.certificates_btn_02}</a></li>
+                                    <li>{language?.certificates_14_03}<a href="/images/sub/certificates/pts-03.jpg" download>{language?.certificates_btn_02}</a></li>
+                                    <li>{language?.certificates_14_04}<a href="/images/sub/certificates/pts-04.jpg" download>{language?.certificates_btn_02}</a></li>
+                                    <li>{language?.certificates_14_05}<a href="/images/sub/certificates/pts-05.jpg" download>{language?.certificates_btn_02}</a></li>
+                                    <li>{language?.certificates_14_06}<a href="/images/sub/certificates/pts-06.jpg" download>{language?.certificates_btn_02}</a></li>
+                                    <li>{language?.certificates_14_07}<a href="/images/sub/certificates/pts-07.jpg" download>{language?.certificates_btn_02}</a></li>
+                                    <li>{language?.certificates_14_08}<a href="/images/sub/certificates/pts-08.jpg" download>{language?.certificates_btn_02}</a></li>
+                                    <li>{language?.certificates_14_09}<a href="/images/sub/certificates/pts-09.jpg" download>{language?.certificates_btn_02}</a></li>
+                                    <li>{language?.certificates_14_10}<a href="/images/sub/certificates/pts-10.jpg" download>{language?.certificates_btn_02}</a></li>
+                                    <li>{language?.certificates_14_11}<a href="/images/sub/certificates/pts-11.jpg" download>{language?.certificates_btn_02}</a></li>
+                                    <li>{language?.certificates_14_12}<a href="/images/sub/certificates/pts-12.jpg" download>{language?.certificates_btn_02}</a></li>
                                 </ul>
                             </dd>
                         </dl>
@@ -176,11 +176,11 @@ export default function Certificates({language}: Props) {
                             </dt>
                             <dd>
                                 <ul>
-                                    <li>{language?.certificates_15_01}<Link href="#">{language?.certificates_btn_02}</Link></li>
-                                    <li>{language?.certificates_15_02}<Link href="#">{language?.certificates_btn_02}</Link></li>
-                                    <li>{language?.certificates_15_03}<Link href="#">{language?.certificates_btn_02}</Link></li>
-                                    <li>{language?.certificates_15_04}<Link href="#">{language?.certificates_btn_02}</Link></li>
-                                    <li>{language?.certificates_15_05}<Link href="#">{language?.certificates_btn_02}</Link></li>
+                                    <li>{language?.certificates_15_01}<a href="/images/sub/certificates/tat-01.jpg" download>{language?.certificates_btn_02}</a></li>
+                                    <li>{language?.certificates_15_02}<a href="/images/sub/certificates/tat-02.jpg" download>{language?.certificates_btn_02}</a></li>
+                                    <li>{language?.certificates_15_03}<a href="/images/sub/certificates/tat-03.jpg" download>{language?.certificates_btn_02}</a></li>
+                                    <li>{language?.certificates_15_04}<a href="/images/sub/certificates/tat-04.jpg" download>{language?.certificates_btn_02}</a></li>
+                                    <li>{language?.certificates_15_05}<a href="/images/sub/certificates/tat-05.jpg" download>{language?.certificates_btn_02}</a></li>
                                 </ul>
                             </dd>
                         </dl>
