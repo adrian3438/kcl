@@ -119,10 +119,9 @@ export default function InquiryPage ({id} : Props) {
                             <div>
                                 <span>문의 유형</span>
                                 <span>
-                                    {data?.inquiryType === 'GE' && '그린에너지'}
-                                    {data?.inquiryType === 'PS' && '플랜트솔루션'}
-                                    {data?.inquiryType === 'MM' && '계측기'}
-                                    {data?.inquiryType === 'MS' && '마린솔루션'}
+                                    {data?.inquiryType === 'P' && '제품문의'}
+                                    {data?.inquiryType === 'T' && '기술문의'}
+                                    {data?.inquiryType === 'O' && '기타문의'}
                                 </span>
                             </div>
                         </li>
@@ -164,12 +163,12 @@ export default function InquiryPage ({id} : Props) {
                                 <span>{data?.availableTime}</span>
                             </div>
                         </li>*/}
-                        <li>
+                        {/*<li>
                             <div>
                                 <span>광고성정보수신동의</span>
                                 <span>{data?.adsAgreeStatus === 'Y' ? '동의' : '미동의'}</span>
                             </div>
-                        </li>
+                        </li>*/}
                     </ul>
 
                     <div className="fileName">

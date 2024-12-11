@@ -102,7 +102,8 @@ export default function Contact({language}: Props) {
             if (data?.attachedFile) {
                 formData.append('attachedFile', data?.attachedFile)
             }
-            formData.append('privacyAgree', isCheck ? 'Y' : 'N')
+            formData.append('privacyAgree', isCheck ? 'Y' : 'N');
+            formData.append('advertiseAgree' , 'N');
             // formData.append('advertiseAgree', isAdCheck ? 'Y' : 'N');
             const response = await api.post(`/user/inquiry/setInquiry.php`, formData)
             if (response?.data?.result === true) {
