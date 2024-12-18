@@ -51,7 +51,7 @@ export default function MainMenu({language, headerLeave}: Props) {
                         <li><Link href="/product/knife-gate-valve">{language?.header_2_9}</Link></li>
                     </ul>
                 </li>
-                <li>&nbsp;</li>
+                {/*<li>&nbsp;</li>*/}
                 <li>
                     <ul>
                         <li><Link href="/media/blog">{language?.header_4_1}</Link></li>
