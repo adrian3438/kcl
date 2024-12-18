@@ -60,9 +60,9 @@ export default function MobileMenu({language}: Props) {
                             <li><Link href="/product/knife-gate-valve">- {language?.header_2_9}</Link></li>
                         </ul>
                     </li>
-                    <li>
+                    {/*<li>
                         <Link href="/projects">{language.header_3}</Link>
-                    </li>
+                    </li>*/}
                     <li className={menuNumber === 3 ? 'on' : ''}>
                         <button onClick={() => handleMobileMenu(3)}>{language.header_4}</button>
                         <ul>

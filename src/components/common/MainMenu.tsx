@@ -24,7 +24,7 @@ export default function MainMenu({language, headerLeave}: Props) {
             <ul className="depth1">
                 <li onMouseOver={() => handleMouseover()}><Link href="#">{language?.header_1}</Link></li>
                 <li onMouseOver={() => handleMouseover()}><Link href="#">{language?.header_2}</Link></li>
-                <li onMouseOver={() => handleMouseover()}><Link href="/projects">{language?.header_3}</Link></li>
+                {/*<li onMouseOver={() => handleMouseover()}><Link href="/projects">{language?.header_3}</Link></li>*/}
                 <li onMouseOver={() => handleMouseover()}><Link href="#">{language?.header_4}</Link></li>
                 <li onMouseOver={() => handleMouseover()}><Link href="/contact">{language?.header_5}</Link></li>
             </ul>
