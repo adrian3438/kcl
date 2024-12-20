@@ -39,6 +39,7 @@ export default function AdminAccountPage ({
                 return;
             }
             const formData = new FormData()
+            formData.append('ID', id);
             formData.append('managerLogin', data?.id)
             if(data?.pass) {formData.append('managerPass', data?.pass)}
             formData.append('managerName', data?.name)
@@ -46,6 +47,7 @@ export default function AdminAccountPage ({
             formData.append('managerMobile', data?.mobile)
             formData.append('managerEmail', data?.email)
             formData.append('managerDept', data?.dept)
+            formData.append('managerPosition', '')
             if(id){
                 const response = await api.post(`/admin/manager/updManager.php`, formData)
                 if(response?.data?.result === true) {
