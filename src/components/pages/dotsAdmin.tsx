@@ -1,46 +1,41 @@
 'use client'
 
 import api from "@/lib/api"
-import {useAppDispatch} from "@/store/hooks"
-import {setUser} from "@/store/Slices/adminInfoSlice"
-import {useRouter} from "next/navigation"
-import {useState} from "react"
+import { useRouter } from "next/navigation"
+import { useState } from "react"
+// import { useAppDispatch } from "@/store/hooks"
+import { useCookies } from 'react-cookie'
 import Image from "next/image";
 
-export default function AdminLoginPage() {
+export default function AdminLoginPage () {
     const router = useRouter()
-    const dispatch = useAppDispatch()
-    const [login, setLogin] = useState<{ id: string, password: string }>({
-        id: '', password: ''
+    // const dispatch = useAppDispatch()
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const [cookies , setCookie] = useCookies(['hessid']);
+    const [login, setLogin] = useState<{id :string, password : string}>({
+        id : '', password : ''
     })
-
-    function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
+    function handleChange(e:React.ChangeEvent<HTMLInputElement>){
         const {name, value} = e.target;
-        setLogin((prev) => ({...prev, [name]: value}))
+        setLogin((prev) => ({...prev, [name] : value}))
     }
-
-    async function handleLogin() {
-        try {
-            const formData = new FormData()
-            formData.append('managerLoginId', login?.id)
-            formData.append('managerPass', login?.password)
+    async function handleLogin () {
+        try{
             const res = await api.get(`/admin/manager/adminLogin.php?managerLoginId=${login?.id}&managerPass=${login?.password}`)
-            if (res?.data?.result === true) {
-                dispatch(setUser({users: res.data}));
+            if(res?.data?.result === true) {
+                setCookie('hessid', res.data.uuid, { path: '/' }); // You can adjust the options as needed
                 router.push(`/dotsAdmin/common-code-management/common-code-list`);
-            } else {
+            }else{
                 alert(res.data.resultMsg);
             }
-        } catch {
+        }catch{
             alert('Server Error')
         }
     }
-
-    function handleEnter(e: React.KeyboardEvent<HTMLInputElement>) {
-        if (e.key === 'Enter') handleLogin()
+    function handleEnter (e:React.KeyboardEvent<HTMLInputElement>){
+        if(e.key==='Enter') handleLogin()
     }
-
-    return (<>
+    return(<>
         <div className="admin_loginBox">
             <h2>KCL Valve ADMIN</h2>
             <p>로그인 후 더욱 다양한 서비스를 이용해 보세요.</p>
@@ -79,8 +74,7 @@ export default function AdminLoginPage() {
                 <button
                     className="admin_loginBtn"
                     onClick={handleLogin}
-                >로그인
-                </button>
+                >로그인</button>
             </div>
         </div>
     </>)

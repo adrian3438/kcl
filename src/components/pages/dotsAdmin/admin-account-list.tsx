@@ -6,6 +6,7 @@ import Paginate from "@/components/DotsAdmin/Paginate/paginate";
 import api from "@/lib/api";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import calCulateIndex from "@/components/calculateIndex";
 interface Props {
     page : any,
     size : number,
@@ -78,10 +79,10 @@ export default function AdminAccountListPage ({
 
                         />
                         <tbody>
-                            {data?.map((list:any) => (
+                            {data?.map((list:any, index:number) => (
                             <tr key={list?.ID}>
                                 <td>
-                                    <span className="readOnly">{1}</span>
+                                    <span className="readOnly">{calCulateIndex(page , size , totalCount , index)}</span>
                                 </td>
                                 <td>
                                     <span className="readOnly">{list?.managerName}</span>
