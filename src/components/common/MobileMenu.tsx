@@ -72,7 +72,7 @@ export default function MobileMenu({language}: Props) {
                         </ul>
                     </li>
                     <li>
-                        <Link href="/Contact">{language.header_5}</Link>
+                        <Link href="/contact">{language.header_5}</Link>
                     </li>
                 </ul>
             </nav>

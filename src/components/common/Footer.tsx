@@ -40,7 +40,7 @@ export default function Footer({language}: Props) {
                     <div className="links">
                         <dl>
                             <dt>{language.footer_10}</dt>
-                            <dd><Link href="" className="sitemap">{language.footer_11}</Link></dd>
+                            <dd><Link href="/sitemap" className="sitemap">{language.footer_11}</Link></dd>
                         </dl>
                         <span>|</span>
                         <dl>

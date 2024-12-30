@@ -1,0 +1,41 @@
+.sitemap-container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 165px 20px 250px;
+  h2 {
+    font-size: 34px;
+    font-family: "Pretendard-Bold", sans-serif;
+    color: #0F3553;
+    margin-bottom: 60px;
+  }
+  > div {
+    margin-bottom: 100px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    > dl {
+      display: flex;
+      gap: 20px 90px;
+      > dt {
+        color: #1C4C93;
+        font-size: 18px;
+        font-family: "Pretendard-SemiBold", sans-serif;
+        min-width: 141px;
+      }
+      > dd {
+        > ul {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 40px 58px;
+          > li {
+            > a {
+              color: #707070;
+              font-size: 18px;
+              font-family: "Pretendard-SemiBold", sans-serif;
+            }
+          }
+        }
+      }
+    }
+  }
+}
