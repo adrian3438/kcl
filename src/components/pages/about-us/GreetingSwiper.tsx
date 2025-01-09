@@ -17,36 +17,34 @@ export default function GreetingSwiper() {
                     clickable: true,
                 }}
                 modules={[Autoplay]}
-                slidesPerView={3}
+                slidesPerView={1}
                 spaceBetween={15}
             >
                 <SwiperSlide>
-                    <Image src="/images/sub/greeting/greeting-01.jpg" alt="" width={600} height={338}/>
+                    <Image src="/images/sub/greeting/greeting-01.jpg" alt="" width={600} height={500}/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Image src="/images/sub/greeting/greeting-02.jpg" alt="" width={600} height={338}/>
+                    <Image src="/images/sub/greeting/greeting-02.jpg" alt="" width={600} height={500}/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Image src="/images/sub/greeting/greeting-03.jpg" alt="" width={600} height={338}/>
+                    <Image src="/images/sub/greeting/greeting-03.jpg" alt="" width={600} height={500}/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Image src="/images/sub/greeting/greeting-04.jpg" alt="" width={600} height={338}/>
+                    <Image src="/images/sub/greeting/greeting-04.jpg" alt="" width={600} height={500}/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Image src="/images/sub/greeting/greeting-05.jpg" alt="" width={600} height={338}/>
+                    <Image src="/images/sub/greeting/greeting-05.jpg" alt="" width={600} height={500}/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Image src="/images/sub/greeting/greeting-06.jpg" alt="" width={600} height={338}/>
+                    <Image src="/images/sub/greeting/greeting-06.jpg" alt="" width={600} height={500}/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Image src="/images/sub/greeting/greeting-07.jpg" alt="" width={600} height={338}/>
+                    <Image src="/images/sub/greeting/greeting-07.jpg" alt="" width={600} height={500}/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Image src="/images/sub/greeting/greeting-08.jpg" alt="" width={600} height={338}/>
+                    <Image src="/images/sub/greeting/greeting-08.jpg" alt="" width={600} height={500}/>
                 </SwiperSlide>
-                <SwiperSlide>
-                    <Image src="/images/sub/greeting/greeting-09.jpg" alt="" width={600} height={338}/>
-                </SwiperSlide>
+
             </Swiper>
             <span/>
         </section>

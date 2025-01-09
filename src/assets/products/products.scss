@@ -327,29 +327,33 @@
     vertical-align: top;
   }
   .swiper-slide {
-    border-radius: 38px;
+    border-radius: 18px;
     overflow: hidden;
   }
   .swiper {
     padding-bottom: 90px;
   }
   .swiper-button-prev {
-    left: 50%;
+    left: 7%;
     transform: translateX(-80px);
   }
   .swiper-button-next {
-    right: 50%;
+    right: 7%;
     transform: translateX(80px);
   }
   .swiper-button-prev, .swiper-button-next {
     top: auto !important;
-    bottom: 0 !important;
-    color: #000;
-    width: 57px;
-    height: 57px;
-    border: 3px solid #000;
+    bottom: 50% !important;
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #ffffff;
     border-radius: 50%;
+    &:after {
+      font-size: 23px;
+    }
   }
+  
 }
 
 /* Product Contact */
@@ -421,5 +425,23 @@
         display: none;
       }
     }
+  }
+}
+
+.greeting-swiper {
+  margin-bottom: 230px;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.ourClients {
+  h2 {
+    font-size: 65px;
+    color: #DE0010;
+    margin-bottom: 35px;
+    text-align: center;
+    font-weight: bold;
   }
 }

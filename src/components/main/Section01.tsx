@@ -14,9 +14,26 @@ interface Props {
 export default function Section01({language}: Props) {
     return (
         <section className="section-01">
+            <div>
+                        <video
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            className="main-video-01"
+                        >
+                            <source src="/video/kclvalve_homepage_main_rev3.mp4" type="video/mp4"/>
+                            Your browser does not support the video tag.
+                        </video>
+                        {/* <Link href="#">
+                            <p>OOO Test</p>
+
+                            <p>Go to OOO valve</p>
+                        </Link> */}
+                    </div>
             <Swiper
                 autoplay={{
-                    delay: 10000,
+                    delay: 3000,
                     disableOnInteraction: false,
                 }}
                 pagination={{
@@ -26,22 +43,7 @@ export default function Section01({language}: Props) {
             >
                 <SwiperSlide>
                     <div className="banner-area">
-                        <Image src="/images/main/main-banner-01.png" alt="" width={1920} height={1080}/>
-                        <div className="banner-text">
-                            <div>
-                                <div>
-                                    <p>{language?.main_01_01}</p>
-                                    <div>
-                                        <Link href="/contact" className="btn-01">{language?.main_01_02}</Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="banner-area">
-                        <Image src="/images/main/main-banner-02.png" alt="" width={1920} height={1080}/>
+                        <Image src="/images/main/main-banner-02.jpg" alt="" width={1920} height={944}/>
                         <div className="banner-text">
                             <div>
                                 <div>
@@ -56,7 +58,7 @@ export default function Section01({language}: Props) {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="banner-area">
-                        <Image src="/images/main/main-banner-03.png" alt="" width={1920} height={1080}/>
+                        <Image src="/images/main/main-banner-03.jpg" alt="" width={1920} height={944}/>
                         <div className="banner-text">
                             <div>
                                 <div>
@@ -71,7 +73,7 @@ export default function Section01({language}: Props) {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="banner-area">
-                        <Image src="/images/main/main-banner-04.png" alt="" width={1920} height={1080}/>
+                        <Image src="/images/main/main-banner-04.jpg" alt="" width={1920} height={944}/>
                         <div className="banner-text">
                             <div>
                                 <div>
@@ -86,7 +88,7 @@ export default function Section01({language}: Props) {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="banner-area">
-                        <Image src="/images/main/main-banner-05.png" alt="" width={1920} height={1080}/>
+                        <Image src="/images/main/main-banner-05.jpg" alt="" width={1920} height={944}/>
                         <div className="banner-text">
                             <div>
                                 <div>
@@ -101,7 +103,7 @@ export default function Section01({language}: Props) {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="banner-area">
-                        <Image src="/images/main/main-banner-06.png" alt="" width={1920} height={1080}/>
+                        <Image src="/images/main/main-banner-06.jpg" alt="" width={1920} height={944}/>
                         <div className="banner-text">
                             <div>
                                 <div>
@@ -116,7 +118,7 @@ export default function Section01({language}: Props) {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="banner-area">
-                        <Image src="/images/main/main-banner-07.png" alt="" width={1920} height={1080}/>
+                        <Image src="/images/main/main-banner-07.jpg" alt="" width={1920} height={944}/>
                         <div className="banner-text">
                             <div>
                                 <div>
@@ -129,8 +131,23 @@ export default function Section01({language}: Props) {
                         </div>
                     </div>
                 </SwiperSlide>
+                <SwiperSlide>
+                    <div className="banner-area">
+                        <Image src="/images/main/main-banner-01.jpg" alt="" width={1920} height={944}/>
+                        <div className="banner-text">
+                            <div>
+                                <div>
+                                    <p>{language?.main_01_01}</p>
+                                    <div>
+                                        <Link href="/contact" className="btn-01">{language?.main_01_02}</Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
             </Swiper>
-            <span/>
+            
         </section>
     )
 }

@@ -7,6 +7,7 @@ import ProductContact from "@/components/pages/products/ProductContact";
 import ButterflyValve from "@/components/pages/products/ButterflyValve";
 
 
+
 export default async function ButterflyValvePage({searchParams: {lang}}: any) {
     const language = await fetchLanguage(lang);
 
@@ -23,7 +24,7 @@ export default async function ButterflyValvePage({searchParams: {lang}}: any) {
     return (
         <>
             <Header language={language}/>
-            <div className="sub-banner4" style={{background: "url(/images/sub/products/product-bg-05.png) no-repeat 50% 0", backgroundSize: "100% auto"}}>
+            <div className="sub-banner4" style={{background: "url(/images/sub/products/product-bg-05.jpg) no-repeat 50% 0", backgroundSize: "100% auto"}}>
                 <div className="banner-text">
                     <div>
                         <p className="banner-text-title">{language?.product_05_01}</p>
@@ -55,7 +56,10 @@ export default async function ButterflyValvePage({searchParams: {lang}}: any) {
                     <ButterflyValve language={language}/>
                 </section>
 
+                <div className="ourClients">
+                <h2>{language?.product_08_63}</h2>
                 <ProductSwiper productImageList={productImageList}/>
+                </div> 
 
                 <ProductContact language={language}/>
             </div>

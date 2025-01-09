@@ -73,11 +73,11 @@ const Modeling: FC = () => {
     const [count, setCount] = useState<number>(0);
 
     const ModelingUrl = [
-        "dbb-plug-valve-150lb-rf-dn250a",
-        "lubricated-plug-valve-600lbs-rtj-18-inch",
-        "Lubricated-Plug-Valve-900LBS-RTJ-2-Inch",
-        "sleeved-plug-valve-150lb-rf-2-inch",
-        "trunnion-ball-valve-300lb-10in",
+        "DBB PLUG VALVE 150LB RF DN250A",  
+        "LUBRICATED PLUG VALVE 600LBS RTJ 18INCH",
+        "LUBRICATED PLUG VALVE 900LBS RTJ 2INCH",
+        "SLEEVED PLUG VALVE 150LB RF 2INCH",
+        "TRUNNION BALL VALVE 300LB 10INCH",
     ];
 
     const updateModel = (direction: number) => {

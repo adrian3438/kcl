@@ -18,15 +18,13 @@ export default async function CastingValvePage({searchParams: {lang}}: any) {
         "/images/sub/products/casting/kcl-casting-valve-6.jpg",
         "/images/sub/products/casting/kcl-casting-valve-7.jpg",
         "/images/sub/products/casting/kcl-casting-valve-8.jpg",
-        "/images/sub/products/casting/kcl-casting-valve-9.jpg",
-        "/images/sub/products/casting/kcl-casting-valve-10.jpg",
-        "/images/sub/products/casting/kcl-casting-valve-11.jpg",
+
     ];
 
     return (
         <>
             <Header language={language}/>
-            <div className="sub-banner4" style={{background: "url(/images/sub/products/product-bg-04.png) no-repeat 50% 0", backgroundSize: "100% auto"}}>
+            <div className="sub-banner4" style={{background: "url(/images/sub/products/product-bg-04.jpg) no-repeat 50% 0", backgroundSize: "100% auto"}}>
                 <div className="banner-text">
                     <div>
                         <p className="banner-text-title">{language?.product_04_01}</p>
@@ -58,7 +56,12 @@ export default async function CastingValvePage({searchParams: {lang}}: any) {
                     <CastingValve language={language}/>
                 </section>
 
+                <div className="ourClients">
+                <h2>{language?.product_08_63}</h2>
                 <ProductSwiper productImageList={productImageList}/>
+                </div> 
+
+                
 
                 <ProductContact language={language}/>
             </div>

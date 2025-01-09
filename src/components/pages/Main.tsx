@@ -11,7 +11,7 @@ export default function Main({language}: Props) {
     return (
         <main>
             <Section01 language={language}/>
-            <section className="section-02">
+            <section className="section-01">
                 <div>
                     <div>
                         <video
@@ -21,16 +21,13 @@ export default function Main({language}: Props) {
                             playsInline
                             className="main-video-01"
                         >
-                            <source src="/video/kclvalve-main-video-1.mp4" type="video/mp4"/>
-                            Your browser does not support the video tag.
+                            <source src="/video/kclvalve-main-video-1234.mp4" type="video/mp4"/>
                         </video>
-                        <Link href="#">
-                            <p>OOO Test</p>
-                            <p>Go to OOO valve</p>
-                        </Link>
+ 
                     </div>
+                                        
                     <div>
-                        <video
+                        {/* <video
                             autoPlay
                             muted
                             loop
@@ -38,47 +35,51 @@ export default function Main({language}: Props) {
                             className="main-video-02"
                         >
                             <source src="/video/kclvalve-main-video-2.mp4" type="video/mp4"/>
-                            Your browser does not support the video tag.
-                        </video>
-                        <Link href="#">
-                            <p>OOO Test</p>
-                            <p>Go to OOO valve</p>
-                        </Link>
+                        </video> */}
                     </div>
-                </div>
-                <div>
+                    
                     <div>
                         <video
                             autoPlay
                             muted
                             loop
                             playsInline
-                            className="main-video-03"
+                            className="main-video-04"
                         >
-                            <source src="/video/kclvalve-main-video-3.mp4" type="video/mp4"/>
-                            Your browser does not support the video tag.
+                            <source src="/video/kclvalve-main-video-4.mp4" type="video/mp4"/>
                         </video>
-                        <Link href="#">
-                            <p>OOO Test</p>
-                            <p>Go to OOO valve</p>
-                        </Link>
+
+                    </div>
+                    
+                    <div>
+                        <video
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            className="main-video-05"
+                        >
+                            <source src="/video/kclvalve-main-video-5.mp4" type="video/mp4"/>
+                        </video>
                     </div>
                 </div>
+                
+                                 
             </section>
             <section className="section-03 main-section">
-                <Image src="/images/main/section-03-bg.png" alt="" width={1919} height={1036}/>
-                <div className="section-text">
                     <div>
-                        <div>
-                            <p className="section-title">{language?.main_01_22}</p>
-                            <p className="section-text-01">{language?.main_01_23}</p>
-                            <p className="section-text-02">{language?.main_01_24}</p>
-                            <div>
-                                <Link href="/about-us/management-solution" className="btn-01">{language?.main_01_25}</Link>
-                            </div>
-                        </div>
+                        <video
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            className="main-video-06"
+                        >
+                            <source src="/video/kclvalve-copmany-concept_rev2.mp4" type="video/mp4"/>
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
-                </div>
+
             </section>
             <section className="section-04 main-section">
                 <Image src="/images/main/section-04-bg.png" alt="" width={1920} height={1076}/>

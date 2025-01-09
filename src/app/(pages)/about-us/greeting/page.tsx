@@ -10,7 +10,7 @@ export default async function Greeting({searchParams : {lang}} : any) {
     return (
         <>
             <Header language={language}/>
-            <div className="sub-banner5" style={{background: "url(/images/sub/sub-banner-bg-04.png) no-repeat 50% 0", backgroundSize: "100% 100%"}}>
+            <div className="sub-banner5" style={{background: "url(/images/sub/sub-banner-bg-04.jpg) no-repeat 50% 0", backgroundSize: "100% 100%"}}>
                 <div className="banner-text">
                     <div>
                         <p className="banner-text-title">{language?.greeting_01}</p>
@@ -93,11 +93,15 @@ export default async function Greeting({searchParams : {lang}} : any) {
                     </section>
                 </div>
             </div>
-            <GreetingSwiper/>
 
             <div className="company-location">
-                <h2>{language?.greeting_30}</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3230.1695338956974!2d128.278830815775!3d35.94282248013407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3565928cc0047651%3A0x280e5b72a36a5dce!2zKOyjvCnsvIDsnbTslKjsl5g!5e0!3m2!1sen!2skr!4v1496799701389" width="600" height="450" style={{width: "100%",border: 0}}></iframe>
+            <h2>{language?.greeting_30}</h2>
+            <GreetingSwiper/>
+            </div>            
+
+            <div className="company-location">
+                <h2>{language?.greeting_31}</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.9922551384498!2d126.82949907639745!3d37.319011138281944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b6f0471593963%3A0x7d671ffdc8793cb0!2z7LyA7J207JSo7JeY!5e0!3m2!1sko!2skr!4v1736315820675!5m2!1sko!2skr" width="600" height="800" style={{width: "100%",border: 0}}></iframe>
             </div>
 
             <Footer language={language}/>

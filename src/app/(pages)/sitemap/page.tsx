@@ -13,6 +13,16 @@ export default async function Home({searchParams: {lang}}: any) {
                 <h2>Sitemap</h2>
                 <div>
                     <dl>
+                        <dt>{language?.header_0}</dt>
+                        <dd>
+                            <ul>
+                                <li><Link href="/">{language?.header_0}</Link></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+                <div>
+                    <dl>
                         <dt>{language?.header_1}</dt>
                         <dd>
                             <ul>

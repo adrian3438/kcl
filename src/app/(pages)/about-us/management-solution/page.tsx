@@ -10,6 +10,14 @@ export default async function ManagementSolution({searchParams : {lang}} : any) 
     return (
         <>
             <Header language={language}/>
+
+            <div className="sub-banner5" style={{background: "url(/images/sub/solution/solution-01.jpg) no-repeat 50% 0", backgroundSize: "100% 100%"}}>
+                <div className="banner-text">
+                    {/* <div>
+                        <p className="banner-text-title">{language?.greeting_01}</p>
+                    </div> */}
+                </div>
+            </div>
             <div className="container">
                 <ul className="location">
                     <li>{language?.header_1}</li>
@@ -80,13 +88,13 @@ export default async function ManagementSolution({searchParams : {lang}} : any) 
                         <h2>{language?.solution_25}</h2>
                         <ul>
                             <li>
-                                <Image src="/images/sub/solution/solution-06.png" alt="" width={480} height={480}/>
+                                <Image src="/images/sub/solution/management-1.gif" alt="" width={480} height={480}/>
                             </li>
                             <li>
-                                <Image src="/images/sub/solution/solution-07.png" alt="" width={480} height={480}/>
+                                <Image src="/images/sub/solution/management-2.gif" alt="" width={480} height={480}/>
                             </li>
                             <li>
-                                <Image src="/images/sub/solution/solution-08.png" alt="" width={480} height={480}/>
+                                <Image src="/images/sub/solution/management-3.gif" alt="" width={480} height={480}/>
                             </li>
                         </ul>
                     </section>

@@ -10,18 +10,27 @@ export default async function ForgedBallValvePage({searchParams: {lang}}: any) {
     const language = await fetchLanguage(lang);
 
     const productImageList = [
-        "/images/sub/products/forged/kcl_forged_ball_vlave_1.jpg",
-        "/images/sub/products/forged/kcl_forged_ball_vlave_2.jpg",
-        "/images/sub/products/forged/kcl_forged_ball_vlave_3.jpg",
-        "/images/sub/products/forged/kcl_forged_ball_vlave_4.jpg",
-        "/images/sub/products/forged/kcl_forged_ball_vlave_6.jpg",
-        "/images/sub/products/forged/kcl_forged_ball_vlave_7.jpg",
+        "/images/sub/products/forged/forged-ball-valve-1.jpg",
+        "/images/sub/products/forged/forged-ball-valve-2.jpg",
+        "/images/sub/products/forged/forged-ball-valve-3.jpg",
+        "/images/sub/products/forged/forged-ball-valve-4.jpg",
+        "/images/sub/products/forged/forged-ball-valve-5.jpg",
+        "/images/sub/products/forged/forged-ball-valve-6.jpg",
+        "/images/sub/products/forged/forged-ball-valve-7.jpg",
+        "/images/sub/products/forged/forged-ball-valve-8.jpg",
+        "/images/sub/products/forged/forged-ball-valve-9.jpg",
+        "/images/sub/products/forged/forged-ball-valve-10.jpg",
+        "/images/sub/products/forged/forged-ball-valve-11.jpg",
+        "/images/sub/products/forged/forged-ball-valve-12.jpg",
+        "/images/sub/products/forged/forged-ball-valve-13.jpg",
+        "/images/sub/products/forged/forged-ball-valve-14.jpg",
+
     ];
 
     return (
         <>
             <Header language={language}/>
-            <div className="sub-banner4" style={{background: "url(/images/sub/products/product-bg-01.png) no-repeat 50% 0", backgroundSize: "100% auto"}}>
+            <div className="sub-banner4" style={{background: "url(/images/sub/products/product-bg-02.jpg) no-repeat 50% 0", backgroundSize: "100% auto"}}>
                 <div className="banner-text">
                     <div>
                         <p className="banner-text-title">{language?.product_01_01}</p>
@@ -55,7 +64,10 @@ export default async function ForgedBallValvePage({searchParams: {lang}}: any) {
 
                 </section>
 
-                <ProductSwiper productImageList={productImageList} />
+                <div className="ourClients">
+                <h2>{language?.product_08_63}</h2>
+                <ProductSwiper productImageList={productImageList}/>
+                </div> 
 
                 <ProductContact language={language}/>
             </div>
