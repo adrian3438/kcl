@@ -2,7 +2,6 @@ import "@/assets/about-us/concept.scss";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import {fetchLanguage} from "@/util/fetchLanguage";
-import Image from "next/image";
 
 export default async function CompanyConcept({searchParams: {lang}}: any) {
     const language = await fetchLanguage(lang);
