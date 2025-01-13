@@ -22,7 +22,7 @@ export default function Section01({language}: Props) {
                             playsInline
                             className="main-video-01"
                         >
-                            <source src="/video/kclvalve_homepage_main_rev3.mp4" type="video/mp4"/>
+                            <source src="/video/kclvalve_homepage_main_rev4.mp4" type="video/mp4"/>
                             Your browser does not support the video tag.
                         </video>
                         {/* <Link href="#">

@@ -13,7 +13,7 @@ export default function Main({language}: Props) {
             <Section01 language={language}/>
             <section className="section-01">
                 <div>
-                    <div>
+                    {/* <div>
                         <video
                             autoPlay
                             muted
@@ -24,7 +24,7 @@ export default function Main({language}: Props) {
                             <source src="/video/kclvalve-main-video-1234.mp4" type="video/mp4"/>
                         </video>
  
-                    </div>
+                    </div> */}
                                         
                     <div>
                         {/* <video
@@ -38,7 +38,7 @@ export default function Main({language}: Props) {
                         </video> */}
                     </div>
                     
-                    <div>
+                    {/* <div>
                         <video
                             autoPlay
                             muted
@@ -61,7 +61,7 @@ export default function Main({language}: Props) {
                         >
                             <source src="/video/kclvalve-main-video-5.mp4" type="video/mp4"/>
                         </video>
-                    </div>
+                    </div> */}
                 </div>
                 
                                  
@@ -95,7 +95,7 @@ export default function Main({language}: Props) {
                     </div>
                 </div>
             </section>
-            <section className="section-05 main-section">
+            {/* <section className="section-05 main-section">
                 <Image src="/images/main/section-05-bg.png" alt="" width={1920} height={1088}/>
                 <div className="section-text">
                     <div>
@@ -108,7 +108,7 @@ export default function Main({language}: Props) {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
             <section className="section-06">
                 <Image src="/images/main/section-06-bg.png" alt="" width={1920} height={998}/>
                 <div>
@@ -129,7 +129,7 @@ export default function Main({language}: Props) {
                 </div>
             </section>
             <section className="section-07 main-section">
-                <Image src="/images/main/section-07-bg.png" alt="" width={1922} height={1087}/>
+                <Image src="/images/main/section-07-bg.jpg" alt="" width={1922} height={1087}/>
                 <div className="section-text">
                     <div>
                         <div>
