@@ -38,7 +38,7 @@ export default async function ManagementSolution({searchParams : {lang}} : any) 
                             <Image src="/images/sub/solution/solution-01.png" alt="" width={656} height={654}/>
                         </div>
                     </section>
-                    <section className="section-02">
+                    {/* <section className="section-02">
                         <h2>{language?.solution_08}</h2>
                         <ul>
                             <li>
@@ -69,7 +69,7 @@ export default async function ManagementSolution({searchParams : {lang}} : any) 
                                 </div>
                             </li>
                         </ul>
-                    </section>
+                    </section> */}
                     <section className="section-type-01">
                         <div className="text-area">
                             <h2>{language?.solution_18}</h2>
@@ -139,10 +139,10 @@ export default async function ManagementSolution({searchParams : {lang}} : any) 
                             <Image src="/images/sub/solution/solution-13.png" alt="" width={656} height={654}/>
                         </div>
                     </section>
-                    <section className="section-05">
+                    {/* <section className="section-05">
                         <h2>SHIPMENT CONTROL</h2>
                         <Image src="/images/sub/solution/solution-14.png" alt="" width={1568} height={1372}/>
-                    </section>
+                    </section> */}
                 </div>
             </div>
             <Footer language={language}/>
