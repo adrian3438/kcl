@@ -261,7 +261,7 @@ export default function History({language}: Props) {
                             <Image src="/images/sub/history/history-saline-water-conversion-corporation.jpg" alt="" width={234} height={87} style={{width:"130px", height:"130px"}}/>
                             <Image src="/images/sub/history/history-takreer.jpg" alt="" width={234} height={87} style={{width:"200px", height:"170px"}}/>
                             <Image src="/images/sub/history/history-fertil.jpg" alt="" width={234} height={87} style={{width:"200px", height:"80px"}}/>
-                            <Image src="/images/sub/history/history-ikpt.jpg" alt="" width={234} height={87} style={{width:"100px", height:"80px"}}/>
+                            <Image src="/images/sub/history/history-IKPT.jpg" alt="" width={234} height={87} style={{width:"100px", height:"80px"}}/>
                             </p>
                         </div>
                     </div>
