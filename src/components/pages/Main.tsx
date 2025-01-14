@@ -110,7 +110,7 @@ export default function Main({language}: Props) {
                 </div>
             </section> */}
             <section className="section-06">
-                <Image src="/images/main/section-06-bg.png" alt="" width={1920} height={998}/>
+                <Image src="/images/main/section-06-bg.jpg" alt="" width={1920} height={998}/>
                 <div>
                     <div>
                         <div>

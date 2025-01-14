@@ -71,6 +71,9 @@ export default async function ManagementSolution({searchParams : {lang}} : any) 
                         </ul>
                     </section> */}
                     <section className="section-type-01">
+                        <div className="image-area">
+                            <Image src="/images/sub/solution/solution-05.png" alt="" width={656} height={654}/>
+                        </div>
                         <div className="text-area">
                             <h2>{language?.solution_18}</h2>
                             <p>{language?.solution_19}<br/>{language?.solution_20}</p>
@@ -80,9 +83,7 @@ export default async function ManagementSolution({searchParams : {lang}} : any) 
                                 <Link href="/projects">{language?.solution_24}</Link>
                             </div>
                         </div>
-                        <div className="image-area">
-                            <Image src="/images/sub/solution/solution-05.png" alt="" width={656} height={654}/>
-                        </div>
+                        
                     </section>
                     <section className="section-03">
                         <h2>{language?.solution_25}</h2>

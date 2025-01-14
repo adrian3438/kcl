@@ -10,6 +10,7 @@ interface Props {
     language: any
     page?: number
 }
+  
 
 export default function BlogList({language, page}: Props) {
     const [newsList, setNewsList] = useState<any[]>([]); // API 호출 결과
@@ -70,5 +71,6 @@ export default function BlogList({language, page}: Props) {
                 <Paginate page={page || 1} size={9} totalCount={totalCount}/>
             </section>
         </>
+        
     )
 }

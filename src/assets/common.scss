@@ -469,7 +469,7 @@ footer {
 //타이틀 영역 Style1
 .title-area1 {
   text-align: center;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   h2 {
     font-size: 65px;
     color: #DE0010;
@@ -537,4 +537,33 @@ footer {
       line-height: 24px;
     }
   }
+}
+
+.title-area3 {
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px;
+  padding-top: 100px;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+  }
+  p {
+    font-size: 40px;
+    color: #194B7E;
+    line-height: 41px;
+    font-weight: 800;
+   
+  }
+}
+
+.image-area1 {
+  position: relative;
+  text-align: left;
+  margin-bottom: 30px;
+  padding-top: 35px;
+ 
 }
