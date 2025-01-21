@@ -2,8 +2,8 @@ import "@/assets/media/catalog.scss";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import {fetchLanguage} from "@/util/fetchLanguage";
-import Link from "next/link";
-import Image from "next/image";
+// import Link from "next/link";
+// import Image from "next/image";
 
 export default async function Catalog({searchParams : {lang}} : any) {
     const language = await fetchLanguage(lang);
