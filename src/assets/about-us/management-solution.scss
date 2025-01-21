@@ -145,6 +145,7 @@
         img {
           width: 100%;
           height: auto;
+          border-radius: 16px;
         }
       }
     }
@@ -234,7 +235,6 @@
       flex-wrap: wrap;
       > li {
         flex-basis: 100%;
-        border-radius: 15px;
       }
     }
   }
