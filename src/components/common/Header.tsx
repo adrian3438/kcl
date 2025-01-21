@@ -26,7 +26,8 @@ export default function Header({language}: Props) {
     const query = useSearchParams();
     const currentRoute = usePathname();
     const [cookie , setCookie] = useCookies(['LANG']);
-    const [setLang] = useState<any>('kr');
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const [lang, setLang] = useState<any>('kr');
 
     function handleLang (e : any, lang : string) {
         e.preventDefault();
@@ -40,7 +41,7 @@ export default function Header({language}: Props) {
 
     useEffect(()=>{setLang(cookie.LANG)} , [setCookie, cookie]);
 
-    
+
     return (
         <header onMouseLeave={() => handleMouseLeave()} onMouseOver={() => handleMouseOver()}>
             <div className="header-top-bar">
@@ -57,7 +58,7 @@ export default function Header({language}: Props) {
                     </li>
                 </ul>
             </div>
-            
+
             <div className="header-inner">
 
                 <h1><Link href="/"><Image src="/images/common/logo.png" alt="Since 2001 KCL Valve" width={188} height={69}/></Link></h1>
