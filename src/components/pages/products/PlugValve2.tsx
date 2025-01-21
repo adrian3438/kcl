@@ -21,7 +21,7 @@ export default function PlugValve2({language}: Props) {
                 {status === 0 && (
                     <div className="text-area-detail">
                         <div className="image-area">
-                            <p><Image src="/images/sub/products/plug/plug-valve-02.png" alt="" width={586} height={440}/></p>
+                            <p><Image src="/images/sub/products/plug/plug-valve-01.jpg" alt="" width={586} height={440}/></p>
                         </div>
                         <ul>
                             <li>
@@ -55,7 +55,7 @@ export default function PlugValve2({language}: Props) {
                 {status === 1 && (
                     <div className="text-area-detail">
                         <div className="image-area">
-                            <p><Image src="/images/sub/products/plug/plug-valve-02.png" alt="" width={586} height={440}/></p>
+                            <p><Image src="/images/sub/products/plug/plug-valve-02.jpg" alt="" width={586} height={440}/></p>
                         </div>
                         <ul>
                             <li>
@@ -85,7 +85,7 @@ export default function PlugValve2({language}: Props) {
                 <Link href="/file/non-lubricated-teflon-sleeved-plug-valves-kclvalve.pdf" target="_blank">{language?.product_03_btn_03}</Link>
             </div>
             <div className="image-area">
-                <p><Image src="/images/sub/products/plug/plug-valve-02.png" alt="" width={586} height={440}/></p>
+                <p><Image src="/images/sub/products/plug/plug-valve-02-.jpg" alt="" width={586} height={440}/></p>
             </div>
         </div>
     )
