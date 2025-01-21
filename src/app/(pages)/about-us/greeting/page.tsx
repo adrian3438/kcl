@@ -3,7 +3,7 @@ import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import {fetchLanguage} from "@/util/fetchLanguage";
 import Image from "next/image";
-import GreetingSwiper from "@/components/pages/about-us/GreetingSwiper";
+// import GreetingSwiper from "@/components/pages/about-us/GreetingSwiper";
 
 export default async function Greeting({searchParams : {lang}} : any) {
     const language = await fetchLanguage(lang);

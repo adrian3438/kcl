@@ -26,7 +26,7 @@ export default function Header({language}: Props) {
     const query = useSearchParams();
     const currentRoute = usePathname();
     const [cookie , setCookie] = useCookies(['LANG']);
-    const [lang , setLang] = useState<any>('kr');
+    const [setLang] = useState<any>('kr');
 
     function handleLang (e : any, lang : string) {
         e.preventDefault();
