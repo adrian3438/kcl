@@ -17,7 +17,7 @@ main {
             max-width: 1275px;
             padding: 39.5px 59.5px;
             box-sizing: border-box;
-            background-color: rgba(3, 3, 3, 0.4);
+            background-color: rgba(3, 3, 3, 0.1);
             border-radius: 15px;
             > p {
               color: #fff;
@@ -25,6 +25,7 @@ main {
               //font-weight: bold;
               font-family: 'Pretendard-ExtraBold', sans-serif;
               line-height: 78px;
+              
             }
             > div {
               margin-top: 10px;

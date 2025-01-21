@@ -134,7 +134,7 @@ export default function KnifeGateValve({language}: Props) {
 
                 </div>
                 <div className="image-area">
-                    {subStatus === 0 && <p><Image src="/images/sub/products/knife/knife-gate-valve-01.png" alt="" width={403} height={992}/></p>}
+                    {subStatus === 0 && <p><Image src="/images/sub/products/knife/knife-gate-valve.gif" alt="" width={471} height={853}/></p>}
                     {subStatus === 1 && <p><Image src="/images/sub/products/knife/knife-gate-valve-05.jpg" alt="" width={284} height={699}/></p>}
                     {subStatus === 2 && <p><Image src="/images/sub/products/knife/knife-gate-valve-06.jpg" alt="" width={159} height={419}/></p>}
                 </div>

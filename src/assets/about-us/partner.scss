@@ -59,3 +59,30 @@
     height: auto;
   }
 }
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.tab-title {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.tab-title.active {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+}
+
+.tab-content {
+  margin-top: 20px;
+}
+
+.tab-panel {
+  display: block;
+}

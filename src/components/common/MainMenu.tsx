@@ -28,6 +28,7 @@ export default function MainMenu({language, headerLeave}: Props) {
                 {/*<li onMouseOver={() => handleMouseover()}><Link href="/projects">{language?.header_3}</Link></li>*/}
                 <li onMouseOver={() => handleMouseover()}><Link href="/media/blog">{language?.header_4}</Link></li>
                 <li onMouseOver={() => handleMouseover()}><Link href="/contact">{language?.header_5}</Link></li>
+                
             </ul>
             <ul className={`depth2 ${depth2Visible ? 'on' : ''}`}>
                 <li>
@@ -60,9 +61,11 @@ export default function MainMenu({language, headerLeave}: Props) {
                 {/*<li>&nbsp;</li>*/}
                 <li>
                     <ul>
-                        <li><Link href="/media/blog">{language?.header_4_1}</Link></li>
+                        <li><Link href="/media/video">{language?.header_4_4}</Link></li>
                         <li><Link href="/media/catalog">{language?.header_4_2}</Link></li>
+                        <li><Link href="/media/pq">{language?.header_4_5}</Link></li>
                         <li><Link href="/media/3d-modeling">{language?.header_4_3}</Link></li>
+                        {/* <li><Link href="/media/blog">{language?.header_4_1}</Link></li> */}
                     </ul>
                 </li>
                 <li>&nbsp;</li>

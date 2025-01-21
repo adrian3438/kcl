@@ -10,7 +10,10 @@ export default function Footer({language}: Props) {
         <footer>
             <div className="footer-inner">
                 <div className="footer-area1">
-                    <Image src="/images/common/footer-logo.png" alt="Since 2001 KCL Valve" width={250} height={90} />
+                    <ul>
+                    <li><Image src="/images/common/footer-logo.png" alt="Since 2001 KCL Valve" width={250} height={90} /></li>
+                    <li className="salesManager">Sales Manager +82 10 6269 8001</li>
+                    </ul>
                     <div>
                         <div>
                             <p>{language.footer_1}</p>

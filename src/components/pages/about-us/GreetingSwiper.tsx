@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function GreetingSwiper() {
     return (
         <section className="greeting-swiper">
-            <Swiper
+            {/* <Swiper
                 autoplay={{
                     delay: 3000,
                     disableOnInteraction: false,
@@ -44,8 +44,15 @@ export default function GreetingSwiper() {
                 <SwiperSlide>
                     <Image src="/images/sub/greeting/greeting-08.jpg" alt="" width={600} height={500}/>
                 </SwiperSlide>
+                <SwiperSlide>
+                    <Image src="/images/sub/greeting/greeting-09.jpg" alt="" width={600} height={500}/>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Image src="/images/sub/greeting/greeting-10.jpg" alt="" width={600} height={500}/>
+                </SwiperSlide>
 
-            </Swiper>
+
+            </Swiper> */}
             <span/>
         </section>
     )

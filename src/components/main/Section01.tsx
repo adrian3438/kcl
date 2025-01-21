@@ -14,7 +14,15 @@ interface Props {
 export default function Section01({language}: Props) {
     return (
         <section className="section-01">
-            <div>
+          <div className="banner-area">
+            <div className="banner-text">
+               <div><div>
+               <p>World leader in valve supply</p>
+                             <div>
+                                <Link href="/projects" className="btn-01">{language?.main_01_02}</Link>
+                            </div>
+               </div></div>
+            </div>
                         <video
                             autoPlay
                             muted
@@ -22,7 +30,7 @@ export default function Section01({language}: Props) {
                             playsInline
                             className="main-video-01"
                         >
-                            <source src="/video/kclvalve_homepage_main_rev4.mp4" type="video/mp4"/>
+                            <source src="/video/kclvalve_homepage_main_rev5_1.mp4" type="video/mp4"/>
                             Your browser does not support the video tag.
                         </video>
                         {/* <Link href="#">
@@ -30,7 +38,10 @@ export default function Section01({language}: Props) {
 
                             <p>Go to OOO valve</p>
                         </Link> */}
-                    </div>
+          </div>
+
+
+          <section>
             <Swiper
                 autoplay={{
                     delay: 3000,
@@ -42,8 +53,8 @@ export default function Section01({language}: Props) {
                 modules={[Autoplay, Pagination]}
             >
                 <SwiperSlide>
-                    <div className="banner-area">
-                        <Image src="/images/main/main-banner-02.jpg" alt="" width={1920} height={944}/>
+                 <div className="banner-area">
+                    <Image src="/images/main/main-banner-02.jpg" alt="" width={1920} height={944}/>
                         <div className="banner-text">
                             <div>
                                 <div>
@@ -147,6 +158,7 @@ export default function Section01({language}: Props) {
                     </div>
                 </SwiperSlide>
             </Swiper>
+            </section>
             
         </section>
     )

@@ -94,10 +94,10 @@ export default async function Greeting({searchParams : {lang}} : any) {
                 </div>
             </div>
 
-            <div className="company-location">
+            {/* <div className="company-location">
             <h2>{language?.greeting_30}</h2>
             <GreetingSwiper/>
-            </div>            
+            </div>             */}
 
             <div className="company-location">
                 <h2>{language?.greeting_31}</h2>

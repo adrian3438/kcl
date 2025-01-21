@@ -12,6 +12,7 @@ export default function Main({language}: Props) {
         <main>
             <Section01 language={language}/>
             <section className="section-01">
+            
                 <div>
                     {/* <div>
                         <video
