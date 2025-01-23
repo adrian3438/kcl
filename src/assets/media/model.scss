@@ -1,7 +1,8 @@
 .model-container {
-  max-width: 1600px;
+  // max-width: 1600px;
   margin: 0 auto;
   padding: 87px 0 130px;
+  background-color: rgba(0, 0, 0, 0.9);
   .model-canvas {
     height: 80vh !important;
     display: none !important;
