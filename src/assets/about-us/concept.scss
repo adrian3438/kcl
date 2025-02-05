@@ -32,3 +32,54 @@
     height: auto;
   }
 }
+
+.main-video-01 {
+  width: 100%;
+  height: auto;
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .main-video-01 {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main-video-01 {
+    width: 100%;
+    height: auto;
+ }
+}
+
+@media screen and (max-width: 767px) {
+.sub-banner2 {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 20px;
+  position: relative;
+  margin-top: 60px;
+  .banner-text {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 15% 0;
+    h2 {
+      font-weight: bold;
+      font-size: 50px;
+      color: #0F3553;
+      margin-bottom: 85px;
+    }
+    > ul {
+      > li {
+        color: #194B7E;
+        margin-top: 20px;
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+ }
+}

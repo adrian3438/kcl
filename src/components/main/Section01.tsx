@@ -19,7 +19,7 @@ export default function Section01({language}: Props) {
                <div><div>
                <p>World leader in valve supply</p>
                              <div>
-                                <Link href="/projects" className="btn-01">{language?.main_01_02}</Link>
+                                <Link href="/contact" className="btn-01">{language?.main_01_02}</Link>
                             </div>
                </div></div>
             </div>
