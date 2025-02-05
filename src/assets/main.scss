@@ -268,31 +268,29 @@ main {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) and (max-width: 1024px)  {
   main {
     .section-01 {
-      .swiper-pagination {
-        padding-left: 20px;
-        bottom: 10px;
-      }
+      width: 100%;
+
       .banner-area {
         .banner-text {
           > div {
             > div {
-              padding: 69.5px 19.5px 39.5px;
+              padding: 50.5px 19.5px 39.5px;
               > p {
-                font-size: 30px;
-                line-height: 30px;
+                font-size: 18px;
+                line-height: 18px;
               }
               > div {
                 a {
                   width: 140px;
-                  font-size: 15px;
+                  font-size: 12px;
                   height: 50px;
                   line-height: 50px;
                   &.btn-01 {
-                    margin-right: 10px;
-                  }
+                  margin-right: 10px;
+                 }
                 }
               }
             }
@@ -318,7 +316,7 @@ main {
         > div {
           > div {
             padding: 40px 0;
-            font-size: 20px;
+            font-size: 18px;
             line-height: 40px;
           }
         }
@@ -331,7 +329,7 @@ main {
           > div {
             padding: 0 19.5px;
             > p {
-              font-size: 25px;
+              font-size: 18px;
               &.section-title {
                 line-height: 35px;
               }
@@ -346,7 +344,7 @@ main {
             }
             > div {
               a {
-                font-size: 18px;
+                font-size: 12px;
                 height: 40px;
                 line-height: 40px;
               }
@@ -357,3 +355,135 @@ main {
     }
   }
 }
+
+
+@media screen and (min-width: 375px) {
+  main {
+    .section-06 {
+      > div {
+        > div {
+          > div {
+            font-size: 12px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 375px) {
+  main {
+    .section-01 {
+      width: 100%;
+
+      .banner-area {
+        .banner-text {
+          > div {
+            > div {
+              padding: 40.5px 9.5px 29.5px;
+              > p {
+                font-size: 12px;
+                line-height: 12px;
+              }
+              > div {
+                a {
+                  width: 100px;
+                  font-size: 12px;
+                  height: 20px;
+                  line-height: 20px;
+                  &.btn-01 {
+                  margin-right: 10px;
+                 }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .section-02 {
+      flex-wrap: wrap;
+      > div {
+        &:first-child {
+          width: 100%;
+        }
+        &:last-child {
+          width: 100%;
+        }
+      }
+    }
+
+    .section-06 {
+      > div {
+        > div {
+          > div {
+            padding: 40px 0;
+            font-size: 12px;
+            line-height: 18px;
+          }
+        }
+      }
+    }
+
+    .main-section {
+      .section-text {
+        > div {
+          > div {
+            padding: 0 19.5px;
+            > p {
+              font-size: 12px;
+              &.section-title {
+                line-height: 20px;
+              }
+              &.section-text-01 {
+                font-size: 12px;
+                line-height: 20px;
+              }
+              &.section-text-02 {
+                font-size: 12px;
+                line-height: 20px;
+              }
+            }
+            > div {
+              a {
+                font-size: 12px;
+                height: 20px;
+                line-height: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 375px) {
+  main {
+    .section-01
+     .main-video-01 {
+      margin-top: 100px;
+      width: 100%;
+    }
+    .main-video-06 {
+      width: 100%;
+    }
+  }}
+
+  @media screen and (min-width: 768px) {
+    main {
+      .section-01
+       .main-video-01 {
+        width: 100%;
+      }
+      .main-video-06 {
+        width: 100%;
+      }
+    }}
+          
+        
+      
+    
