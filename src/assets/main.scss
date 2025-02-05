@@ -357,7 +357,7 @@ main {
 }
 
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 767px) {
   main {
     .section-06 {
       > div {
@@ -372,7 +372,7 @@ main {
   }
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 767px) {
   main {
     .section-01 {
       width: 100%;
@@ -461,7 +461,7 @@ main {
 }
 
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 768px) and (max-width: 1920px) {
   main {
     .section-01
      .main-video-01 {
@@ -473,7 +473,31 @@ main {
     }
   }}
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1920px)  {
+    main {
+      .section-01
+       .main-video-01 {
+        width: 100%;
+      }
+      .main-video-06 {
+        width: 100%;
+      }
+    }}
+
+
+@media screen and (max-width: 767px) {
+  main {
+    .section-01
+     .main-video-01 {
+      margin-top: 100px;
+      width: 100%;
+    }
+    .main-video-06 {
+      width: 100%;
+    }
+  }}
+
+  @media screen and (max-width: 767px) {
     main {
       .section-01
        .main-video-01 {
