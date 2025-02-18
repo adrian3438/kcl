@@ -1,6 +1,14 @@
 main {
   /* 메인 배너 */
   .section-01 {
+    > section {
+      .swiper-button-next {
+        color: #fff;
+      }
+      .swiper-button-prev {
+        color: #fff;
+      }
+    }
     position: relative;
     .banner-area {
       position: relative;
@@ -25,7 +33,7 @@ main {
               //font-weight: bold;
               font-family: 'Pretendard-ExtraBold', sans-serif;
               line-height: 78px;
-              
+
             }
             > div {
               margin-top: 10px;
@@ -467,6 +475,7 @@ main {
      .main-video-01 {
       margin-top: 100px;
       width: 100%;
+      vertical-align: top;
     }
     .main-video-06 {
       width: 100%;
@@ -507,7 +516,6 @@ main {
         width: 100%;
       }
     }}
-          
-        
-      
-    
+
+
+

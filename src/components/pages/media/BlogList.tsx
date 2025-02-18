@@ -10,7 +10,7 @@ interface Props {
     language: any
     page?: number
 }
-  
+
 
 export default function BlogList({language, page}: Props) {
     const [newsList, setNewsList] = useState<any[]>([]); // API 호출 결과
@@ -34,7 +34,7 @@ export default function BlogList({language, page}: Props) {
 
     return (
         <>
-            <div className="sub-banner3" style={{background: "#CECECE", backgroundSize: "100% 100%"}}>
+            <div className="sub-banner3" style={{background: "url(/images/sub/kclvalve_brochure_bg_02.jpg) no-repeat 50% 0", backgroundSize: "100% auto"}}>
                 <div className="banner-text">
                     <div>
                         <p className="banner-text-title">{language?.blog_01}</p>
@@ -71,6 +71,6 @@ export default function BlogList({language, page}: Props) {
                 <Paginate page={page || 1} size={9} totalCount={totalCount}/>
             </section>
         </>
-        
+
     )
 }

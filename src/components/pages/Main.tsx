@@ -11,62 +11,6 @@ export default function Main({language}: Props) {
     return (
         <main>
             <Section01 language={language}/>
-            <section className="section-01">
-            
-                <div>
-                    {/* <div>
-                        <video
-                            autoPlay
-                            muted
-                            loop
-                            playsInline
-                            className="main-video-01"
-                        >
-                            <source src="/video/kclvalve-main-video-1234.mp4" type="video/mp4"/>
-                        </video>
- 
-                    </div> */}
-                                        
-                    <div>
-                        {/* <video
-                            autoPlay
-                            muted
-                            loop
-                            playsInline
-                            className="main-video-02"
-                        >
-                            <source src="/video/kclvalve-main-video-2.mp4" type="video/mp4"/>
-                        </video> */}
-                    </div>
-                    
-                    {/* <div>
-                        <video
-                            autoPlay
-                            muted
-                            loop
-                            playsInline
-                            className="main-video-04"
-                        >
-                            <source src="/video/kclvalve-main-video-4.mp4" type="video/mp4"/>
-                        </video>
-
-                    </div>
-                    
-                    <div>
-                        <video
-                            autoPlay
-                            muted
-                            loop
-                            playsInline
-                            className="main-video-05"
-                        >
-                            <source src="/video/kclvalve-main-video-5.mp4" type="video/mp4"/>
-                        </video>
-                    </div> */}
-                </div>
-                
-                                 
-            </section>
             <section className="section-03 main-section">
                     <div>
                         <video

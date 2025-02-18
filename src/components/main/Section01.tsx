@@ -1,9 +1,9 @@
 'use client';
 
 import {Swiper, SwiperSlide} from "swiper/react";
-import { Autoplay, Pagination } from 'swiper/modules';
+import {Autoplay, Navigation} from 'swiper/modules';
 import 'swiper/css';
-import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import Image from "next/image";
 import Link from "next/link";
 
@@ -45,12 +45,9 @@ export default function Section01({language}: Props) {
             <Swiper
                 autoplay={{
                     delay: 3000,
-                    disableOnInteraction: false,
                 }}
-                pagination={{
-                    clickable: true,
-                }}
-                modules={[Autoplay, Pagination]}
+                navigation={true}
+                modules={[Autoplay, Navigation]}
             >
                 <SwiperSlide>
                  <div className="banner-area">
@@ -159,7 +156,7 @@ export default function Section01({language}: Props) {
                 </SwiperSlide>
             </Swiper>
             </section>
-            
+
         </section>
     )
 }
