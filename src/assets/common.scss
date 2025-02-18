@@ -64,16 +64,20 @@ header {
     align-items: center; /* 아이콘과 텍스트 정렬 */
   }
   .header-inner {
-    max-width: 1600px;
+    max-width: 1920px;
     height: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 200px;
+    padding-right: 200px;
     .main-menu {
       z-index: 10;
       position: relative;
-      max-width: 895px;
+      max-width: 1920px;
+      padding-left: 200px;
+      padding-right: 200px;
       width: 100%;
       .depth1 {
         display: flex;
@@ -86,15 +90,15 @@ header {
         }
       }
       .depth2 {
-        background-color: #fff;
+        background-color: #ffffffe8;
         position: absolute;
         top: 40px;
-        left: -40px;
-        border: 0.1px solid #707070;
+        left: -440px;
+        border: 0.1px solid #70707000;
         display: flex;
         justify-content: space-between;
-        max-width: 895px;
-        width: 100%;
+        max-width: 1920px;
+        width: 1920px;
         padding: 20px 40px;
         visibility: hidden;
         opacity: 0;
@@ -106,19 +110,19 @@ header {
         > li {
           width: 100%;
           &:nth-child(1) {
-            max-width: 132px;
+            max-width: 690px;
           }
           &:nth-child(2) {
-            max-width: 165px;
+            max-width: 145px;
           }
           &:nth-child(3) {
-            max-width: 194px;
+            max-width: 174px;
           }
           &:nth-child(4) {
-            max-width: 114px;
+            max-width: 324px;
           }
           &:nth-child(5) {
-            max-width: 140px;
+            max-width: 330px;
           }
           > ul {
             > li {
@@ -400,6 +404,10 @@ footer {
     .header-inner {
       .main-menu {
         display: none;
+        > h1 {
+          width: 100%;
+          height: 100%;
+        }
       }
       > div {
         .mobile-menu {
@@ -438,6 +446,231 @@ footer {
     }
   }
 }
+
+
+@media screen and (max-width: 375px) {
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px; /* 높이 축소 */
+    padding: 0 0px; /* 패딩 조정 */
+    background: white;
+    z-index: 10;
+    box-sizing: border-box;
+        
+    .header-top-bar {
+      width: 100%;
+      height: 20px;
+      padding: 5px 10px; /* 좌우 패딩 축소 */
+      display: flex;
+      align-items: center;
+      background: rgb(17, 91, 230);
+      color: white;
+      font-size: 12px; /* 글자 크기 축소 */
+    }
+    
+    .header-inner {
+      display: flex;  /* align-items: flex-end; */
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      flex-wrap: wrap;
+      align-content: stretch;
+    }
+    
+    .main-menu {
+      width: 100%;
+      text-align: left;
+      padding: 0;
+      
+      .depth1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+        margin: 0;
+        
+        > li {
+          width: 100%;
+          text-align: center;
+          
+          > a {
+            color: #0F3553;
+            font-weight: bold;
+            display: block;
+            padding: 10px 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* Footer */
+footer {
+  background-color: #000A30;
+  .footer-inner {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 55px 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 70px 0;
+    .footer-area1 {
+      max-width: 830px;
+      display: flex;
+      gap: 20px 65px;
+      > div {
+        > div {
+          margin-bottom: 25px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+      .salesManager {
+        font-size: 15px;
+        padding-left: 10px;
+      }
+    }
+    .footer-area2 {
+      max-width: 700px;
+      width: 100%;
+      .news-letter {
+        font-weight: 600;
+        margin-bottom: 33px;
+      }
+      > dl {
+        margin-bottom: 28px;
+        dt {
+          font-weight: 600;
+          margin-bottom: 14px;
+        }
+        dd {
+          display: flex;
+          gap: 0 45px;
+          input {
+            font-size: 15px;
+            border: 1px solid #707070;
+            border-radius: 9px;
+            box-sizing: border-box;
+            padding: 15px 16px;
+            max-width: 500px;
+            width: 100%;
+            &::placeholder {
+              color: #C2C6D1;
+            }
+          }
+          button {
+            flex-shrink: 0;
+            height: 50px;
+            width: 231px;
+            background-color: #00B8F5;
+            font-size: 20px;
+            border: none;
+            padding: 0;
+            color: #fff;
+            font-weight: 600;
+            border-radius: 28px;
+          }
+        }
+      }
+
+      .links {
+        display: flex;
+        gap: 10px 30px;
+        flex-wrap: wrap;
+        > dl {
+          display: flex;
+          gap: 0 30px;
+          > dd {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0 30px;
+            a {
+              color: #fff;
+              &.sitemap {
+                color: #FFFF0C;
+              }
+            }
+          }
+        }
+      }
+
+      .copyright {
+        margin-top: 23px;
+        font-size: 15px;
+        color: #C1C1C1;
+      }
+    }
+  }
+}
+
+/* Mobile (max-width: 375px) */
+@media screen and (max-width: 375px) {
+  footer {
+    .footer-inner {
+      padding: 30px 15px;
+      flex-direction: column;
+      gap: 30px;
+      .footer-area1 {
+        flex-direction: column;
+        gap: 15px;
+        max-width: 100%;
+        font-size: 12px;
+      }
+      .footer-area2 {
+        max-width: 100%;
+        .news-letter {
+          font-size: 12px;
+          margin-bottom: 20px;
+        }
+        > dl {
+          margin-bottom: 20px;
+          dt {
+            font-size: 12px;
+          }
+          dd {
+            flex-direction: column;
+            gap: 10px;
+            input {
+              width: 100%;
+              padding: 12px;
+            }
+            button {
+              width: 100%;
+              height: 45px;
+              font-size: 12px;
+            }
+          }
+        }
+        .links {
+          flex-direction: column;
+          gap: 15px;
+          font-size: 12px;
+          > dl {
+            flex-direction: column;
+            gap: 10px;
+          }
+        }
+        .copyright {
+          font-size: 12px;
+          text-align: center;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}
+
+
 
 /* Sub 공통 */
 // Sub 상단 배너 공통 스타일
