@@ -34,44 +34,36 @@ header {
   top:0;
   left:0;
   width: 100%;
-  height: 100px;
-  padding: 0 0 25px;
+  height: 112px;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
   z-index: 10;
   box-sizing: border-box;
   .header-top-bar {
-    width: 100%;
-    height: 20px; /* 높이 설정 */
-    margin: 0;
-    padding: 5px 160px; /* 상하 및 좌우 여백 */
-    display: flex;
     align-items: center;
     background: linear-gradient(to bottom, rgb(17, 91, 230), rgba(17, 91, 230));
     color: white;
     font-size: 14px;
+    .header-items {
+      max-width: 1560px;
+      margin: 0 auto;
+      list-style: none; /* 기본 불릿 제거 */
+      padding: 5px 20px;
+      display: flex;
+      li {
+        margin-right: 15px; /* 요소 간 간격 */
+        display: flex;
+        align-items: center; /* 아이콘과 텍스트 정렬 */
+      }
+    }
   }
-  
-  .header-items {
-    display: flex;
-    list-style: none; /* 기본 불릿 제거 */
-    margin: 0;
-    padding: 0;
-  }
-  
-  .header-items li {
-    margin-right: 15px; /* 요소 간 간격 */
-    display: flex;
-    align-items: center; /* 아이콘과 텍스트 정렬 */
-  }
+
   .header-inner {
-    max-width: 1920px;
-    height: 100%;
+    max-width: 1560px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding: 0 20px;
     .main-menu {
       z-index: 10;
       position: relative;
@@ -91,51 +83,55 @@ header {
       }
       .depth2 {
         background-color: #ffffffe8;
-        position: absolute;
-        top: 40px;
-        left: -440px;
+        position: fixed;
+        top: 100px;
+        left: 0;
         border: 0.1px solid #70707000;
-        display: flex;
-        justify-content: space-between;
-        max-width: 1920px;
-        width: 1920px;
+        width: 100%;
         padding: 20px 40px;
         visibility: hidden;
         opacity: 0;
+        box-sizing: border-box;
         &.on {
           visibility: visible;
           opacity: 1;
           transition: all 0.5s;
         }
-        > li {
-          width: 100%;
-          &:nth-child(1) {
-            max-width: 690px;
-          }
-          &:nth-child(2) {
-            max-width: 145px;
-          }
-          &:nth-child(3) {
-            max-width: 174px;
-          }
-          &:nth-child(4) {
-            max-width: 324px;
-          }
-          &:nth-child(5) {
-            max-width: 330px;
-          }
-          > ul {
-            > li {
-              margin-top: 20px;
-              &:first-child {
-                margin-top: 0;
-              }
-              > a {
-                font-size: 20px;
-                color: #0F3553;
-                &:hover {
-                  color: #A51546;
-                  transition: all 0.2s;
+        > ul {
+          display: flex;
+          justify-content: space-between;
+          max-width: 949px;
+          margin: 0 auto;
+          > li {
+            width: 100%;
+            /*&:nth-child(1) {
+              max-width: 690px;
+            }*/
+            &:nth-child(2) {
+              max-width: 145px;
+            }
+            &:nth-child(3) {
+              max-width: 174px;
+            }
+            &:nth-child(4) {
+              max-width: 324px;
+            }
+            &:nth-child(5) {
+              max-width: 330px;
+            }
+            > ul {
+              > li {
+                margin-top: 20px;
+                &:first-child {
+                  margin-top: 0;
+                }
+                > a {
+                  font-size: 20px;
+                  color: #0F3553;
+                  &:hover {
+                    color: #A51546;
+                    transition: all 0.2s;
+                  }
                 }
               }
             }
@@ -459,7 +455,7 @@ footer {
     background: white;
     z-index: 10;
     box-sizing: border-box;
-        
+
     .header-top-bar {
       width: 100%;
       height: 20px;
@@ -470,7 +466,7 @@ footer {
       color: white;
       font-size: 12px; /* 글자 크기 축소 */
     }
-    
+
     .header-inner {
       display: flex;  /* align-items: flex-end; */
       justify-content: center;
@@ -480,12 +476,12 @@ footer {
       flex-wrap: wrap;
       align-content: stretch;
     }
-    
+
     .main-menu {
       width: 100%;
       text-align: left;
       padding: 0;
-      
+
       .depth1 {
         display: flex;
         flex-direction: column;
@@ -493,11 +489,11 @@ footer {
         gap: 10px;
         padding: 0;
         margin: 0;
-        
+
         > li {
           width: 100%;
           text-align: center;
-          
+
           > a {
             color: #0F3553;
             font-weight: bold;
@@ -820,7 +816,7 @@ footer {
     color: #194B7E;
     line-height: 41px;
     font-weight: 800;
-   
+
   }
 }
 
@@ -829,7 +825,7 @@ footer {
   text-align: left;
   margin-bottom: 30px;
   padding-top: 35px;
- 
+
 }
 
 
@@ -863,5 +859,5 @@ footer {
 //       font-size: 23px;
 //     }
 //   }
-  
+
 // }
