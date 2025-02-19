@@ -72,6 +72,7 @@ header {
       padding-right: 200px;
       width: 100%;
       .depth1 {
+        position: relative;
         display: flex;
         justify-content: space-between;
         > li {
@@ -82,6 +83,76 @@ header {
         }
       }
       .depth2 {
+        position: absolute;
+        top: 76px;
+        left: 0;
+        width: 100%;
+        &.on {
+          &:after {
+            visibility: visible;
+            opacity: 1;
+            transition: all .5s;
+          }
+          > ul {
+            visibility: visible;
+            opacity: 1;
+            transition: all .5s;
+          }
+        }
+        &:after {
+          content: "";
+          display: block;
+          position: fixed;
+          width: 100%;
+          top: 112px;
+          left: 0;
+          height: 382px;
+          background-color: #ffffffe8;
+          visibility: hidden;
+          opacity: 0;
+          z-index: 11;
+        }
+        > ul {
+          visibility: hidden;
+          opacity: 0;
+          position: relative;
+          z-index: 12;
+          display: flex;
+          //justify-content: space-between;
+          > li {
+            &:nth-child(1) {
+              min-width: 138px;
+            }
+            &:nth-child(2) {
+              max-width: 135px;
+            }
+            &:nth-child(3) {
+              max-width: 174px;
+              margin-left: 45px;
+            }
+            &:nth-child(4) {
+              width: 195px;
+            }
+            > ul {
+              > li {
+                margin-top: 20px;
+                &:first-child {
+                  margin-top: 0;
+                }
+                > a {
+                  font-size: 20px;
+                  color: #0F3553;
+                  &:hover {
+                    color: #A51546;
+                    transition: all 0.2s;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      /*.depth2 {
         background-color: #ffffffe8;
         position: fixed;
         top: 100px;
@@ -104,9 +175,9 @@ header {
           margin: 0 auto;
           > li {
             width: 100%;
-            /*&:nth-child(1) {
+            !*&:nth-child(1) {
               max-width: 690px;
-            }*/
+            }*!
             &:nth-child(2) {
               max-width: 145px;
             }
@@ -137,7 +208,7 @@ header {
             }
           }
         }
-      }
+      }*/
     }
 
     > div {

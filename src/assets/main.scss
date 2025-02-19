@@ -18,6 +18,7 @@ main {
         left: 0;
         transform: translateY(-50%);
         width: 100%;
+        z-index: 9;
         > div {
           max-width: 1600px;
           margin: 0 auto;
@@ -479,6 +480,7 @@ main {
     }
     .main-video-06 {
       width: 100%;
+      vertical-align: top;
     }
   }}
 

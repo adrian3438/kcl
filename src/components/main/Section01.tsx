@@ -23,21 +23,10 @@ export default function Section01({language}: Props) {
                             </div>
                </div></div>
             </div>
-                        <video
-                            autoPlay
-                            muted
-                            loop
-                            playsInline
-                            className="main-video-01"
-                        >
-                            <source src="/video/kclvalve_homepage_main_rev6.mp4" type="video/mp4"/>
-                            Your browser does not support the video tag.
-                        </video>
-                        {/* <Link href="#">
-                            <p>OOO Test</p>
+              <div style={{padding: '56.25% 0 0 0', position:'relative'}}>
+                  <iframe src="https://player.vimeo.com/video/1057774474?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&autoplay=1&background=1&muted=1" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style={{position: 'absolute', top: 0, left: 0, width: "100%", height: '100%'}} title="kclvalve_homepage_main_rev6"></iframe>
+              </div>
 
-                            <p>Go to OOO valve</p>
-                        </Link> */}
           </div>
 
 
