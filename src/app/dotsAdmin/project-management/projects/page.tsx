@@ -17,7 +17,7 @@ export default function Projects({searchParams : {id}} : any) {
     subject: '',
     excerpt: '',
     projectImage: [],
-    date: '',
+    inputDate: '',
   });
   const [previewImage, setPreviewImage] = useState<any>({thumnailImage : null});
 
@@ -65,9 +65,6 @@ export default function Projects({searchParams : {id}} : any) {
 
   //TODO: 저장
   async function save() {
-    console.log('data : ', data);
-
-
     const formData = new FormData();
     formData.append('projectGroupId', data?.projectGroupId);
     if(data?.thumnailImage){
@@ -79,10 +76,9 @@ export default function Projects({searchParams : {id}} : any) {
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-expect-error
     formData.append('projectImage', data?.projectImage);
-    formData.append('date', data?.date);
+    formData.append('inputDate', data?.inputDate);
 
-    if(!id) {
-      //신규등록
+    if(!id) { //신규등록
       try {
         const response = await api.post('/admin/projects/setProject.php', formData);
         if (response?.data?.result) {
@@ -94,10 +90,9 @@ export default function Projects({searchParams : {id}} : any) {
       } catch {
         alert('Server Error');
       }
-    } else {
-      //수정
+    } else { //수정
       try {
-        const response = await api.post('/admin/code/getProjectGroupList2.php');
+        const response = await api.post('/admin/code/getProjectGroupList2.php', formData);
         console.log('response : ', response);
       } catch {
         alert('Server Error');
@@ -108,8 +103,22 @@ export default function Projects({searchParams : {id}} : any) {
   //상세조회
   async function getProjectDetail() {
     try {
-      const response = await api.get(`/admin/projects/getProjectList.php?ID=${id}`);
-      console.log('response : ', response);
+      const response = await api.get(`/admin/projects/getProjectDetail.php?ID=${id}`);
+      if(response?.data?.result == true) {
+        const data = response?.data?.List[0];
+
+        setData((prev:any) => ({...prev,
+          projectGroupId: data?.groupId,
+          // thumnailImage : null,
+          subject: data?.projectName,
+          excerpt: data?.projectDescription,
+          // projectImage: [],
+          inputDate: data?.createDate,
+        }))
+        setPreviewImage((prev:any) => ({...prev, thumnailImage : data?.thumbnailFile}));
+      }else {
+        alert(response?.data?.resultMsg)
+      }
     } catch {
       alert('Server Error');
     }
@@ -197,7 +206,144 @@ export default function Projects({searchParams : {id}} : any) {
             <tr>
               <th>정보</th>
               <td>
+                <div className="btnBox" style={{marginBottom: '20px', textAlign: 'right'}}>
+                  <button className="blackBtn">등록</button>
+                </div>
+                <div className="tableWrap" style={{marginBottom: '20px'}}>
+                  <div className="btnBox" style={{marginBottom: '10px'}}>
+                    <button className="blackBtn">수정</button>
+                  </div>
+                  <div className="tableType_a thumb" style={{overflowX: 'auto', maxWidth: '1300px'}}>
+                    <table style={{minWidth: '2500px'}}>
+                      <thead>
+                      <tr>
+                        <th scope="col">DATE</th>
+                        <th scope="col">USER</th>
+                        <th scope="col">PROJECT NAME</th>
+                        <th scope="col">EPC</th>
+                        <th scope="col">ITEM</th>
+                        <th scope="col">REMARK</th>
+                        <th scope="col">MATERIAL</th>
+                        <th scope="col">CLASS</th>
+                        <th scope="col">SIZE</th>
+                        <th scope="col">EA</th>
+                        <th scope="col">SITE</th>
+                        <th scope="col">RESULT</th>
+                        <th scope="col">TOTAL AMOUNT</th>
+                        <th scope="col">YEAR OF SUPPLY</th>
+                        <th scope="col">REMARK</th>
+                        <th scope="col">BLAND</th>
+                        <th scope="col">납품처</th>
+                        <th scope="col">PO NO.</th>
+                        <th scope="col">생산의뢰서 NO</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td scope="col">
+                          <div className="inputBox">
+                            <input type="text"/>
+                          </div>
+                        </td>
+                        <td scope="col">
+                          <div className="inputBox">
+                            <input type="text"/>
+                          </div>
+                        </td>
+                        <td scope="col">
+                          <div className="inputBox">
+                            <input type="text"/>
+                          </div>
+                        </td>
+                        <td scope="col">
+                          <div className="inputBox">
+                            <input type="text"/>
+                          </div>
+                        </td>
+                        <td scope="col">
+                          <div className="inputBox">
+                            <input type="text"/>
+                          </div>
+                        </td>
+                        <td scope="col">
+                          <div className="inputBox">
+                            <input type="text"/>
+                          </div>
+                        </td>
+                        <td scope="col">
+                          <div className="inputBox">
+                            <input type="text"/>
+                          </div>
+                        </td>
+                        <td scope="col">
+                          <div className="inputBox">
+                            <input type="text"/>
+                          </div>
+                        </td>
+                        <td scope="col">
+                          <div className="inputBox">
+                            <input type="text"/>
+                          </div>
+                        </td>
+                        <td scope="col">
+                          <div className="inputBox">
+                            <input type="text"/>
+                          </div>
+                        </td>
+                        <td scope="col">
+                          <div className="inputBox">
+                            <input type="text"/>
+                          </div>
+                        </td>
+                        <td scope="col">
+                          <div className="inputBox">
+                            <input type="text"/>
+                          </div>
+                        </td>
+                        <td scope="col">
+                          <div className="inputBox">
+                            <input type="text"/>
+                          </div>
+                        </td>
+                        <td scope="col">
+                          <div className="inputBox">
+                            <input type="text"/>
+                          </div>
+                        </td>
+                        <td scope="col">
+                          <div className="inputBox">
+                            <input type="text"/>
+                          </div>
+                        </td>
+                        <td scope="col">
+                          <div className="inputBox">
+                            <input type="text"/>
+                          </div>
+                        </td>
+                        <td scope="col">
+                          <div className="inputBox">
+                            <input type="text"/>
+                          </div>
+                        </td>
+                        <td scope="col">
+                          <div className="inputBox">
+                            <input type="text"/>
+                          </div>
+                        </td>
+                        <td scope="col">
+                          <div className="inputBox">
+                            <input type="text"/>
+                          </div>
+                        </td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
                 <div className="tableWrap">
+                  <div className="btnBox" style={{marginBottom: '10px'}}>
+                    <button className="blackBtn">수정</button>
+                  </div>
                   <div className="tableType_a thumb" style={{overflowX: 'auto', maxWidth: '1300px'}}>
                     <table style={{minWidth: '2500px'}}>
                       <thead>

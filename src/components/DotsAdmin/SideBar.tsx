@@ -25,14 +25,14 @@ export default function AdminSideBar () {
                     </ul>
                 </li>
 
-                <li className={splitPath[2] === 'contents-management' ? 'content active' : 'content'}>
+                {/*<li className={splitPath[2] === 'contents-management' ? 'content active' : 'content'}>
                     <span onClick={() => router.push(`/dotsAdmin/contents-management/contents-list/`)}>콘텐츠 관리</span>
                     <ul className="subMenu">
                         <li className={splitPath[3] === 'contents-list' || splitPath[3] === 'contents' ? 'active' : ''} onClick={() => router.push(`/dotsAdmin/contents-management/contents-list/`)}>
                             <span>콘텐츠</span>
                         </li>
                     </ul>
-                </li>
+                </li>*/}
 
                 <li className={splitPath[2] === 'project-management' ? 'content active' : 'content'}>
                     <span onClick={() => router.push(`/dotsAdmin/project-management/category/`)}>프로젝트 관리</span>
@@ -41,7 +41,7 @@ export default function AdminSideBar () {
                             <span>프로젝트 카테고리 관리</span>
                         </li>
                         <li className={splitPath[3] === 'projects-list' || splitPath[3] === 'projects' ? 'active' : ''} onClick={() => router.push(`/dotsAdmin/project-management/projects-list/`)}>
-                            <span>프로젝트 등록</span>
+                            <span>프로젝트 관리</span>
                         </li>
                     </ul>
                 </li>

@@ -1,4 +1,26 @@
 .partner {
+  .partner-btn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 8px 10px;
+      border: none;
+      background-color: #DFE0E1;
+      color: #C0C2C4;
+      font-size: 18px;
+      font-family: "pretendard-Medium", sans-serif;
+      min-width: 195px;
+      cursor: pointer;
+      &.active {
+        background-color: #194B7E;
+        color: #fff;
+      }
+    }
+  }
   > ul {
     display: flex;
     justify-content: space-between;

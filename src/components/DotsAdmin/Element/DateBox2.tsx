@@ -13,7 +13,7 @@ export default function AdminDateBox2 ({data, onChange}: Props) {
                 <th>등록일자 <span className="star">*</span></th>
                 <td>
                     <div className="dateBox">
-                        <input type="date" name="date" id="date" value={data?.date} onChange={(e)=>onChange(e)} />
+                        <input type="date" name="inputDate" id="inputDate" value={data?.inputDate} onChange={(e)=>onChange(e)} />
                     </div>
                 </td>
             </tr>

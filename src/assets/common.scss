@@ -87,7 +87,9 @@ header {
         top: 76px;
         left: 0;
         width: 100%;
+        visibility: hidden;
         &.on {
+          visibility: visible;
           &:after {
             visibility: visible;
             opacity: 1;
@@ -896,7 +898,10 @@ footer {
   text-align: left;
   margin-bottom: 30px;
   padding-top: 35px;
-
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 

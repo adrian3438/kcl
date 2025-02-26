@@ -2,6 +2,7 @@ import '@/assets/main.scss';
 import Section01 from "@/components/main/Section01";
 import Image from "next/image";
 import Link from "next/link";
+import ModelSwiper from "@/components/main/ModelSwiper";
 
 interface Props {
     language: any
@@ -74,7 +75,8 @@ export default function Main({language}: Props) {
                 </div>
             </section>
             <section className="section-07 main-section">
-                <Image src="/images/main/section-07-bg.jpg" alt="" width={1922} height={1087}/>
+                <ModelSwiper/>
+                {/*<Image src="/images/main/section-07-bg.jpg" alt="" width={1922} height={1087}/>*/}
                 <div className="section-text">
                     <div>
                         <div>

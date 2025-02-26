@@ -1,6 +1,7 @@
 main {
   /* 메인 배너 */
   .section-01 {
+    position: relative;
     > section {
       .swiper-button-next {
         color: #fff;
@@ -9,7 +10,17 @@ main {
         color: #fff;
       }
     }
-    position: relative;
+    .banner-area {
+      img {
+        transform: scale(1);
+      }
+    }
+    .swiper-slide-active {
+      img {
+        transform: scale(1.3);
+        transition: transform 6s;
+      }
+    }
     .banner-area {
       position: relative;
       .banner-text {
@@ -164,6 +175,7 @@ main {
     > img {
       width: 100%;
       height: auto;
+      vertical-align: top;
     }
     > div {
       position: absolute;
@@ -202,6 +214,7 @@ main {
       vertical-align: top
     }
     .section-text {
+      z-index: 9;
       position: absolute;
       top: 50%;
       left: 0;

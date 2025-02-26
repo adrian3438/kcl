@@ -1,24 +1,20 @@
 'use client';
 
 import {Swiper, SwiperSlide} from "swiper/react";
-import { Autoplay } from 'swiper/modules';
+import {Autoplay, Navigation} from 'swiper/modules';
 import 'swiper/css';
+import 'swiper/css/navigation';
 import Image from "next/image";
 
 export default function GreetingSwiper() {
     return (
         <section className="greeting-swiper">
             <Swiper
-                autoplay={{
-                    delay: 3000,
-                    disableOnInteraction: false,
-                }}
-                pagination={{
-                    clickable: true,
-                }}
-                modules={[Autoplay]}
-                slidesPerView={1}
-                spaceBetween={15}
+              autoplay={{
+                  delay: 3000,
+              }}
+              navigation={true}
+              modules={[Autoplay, Navigation]}
             >
                 <SwiperSlide>
                     <Image src="/images/sub/partner/kcl-partner-1.jpg" alt="" width={600} height={500}/>
