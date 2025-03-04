@@ -27,23 +27,9 @@ export default async function CompanyConcept({searchParams: {lang}}: any) {
                 </div>
             </div>
             <div className="cosection-02">
-               <div>
-                        <video
-                            autoPlay
-                            muted
-                            loop
-                            playsInline
-                            className="main-video-01"
-                        >
-                            <source src="/video/kclvalve-copmany-concept_rev2.mp4" type="video/mp4"/>
-                            Your browser does not support the video tag.
-                        </video>
-                        {/* <Link href="#">
-                            <p>OOO Test</p>
-
-                            <p>Go to OOO valve</p>
-                        </Link> */}
-                </div>
+            <div style={{padding: '56.25% 0 0 0', position:'relative'}}>
+                  <iframe src="https://player.vimeo.com/video/1045185563?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&autoplay=1&background=1&muted=1" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style={{position: 'absolute', top: 0, left: 0, width: "100%", height: '100%'}} title="kclvalve_homepage_main_concept_rev2"></iframe>
+              </div>
             </div>
             <Footer language={language}/>
         </>
