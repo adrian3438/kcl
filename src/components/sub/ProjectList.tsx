@@ -6,6 +6,7 @@ import {useEffect, useState} from "react";
 import api from "@/lib/api";
 import Paginate from "@/components/DotsAdmin/Paginate/paginate";
 import {useSearchParams} from "next/navigation";
+import {it} from "node:test";
 
 interface Props {
   language: any
@@ -62,7 +63,7 @@ export default function ProjectList({language, projectGroupList}: Props) {
         <ul>
           {projectList && projectList?.length > 0 && projectList.map((item: any, index: number) =>
             <li key={index}>
-              <Link href="#">
+              <Link href={`/projects/${item?.ID}`}>
                 <div className="image-area">
                   <Image src={item?.thumbnailFile} alt="sample" width={306} height={229}/>
                 </div>
