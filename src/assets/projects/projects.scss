@@ -104,6 +104,10 @@
       }
     }
   }
+  .pagerBox {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 //리스트 상세

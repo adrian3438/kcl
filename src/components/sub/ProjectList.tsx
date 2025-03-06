@@ -84,7 +84,7 @@ export default function ProjectList({language, projectGroupList}: Props) {
           )}
         </ul>
 
-        <div className="pagerBox" style={{display: 'flex', justifyContent: 'center'}}>
+        <div className="pagerBox">
           <Paginate
             page={page}
             size={size}
