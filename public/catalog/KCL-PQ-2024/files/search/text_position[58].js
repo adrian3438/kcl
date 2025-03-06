@@ -1,0 +1,1 @@
+positionForPages[58]={"page":58,"positions":[{"word":"Storage Warehouse","left":0.050479,"top":0.070497,"width":0.383766,"height":0.051831}]};

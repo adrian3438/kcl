@@ -1,0 +1,1 @@
+positionForPages[63]={"page":63,"positions":[{"word":"Knife Gate Valve Project ( All KCL Brand Export )","left":0.052118,"top":0.069219,"width":0.817593,"height":0.046529}]};

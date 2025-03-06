@@ -1,0 +1,1 @@
+positionForPages[30]={"page":30,"positions":[{"word":"Products ","left":0.047376,"top":0.065836,"width":0.182750,"height":0.046356},{"word":"Metal seat & DBB Ball Valve","left":0.347352,"top":0.183377,"width":0.267150,"height":0.020046}]};

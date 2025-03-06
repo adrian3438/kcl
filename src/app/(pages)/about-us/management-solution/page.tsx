@@ -72,7 +72,7 @@ export default async function ManagementSolution({searchParams : {lang}} : any) 
                     </section> */}
                     <section className="section-type-01">
                         <div className="image-area">
-                            <Image src="/images/sub/solution/solution-05.png" alt="" width={656} height={654}/>
+                            <Image src="/images/sub/solution/solution-05.jpg" alt="" width={656} height={654}/>
                         </div>
                         <div className="text-area">
                             <h2>{language?.solution_18}</h2>

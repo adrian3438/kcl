@@ -1,0 +1,1 @@
+positionForPages[6]={"page":6,"positions":[{"word":"Seongju Factory for Assembly & test ","left":0.058280,"top":0.070497,"width":0.716580,"height":0.051885},{"word":"Seongju Factory Area : 3,967 \u33a1","left":0.048583,"top":0.184526,"width":0.247811,"height":0.020422}]};

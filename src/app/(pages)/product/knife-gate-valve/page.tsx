@@ -15,6 +15,8 @@ export default async function KnifeGateValvePage({searchParams: {lang}}: any) {
         "/images/sub/products/knife/knife-gate-valve-swipe-3.jpg",
         "/images/sub/products/knife/knife-gate-valve-swipe-4.jpg",
         "/images/sub/products/knife/knife-gate-valve-swipe-5.jpg",
+        "/images/sub/products/knife/knife-gate-valve-swipe-6.jpg",
+        "/images/sub/products/knife/knife-gate-valve-swipe-7.jpg",
  
     ];
 

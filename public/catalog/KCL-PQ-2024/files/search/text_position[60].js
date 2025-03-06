@@ -1,0 +1,1 @@
+positionForPages[60]={"page":60,"positions":[{"word":"South Pars Project ( All KCL Brand Export )","left":0.051900,"top":0.069219,"width":0.718642,"height":0.046529}]};

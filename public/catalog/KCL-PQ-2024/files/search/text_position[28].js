@@ -1,0 +1,1 @@
+positionForPages[28]={"page":28,"positions":[{"word":"Products ","left":0.047376,"top":0.065836,"width":0.182750,"height":0.046356},{"word":"ESV Ball Valve & MOV, POV","left":0.317296,"top":0.197562,"width":0.255216,"height":0.023036}]};

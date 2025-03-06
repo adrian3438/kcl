@@ -1,0 +1,1 @@
+positionForPages[35]={"page":35,"positions":[{"word":"LUBRICATED PLUG VALVES","left":0.053183,"top":0.585870,"width":0.210633,"height":0.016489},{"word":"Products","left":0.047376,"top":0.065836,"width":0.167988,"height":0.046356},{"word":"METAL SEAT PLUG VALVES","left":0.053517,"top":0.169426,"width":0.209933,"height":0.016489}]};

@@ -1,0 +1,1 @@
+positionForPages[64]={"page":64,"positions":[{"word":"AUSTRALIA Project ( All KCL Brand Export )","left":0.051176,"top":0.069219,"width":0.702918,"height":0.046529}]};

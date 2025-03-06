@@ -18,8 +18,8 @@ export default async function Catalog({searchParams : {lang}} : any) {
                 <ul className="catalog-list">
                  
                     <li>
-                        <Link href="/catalog/kcl-pq-2021-may-210515/index.html" target="_blank">
-                            <Image src="/images/sub/catalog/catalog-list-02.jpg" alt="" width={250} height={333}/>
+                        <Link href="/catalog/KCL-PQ-2024/index.html" target="_blank">
+                            <Image src="/images/sub/catalog/catalog-list-01.jpg" alt="" width={720} height={540}/>
                             <p>{language?.catalog_02}</p>
                         </Link>
                     </li>

@@ -1,0 +1,1 @@
+positionForPages[43]={"page":43,"positions":[{"word":"TAT - FET Certification List ","left":0.049309,"top":0.064922,"width":0.512801,"height":0.047540}]};

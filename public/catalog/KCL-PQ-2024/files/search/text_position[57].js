@@ -1,0 +1,1 @@
+positionForPages[57]={"page":57,"positions":[{"word":"Fire Safety Test / TAT / FET Test Facility","left":0.050843,"top":0.069851,"width":0.744486,"height":0.052530}]};

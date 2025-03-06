@@ -21,17 +21,12 @@ export default async function Catalog({searchParams : {lang}} : any) {
                         <div style={{padding:"56.25% 0 0 0",position:"relative"}}><iframe src="https://player.vimeo.com/video/1045185579?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style={{position:"absolute",top:0,left:0,width:"100%",height:"100%"}} title="kclvalve-main-video-4"></iframe></div>
                     </li>
                     <li>
-                        <div style={{padding:"56.25% 0 0 0",position:"relative"}}><iframe src="https://player.vimeo.com/video/1045185579?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style={{position:"absolute",top:0,left:0,width:"100%",height:"100%"}} title="kclvalve-main-video-4"></iframe></div>
+                        <div style={{padding:"56.25% 0 0 0",position:"relative"}}><iframe src="https://player.vimeo.com/video/1062608994?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style={{position:"absolute",top:0,left:0,width:"100%",height:"100%"}} title="kclvalve-main-video-4"></iframe></div>
                     </li>
                     <li>
-                        <div style={{padding:"56.25% 0 0 0",position:"relative"}}><iframe src="https://player.vimeo.com/video/1045185579?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style={{position:"absolute",top:0,left:0,width:"100%",height:"100%"}} title="kclvalve-main-video-4"></iframe></div>
+                        <div style={{padding:"56.25% 0 0 0",position:"relative"}}><iframe src="https://player.vimeo.com/video/1062608971?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style={{position:"absolute",top:0,left:0,width:"100%",height:"100%"}} title="kclvalve-main-video-4"></iframe></div>
                     </li>
-                    <li>
-                        <div style={{padding:"56.25% 0 0 0",position:"relative"}}><iframe src="https://player.vimeo.com/video/1045185579?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style={{position:"absolute",top:0,left:0,width:"100%",height:"100%"}} title="kclvalve-main-video-4"></iframe></div>
-                    </li>
-                    <li>
-                        <div style={{padding:"56.25% 0 0 0",position:"relative"}}><iframe src="https://player.vimeo.com/video/1045185579?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style={{position:"absolute",top:0,left:0,width:"100%",height:"100%"}} title="kclvalve-main-video-4"></iframe></div>
-                    </li>
+                  
                 </ul>
             </div>
             <Footer language={language}/>
