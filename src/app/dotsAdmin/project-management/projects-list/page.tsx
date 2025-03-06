@@ -6,8 +6,6 @@ import Paginate from "@/components/DotsAdmin/Paginate/paginate";
 import api from "@/lib/api";
 import {useEffect, useState} from "react";
 import calCulateIndex from "@/components/calculateIndex";
-// import api from "@/lib/api";
-// import {useEffect} from "react";
 
 export default function ProjectsList({searchParams: {page, size, keyword, groupId}}: any) {
   const router = useRouter();

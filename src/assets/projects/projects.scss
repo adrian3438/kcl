@@ -44,6 +44,7 @@
 .project-list {
   padding-bottom: 130px;
   > ul {
+    margin-bottom: 50px;
     > li {
       margin-top: 55px;
       &:first-child {
@@ -103,6 +104,10 @@
       }
     }
   }
+  .pagerBox {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 //리스트 상세
@@ -126,6 +131,9 @@
   }
   .table-area {
     margin-top: 100px;
+    table {
+      width: 100%;
+    }
     thead {
       th {
         background-color: #0F3553;
