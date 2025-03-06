@@ -6,7 +6,6 @@ import {useEffect, useState} from "react";
 import api from "@/lib/api";
 import Paginate from "@/components/DotsAdmin/Paginate/paginate";
 import {useSearchParams} from "next/navigation";
-import {it} from "node:test";
 
 interface Props {
   language: any
