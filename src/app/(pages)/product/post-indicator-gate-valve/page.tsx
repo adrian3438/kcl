@@ -17,7 +17,7 @@ export default async function PostIndicatedGateValvePage({searchParams: {lang}}:
         "/images/sub/products/post/kcl-post-indicator-valve-4.jpg",
         "/images/sub/products/post/kcl-post-indicator-valve-6.jpg",
         "/images/sub/products/post/kcl-post-indicator-valve-7.jpg",
-        "/images/sub/products/post/kcl-post-indicator-valve-8.jpg",
+        
     ];
 
     return (
