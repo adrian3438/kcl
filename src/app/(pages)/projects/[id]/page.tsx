@@ -3,7 +3,6 @@ import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import {fetchLanguage} from "@/util/fetchLanguage";
 import Image from "next/image";
-import Link from "next/link";
 import api from "@/lib/api";
 
 export default async function ProjectsDetail({searchParams : {lang}, params: {id}} : any) {
@@ -11,7 +10,7 @@ export default async function ProjectsDetail({searchParams : {lang}, params: {id
     const response = await api.get(`/admin/projects/getProjectDetail.php?ID=${id}`);
     const projectImages = response?.data?.List[0].projectImages;
     const projectTables = response?.data?.List[0].projectPerformance;
-    // console.log('response : ', response?.data?.List[0].projectImages);
+
     return (
         <>
             <Header language={language}/>
