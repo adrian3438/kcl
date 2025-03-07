@@ -16,16 +16,19 @@ export default function ProjectList({language, projectGroupList}: Props) {
   const searchParams = useSearchParams();
   const page = searchParams.get("page") || 1;
   const size = Number(searchParams.get("size") || 10);
-  const groupId = searchParams.get("groupId") || 0;
+  // const groupId = searchParams.get("groupId") || 0;
 
   const [buttonIndex, setButtonIndex] = useState<number>(0);
+  useEffect(() => {
+    console.log('buttonIndex : ', buttonIndex);
+  }, [buttonIndex]);
 
   //프로젝트 리스트
   const [projectList, setProjectList] = useState([]);
   const [totalCnt, setTotalCnt] = useState(0);
   async function getProjectList() {
     try {
-      const response = await api.get(`/admin/projects/getProjectList.php?page=${page}&size=${size}&keyword=&groupId=${groupId}&sortColumn=createDate&sortOrder=asc`);
+      const response = await api.get(`/admin/projects/getProjectList.php?page=${page}&size=${size}&keyword=&groupId=${buttonIndex}&sortColumn=createDate&sortOrder=asc`);
       if (response?.data?.result) {
         setProjectList(response?.data?.List);
         setTotalCnt(response?.data?.TotalCnt);
@@ -38,7 +41,7 @@ export default function ProjectList({language, projectGroupList}: Props) {
   }
   useEffect(() => {
     getProjectList();
-  }, [page, groupId]);
+  }, [page, buttonIndex]);
 
   return (
     <div className="container">
@@ -50,8 +53,8 @@ export default function ProjectList({language, projectGroupList}: Props) {
         {projectGroupList && projectGroupList?.length > 0 && projectGroupList.map((item: any, index: number) =>
           <button
             key={index}
-            onClick={() => setButtonIndex(index + 1)}
-            className={index + 1 === buttonIndex ? "active" : ""}
+            onClick={() => setButtonIndex(item?.codeId)}
+            className={item?.codeId === buttonIndex ? "active" : ""}
           >
             {item?.codeNameKr}
           </button>
