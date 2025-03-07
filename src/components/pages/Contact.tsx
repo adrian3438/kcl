@@ -107,8 +107,12 @@ export default function Contact({language}: Props) {
             // formData.append('advertiseAgree', isAdCheck ? 'Y' : 'N');
             const response = await api.post(`/user/inquiry/setInquiry.php`, formData)
             if (response?.data?.result === true) {
-                alert(response?.data?.resultMsg);
-                router.push('/')
+                if (language?.language === 'kr') {
+                    alert(response?.data?.resultMsg);
+                } else {
+                    alert(response?.data?.resultMsgEn);
+                }
+                router.push('/');
             } else {
                 alert(response?.data?.resultMsg)
             }
