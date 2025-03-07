@@ -224,12 +224,12 @@ export default function Projects({searchParams : {id}} : any) {
     formData.append('projectEa', projectPerformance.projectEa);
     formData.append('projectSite', projectPerformance.projectSite);
     formData.append('projectResult', projectPerformance.projectResult);
-    formData.append('projectAmount', projectPerformance.projectResult);
-    formData.append('projectYear', projectPerformance.projectResult);
-    formData.append('projectBrand', projectPerformance.projectResult);
-    formData.append('projectBuyer', projectPerformance.projectResult);
-    formData.append('projectPo', projectPerformance.projectResult);
-    formData.append('projectManufactureNo', projectPerformance.projectResult);
+    formData.append('projectAmount', projectPerformance.projectAmount);
+    formData.append('projectYear', projectPerformance.projectYear);
+    formData.append('projectBrand', projectPerformance.projectBrand);
+    formData.append('projectBuyer', projectPerformance.projectBuyer);
+    formData.append('projectPo', projectPerformance.projectPo);
+    formData.append('projectManufactureNo', projectPerformance.projectManufactureNo);
 
     try {
       const response = await api.post(`/admin/projects/setProjectPerformance.php`, formData);
@@ -258,12 +258,12 @@ export default function Projects({searchParams : {id}} : any) {
     formData.append('projectEa', registedPerformance[tableIndex].projectEa);
     formData.append('projectSite', registedPerformance[tableIndex].projectSite);
     formData.append('projectResult', registedPerformance[tableIndex].projectResult);
-    formData.append('projectAmount', registedPerformance[tableIndex].projectResult);
-    formData.append('projectYear', registedPerformance[tableIndex].projectResult);
-    formData.append('projectBrand', registedPerformance[tableIndex].projectResult);
-    formData.append('projectBuyer', registedPerformance[tableIndex].projectResult);
-    formData.append('projectPo', registedPerformance[tableIndex].projectResult);
-    formData.append('projectManufactureNo', registedPerformance[tableIndex].projectResult);
+    formData.append('projectAmount', registedPerformance[tableIndex].projectAmount);
+    formData.append('projectYear', registedPerformance[tableIndex].projectYear);
+    formData.append('projectBrand', registedPerformance[tableIndex].projectBrand);
+    formData.append('projectBuyer', registedPerformance[tableIndex].projectBuyer);
+    formData.append('projectPo', registedPerformance[tableIndex].projectPo);
+    formData.append('projectManufactureNo', registedPerformance[tableIndex].projectManufactureNo);
 
     try {
       const response = await api.post(`/admin/projects/updProjectPerformance.php`, formData);
