@@ -183,6 +183,7 @@ export default function Projects({searchParams : {id}} : any) {
 
   //프로젝트 이미지 등록
   async function registProjectImages(id: any) {
+    console.log('registProjectImages');
     for (let i = 0; i < data?.projectImage.length; i++) {
       const formData = new FormData();
       formData.append('projectId', id);
@@ -195,14 +196,15 @@ export default function Projects({searchParams : {id}} : any) {
     }
     getProjectDetail();
   }
-  /*useEffect(() => {
-    registProjectImages(id);
-  }, [data?.projectImage]);*/
+  useEffect(() => {
+    if(id) {
+      registProjectImages(id);
+    }
+  }, [data?.projectImage]);
 
   useEffect(() => {
     if(id) {
       getProjectDetail();
-      registProjectImages(id);
     }
   }, [id]);
 
