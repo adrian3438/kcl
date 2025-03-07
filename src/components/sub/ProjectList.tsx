@@ -5,7 +5,7 @@ import Image from "next/image";
 import {useEffect, useState} from "react";
 import api from "@/lib/api";
 import Paginate from "@/components/DotsAdmin/Paginate/paginate";
-import {useSearchParams} from "next/navigation";
+import {usePathname, useRouter, useSearchParams} from "next/navigation";
 
 interface Props {
   language: any
@@ -13,22 +13,18 @@ interface Props {
 }
 
 export default function ProjectList({language, projectGroupList}: Props) {
+  const router = useRouter();
   const searchParams = useSearchParams();
   const page = searchParams.get("page") || 1;
   const size = Number(searchParams.get("size") || 10);
-  // const groupId = searchParams.get("groupId") || 0;
-
-  const [buttonIndex, setButtonIndex] = useState<number>(0);
-  useEffect(() => {
-    console.log('buttonIndex : ', buttonIndex);
-  }, [buttonIndex]);
+  const groupId = searchParams.get("groupId") || 0;
 
   //프로젝트 리스트
   const [projectList, setProjectList] = useState([]);
   const [totalCnt, setTotalCnt] = useState(0);
   async function getProjectList() {
     try {
-      const response = await api.get(`/admin/projects/getProjectList.php?page=${page}&size=${size}&keyword=&groupId=${buttonIndex}&sortColumn=createDate&sortOrder=asc`);
+      const response = await api.get(`/admin/projects/getProjectList.php?page=${page}&size=${size}&keyword=&groupId=${groupId}&sortColumn=createDate&sortOrder=asc`);
       if (response?.data?.result) {
         setProjectList(response?.data?.List);
         setTotalCnt(response?.data?.TotalCnt);
@@ -41,7 +37,16 @@ export default function ProjectList({language, projectGroupList}: Props) {
   }
   useEffect(() => {
     getProjectList();
-  }, [page, buttonIndex]);
+  }, [page, groupId]);
+
+  const path = usePathname()
+  const query = useSearchParams()
+  function setPage(groupId: number) {
+    const newParams : number | any = new URLSearchParams(query.toString())
+    newParams.set('groupId', groupId);
+    newParams.set('page', 1);
+    router.push(`${path}?${newParams?.toString()}`)
+  }
 
   return (
     <div className="container">
@@ -49,12 +54,12 @@ export default function ProjectList({language, projectGroupList}: Props) {
         <li>{language?.projects_01}</li>
       </ul>
       <div className="project-category">
-        <button className={buttonIndex === 0 ? 'active' : ''} onClick={() => setButtonIndex(0)}>All</button>
+        <button className={Number(groupId) === 0 ? 'active' : ''} onClick={() => setPage(0)}>All</button>
         {projectGroupList && projectGroupList?.length > 0 && projectGroupList.map((item: any, index: number) =>
           <button
             key={index}
-            onClick={() => setButtonIndex(item?.codeId)}
-            className={item?.codeId === buttonIndex ? "active" : ""}
+            onClick={() => setPage(item?.codeId)}
+            className={item?.codeId === Number(groupId) ? "active" : ""}
           >
             {item?.codeNameKr}
           </button>
