@@ -42,10 +42,10 @@ export default async function ProjectsDetail({searchParams : {lang}, params: {id
                                   <th scope="col">SITE</th>
                                   <th scope="col">RESULT</th>
                                   <th scope="col">TOTAL AMOUNT</th>
-                                  <th scope="col">BLAND</th>
-                                  <th scope="col">납품처</th>
+                                  <th scope="col">BRAND</th>
+                                  <th scope="col">DELIVERY TO</th>
                                   <th scope="col">PO NO.</th>
-                                  <th scope="col">생산의뢰서 NO.</th>
+                                  <th scope="col">PRODUCTION NO.</th>
                               </tr>
                               </thead>
                               <tbody>

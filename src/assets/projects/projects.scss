@@ -133,13 +133,14 @@
     margin-top: 100px;
     table {
       width: 100%;
+      font-size: 16px;
     }
     thead {
       th {
         background-color: #0F3553;
         color: #fff;
         vertical-align: middle;
-        padding: 20px 0;
+        padding: 20px 10px;
         border:1px solid #ddd;
         text-align: center;
       }
@@ -150,6 +151,7 @@
         text-align: center;
         background-color: #F6F7F9;
         border: 1px solid #ddd;
+        padding: 15px 15px;
       }
     }
   }
