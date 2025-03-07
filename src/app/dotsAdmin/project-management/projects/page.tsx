@@ -53,7 +53,7 @@ export default function Projects({searchParams : {id}} : any) {
     const {name, value} = e.target;
     setProjectPerformance((prev:any) => ({...prev, [name] : value}));
 
-    if(index) {
+    if(index !== undefined) {
       setRegistedPerformance((prev) =>
         prev.map((item, idx) =>
           idx === index ? { ...item, [name]: value } : item
@@ -274,6 +274,22 @@ export default function Projects({searchParams : {id}} : any) {
     }
   }
 
+  //실적 삭제
+  async function deleteTable(performanceId: any) {
+    const formData = new FormData();
+    formData.append('ID', performanceId);
+    try {
+      const response = await api.post(`/admin/projects/delProjectPerformance.php`, formData);
+      console.log('response : ', response);
+      if(response?.data?.result) {
+        alert(response?.data?.resultMsg);
+        location.reload();
+      }
+    } catch {
+      alert('Server Error')
+    }
+  }
+
   return(
     <div className="contentBox add">
       <h3>Projects</h3>
@@ -351,12 +367,11 @@ export default function Projects({searchParams : {id}} : any) {
           )}
           {id && (
             <tr>
-              <th>정보</th>
+              <th>실적</th>
               <td>
                 <div className="tableWrap" style={{marginBottom: '20px'}}>
                   <div className="btnBox" style={{marginBottom: '10px'}}>
                     <button className="blackBtn" onClick={() => registTable()}>등록</button>
-                    &nbsp;<button className="blackBtn">삭제</button>
                   </div>
                   <div className="tableType_a thumb" style={{overflowX: 'auto', maxWidth: '1300px'}}>
                     <table style={{minWidth: '2500px'}}>
@@ -484,12 +499,12 @@ export default function Projects({searchParams : {id}} : any) {
           )}
           {registedPerformance && registedPerformance.length > 0 && registedPerformance.map((item: any, index: number) => (
             <tr key={index}>
-              <th>정보</th>
+              <th>실적</th>
               <td>
                 <div className="tableWrap" style={{marginBottom: '20px'}}>
                   <div className="btnBox" style={{marginBottom: '10px'}}>
                     <button className="blackBtn" onClick={() => modifyTable(index)}>수정</button>
-                    &nbsp;<button className="blackBtn">삭제</button>
+                    &nbsp;<button className="blackBtn" onClick={() => deleteTable(item?.ID)}>삭제</button>
                   </div>
                   <div className="tableType_a thumb" style={{overflowX: 'auto', maxWidth: '1300px'}}>
                     <table style={{minWidth: '2500px'}}>
