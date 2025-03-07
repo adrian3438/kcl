@@ -183,7 +183,6 @@ export default function Projects({searchParams : {id}} : any) {
 
   //프로젝트 이미지 등록
   async function registProjectImages(id: any) {
-    console.log('registProjectImages');
     for (let i = 0; i < data?.projectImage.length; i++) {
       const formData = new FormData();
       formData.append('projectId', id);
@@ -282,7 +281,6 @@ export default function Projects({searchParams : {id}} : any) {
     formData.append('ID', performanceId);
     try {
       const response = await api.post(`/admin/projects/delProjectPerformance.php`, formData);
-      console.log('response : ', response);
       if(response?.data?.result) {
         alert(response?.data?.resultMsg);
         location.reload();
