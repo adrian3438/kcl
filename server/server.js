@@ -19,15 +19,34 @@ app.prepare().then(() => {
 
     server.get('/api/lang', (req, res) => {
         const lang = req.query.lang;
+
+        // lang이 없거나 잘못된 경우 기본값 설정
+        if (!lang || typeof lang !== 'string') {
+            return res.status(400).json({ error: 'Invalid language parameter' });
+        }
+
         const filePath = path.join(__dirname, 'locale', lang, 'language.json');
+
+        // 파일이 존재하는지 먼저 확인
+        if (!fs.existsSync(filePath)) {
+            return res.status(404).json({ error: 'Language file not found' });
+        }
+
         fs.readFile(filePath, 'utf8', (err, data) => {
-            if(err) {
-                res.status(200).json({ error : 'not found' });
-            }else{
-                res.json(JSON.parse(data));
+            if (err) {
+                console.error('File read error:', err);
+                return res.status(500).json({ error: 'Internal Server Error' });
             }
-        })
+
+            try {
+                res.json(JSON.parse(data));
+            } catch (parseErr) {
+                console.error('JSON Parse Error:', parseErr);
+                return res.status(500).json({ error: 'Invalid JSON format' });
+            }
+        });
     });
+
 
     server.all('*', (req, res) => {
         return handle(req, res);
