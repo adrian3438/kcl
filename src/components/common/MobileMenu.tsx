@@ -32,7 +32,7 @@ export default function MobileMenu({language}: Props) {
             </button>
             <nav className={visibleMenu ? "on" : ''}>
                 <div className="nav-header">
-                    <Image src="/images/common/logo.png" alt="Since 2001 KCL Valve" width={188} height={69}/>
+                    <Image src="/images/common/logo-mobile.png" alt="Since 2001 KCL Valve" width={80} height={29}/>
                     <button className="close" onClick={closeMobileMenu}/>
                 </div>
                 <ul>
