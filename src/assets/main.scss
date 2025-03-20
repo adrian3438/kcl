@@ -219,7 +219,8 @@ main {
       top: 50%;
       left: 0;
       transform: translateY(-50%);
-      width: 100%;
+      width: calc(100% - 120px);
+      margin: 0 60px;
       > div {
         max-width: 1600px;
         margin: 0 auto;

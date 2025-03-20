@@ -1,0 +1,100 @@
+.modal-wrapper {
+  position: relative;
+  height: 100%;
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:10px;
+    h2 {
+      font-weight: 600;
+    }
+    .modal-close-button {
+      cursor: pointer;
+      position: relative;
+      background: none;
+      border: none;
+      display: inline-block;
+      *display: inline;
+      text-indent: -9999px;
+      overflow: hidden;
+      width: 23px;
+      height: 23px;
+      line-height: 23px;
+
+      &::after {
+        position: absolute;
+        top:0;
+        right:0;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        content: "\00d7";
+        font-size: 23px;
+        font-weight: bold;
+        color: #000;
+        text-indent: 0;
+      }
+    }
+  }
+  .modal-table {
+    border-top: 1px solid #e00;
+    background: #fff;
+    min-width: 1100px;
+    thead {
+      th {
+        padding: 28px 10px;
+        color: #e00;
+        text-align: center;
+      }
+    }
+    tbody {
+      th {
+        border-top: 1px solid #666;
+        padding: 15px 10px;
+        color: #666;
+        text-align: center;
+      }
+      td {
+        border-top: 1px solid #666;
+        padding: 15px 10px;
+        color: #666;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .modal-wrapper {
+    .modal-table {
+      min-width: 0;
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .modal-wrapper {
+    .modal-table {
+      min-width: 0;
+      width: 100%;
+    }
+  }
+}
+
+/* React Modal Customize */
+.ReactModal__Overlay--after-open {
+  background-color: rgba(0,0,0,0.6) !important;
+}
+
+
+.ReactModalPortal {
+  position: relative;
+  z-index: 9999;
+  .modal-wrapper .modal-header .modal-close-button::after {
+    font-size: 40px;
+  }
+  .modal-wrapper .modal-content {
+    height: calc(100% - 60px);
+  }
+}

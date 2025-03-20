@@ -4,6 +4,7 @@ import Footer from "@/components/common/Footer";
 import {fetchLanguage} from "@/util/fetchLanguage";
 import Image from "next/image";
 import api from "@/lib/api";
+import ProjectDetailImageList from "@/components/sub/ProjectDetailImageList";
 
 export default async function ProjectsDetail({searchParams : {lang}, params: {id}} : any) {
     const language = await fetchLanguage(lang);
@@ -20,9 +21,10 @@ export default async function ProjectsDetail({searchParams : {lang}, params: {id
                 </ul>
                 <div className="project-list-detail">
                     <ul>
-                        {projectImages && projectImages.length > 0 && projectImages.map((item: any, index: number) =>
+                      <ProjectDetailImageList projectImages={projectImages}/>
+                        {/*{projectImages && projectImages.length > 0 && projectImages.map((item: any, index: number) =>
                           <li key={index}><Image src={item?.imageFile} alt="" width={500} height={375}/></li>
-                        )}
+                        )}*/}
                     </ul>
                     {projectTables && projectTables.length > 0 && projectTables.map((item: any, index: number) =>
                       <div className="table-area" key={index}>
