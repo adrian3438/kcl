@@ -184,8 +184,24 @@ export default function Contact({language}: Props) {
                         </div>
                     </fieldset>
 
+
                     <fieldset className="inquiry-detail">
-                        <legend><span>4</span> {language.inquiry_text_17} <i>*</i></legend>
+                        <legend><span>4</span> {language.inquiry_text_26} <i>*</i></legend>
+                        <div className="text-box-2">
+                            <p>{language.inquiry_text_27}</p>
+                            <textarea id="inquiryDetailText" placeholder={language.inquiry_text_31} name="message" onChange={handleChange}></textarea>
+                            <p>{language.inquiry_text_28}</p>
+                            <textarea id="inquiryDetailText" placeholder={language.inquiry_text_31} name="message" onChange={handleChange}></textarea>
+                            <p>{language.inquiry_text_29}</p>
+                            <textarea id="inquiryDetailText" placeholder={language.inquiry_text_31} name="message" onChange={handleChange}></textarea>
+                            <p>{language.inquiry_text_30}</p>
+                            <textarea id="inquiryDetailText" placeholder={language.inquiry_text_31} name="message" onChange={handleChange}></textarea>
+                        </div>
+                    </fieldset>
+
+
+                    <fieldset className="inquiry-detail">
+                        <legend><span>5</span> {language.inquiry_text_17} <i>*</i></legend>
                         <div className="file-box">
                             <div>
                                 <input type="file" id="dk_inquiry_pdsFile" name="attachedFile" onChange={handleChange}/>

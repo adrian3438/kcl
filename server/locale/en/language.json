@@ -818,7 +818,7 @@
     "blog_02": "KCL Valve dedicated valve development, manufacturing and management for more than 40 years.",
 
     "catalog_01": "KCL Valve PQ",
-    "catalog_02": "KCL PQ 2024",
+    "catalog_02": "Control Valves Products",
     "catalog_03": "KCL Company Product Guide New",
     "catalog_04": "Tunnion (DBB) Ball Valve",
     "catalog_05": "Plug Valve",
@@ -835,7 +835,7 @@
 
     "inquiry_banner_title": "Customer Inquiries",
     "inquiry_banner_text": "Please feel free to ask any questions.",
-    "inquiry_text_01": "If you have any inquiers, please leave a message",
+    "inquiry_text_01": "If you have any Inquiries, please leave a message",
     "inquiry_text_02": "Please fill in the information for your inquiry.",
     "inquiry_text_03": "Company Name",
     "inquiry_text_04": "Your Name",
@@ -860,6 +860,12 @@
     "inquiry_text_23": "You have the right to refuse consent to the collection and use of personal information. However, if you refuse consent, your use of the service may be restricted.",
     "inquiry_text_24": "Submit Inquiry",
     "inquiry_text_25": "* All fields are mandatory",
+    "inquiry_text_26": "Project Details ",
+    "inquiry_text_27": "1) End user details and final installation locatio nfor this RFQ ",
+    "inquiry_text_28": "2) Project name and RFQ status details (Buying or Budgetary)",
+    "inquiry_text_29": "3) Your company's introduction (Country, Company type: Trading, Engineering, End user etc.)",
+    "inquiry_text_30": "4) How did you find out and contact us KCL?",
+    "inquiry_text_31": "This is mandatory field, please provide the details of your project.",
 
 
     "language": "en"

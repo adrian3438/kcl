@@ -18,7 +18,7 @@ const Model1: FC<ModelProps> = ({ url }) => {
         scene.position.sub(center);
     }, [scene]);
 
-    return <primitive object={scene} scale={0.07} />;
+    return <primitive object={scene} scale={3.0} />;
 };
 
 const Model2: FC<ModelProps> = ({ url }) => {
@@ -69,15 +69,42 @@ const Model5: FC<ModelProps> = ({ url }) => {
     return <primitive object={scene} scale={0.2} />;
 };
 
+const Model6: FC<ModelProps> = ({ url }) => {
+    const { scene } = useGLTF(url);
+
+    useEffect(() => {
+        const box = new THREE.Box3().setFromObject(scene);
+        const center = box.getCenter(new THREE.Vector3());
+        scene.position.sub(center);
+    }, [scene]);
+
+    return <primitive object={scene} scale={0.07} />;
+};
+
+// const Model7: FC<ModelProps> = ({ url }) => {
+//     const { scene } = useGLTF(url);
+
+//     useEffect(() => {
+//         const box = new THREE.Box3().setFromObject(scene);
+//         const center = box.getCenter(new THREE.Vector3());
+//         scene.position.sub(center);
+//     }, [scene]);
+
+//     return <primitive object={scene} scale={5.0} />;
+// };
+
+
 const Modeling: FC = () => {
     const [count, setCount] = useState<number>(0);
 
     const ModelingUrl = [
+        "300LB-24",
         "DBB PLUG VALVE 150LB RF DN250A",  
         "LUBRICATED PLUG VALVE 600LBS RTJ 18INCH",
         "LUBRICATED PLUG VALVE 900LBS RTJ 2INCH",
         "SLEEVED PLUG VALVE 150LB RF 2INCH",
         "TRUNNION BALL VALVE 300LB 10INCH",
+        // "DBB PLUG VALVE 150LB RF DN250A",
     ];
 
     const updateModel = (direction: number) => {
@@ -97,7 +124,7 @@ const Modeling: FC = () => {
                 <directionalLight position={[50, -50, 30]} intensity={0.6} />
                 <directionalLight position={[-50, 50, -30]} intensity={0.6} />
                 <OrbitControls enableZoom={true} />
-                <Model1 url={`/modeling/dbb-plug-valve-150lb-rf-dn250a.glb`} />
+                <Model1 url={`/modeling/300LB-24.glb`} />
             </Canvas>
             <Canvas className={`model-canvas ${count === 1 ? "active" : ""}`}>
                 <ambientLight intensity={1} />
@@ -147,6 +174,30 @@ const Modeling: FC = () => {
                 <OrbitControls enableZoom={true} />
                 <Model5 url={`/modeling/trunnion-ball-valve-300lb-10in.glb`} />
             </Canvas>
+            <Canvas className={`model-canvas ${count === 5 ? "active" : ""}`}>
+                <ambientLight intensity={1} />
+                <directionalLight position={[10, 30, 20]} intensity={1} />
+                <directionalLight position={[10, -180, -90]} intensity={1} />
+                <directionalLight position={[-10, -30, 20]} intensity={1} />
+                <directionalLight position={[0, 50, 50]} intensity={0.8} />
+                <directionalLight position={[-30, 10, -40]} intensity={0.7} />
+                <directionalLight position={[50, -50, 30]} intensity={0.6} />
+                <directionalLight position={[-50, 50, -30]} intensity={0.6} />
+                <OrbitControls enableZoom={true} />
+                <Model6 url={`/modeling/dbb-plug-valve-150lb-rf-dn250a.glb`} />
+            </Canvas>
+            {/* <Canvas className={`model-canvas ${count === 6 ? "active" : ""}`}>
+                <ambientLight intensity={1} />
+                <directionalLight position={[10, 30, 20]} intensity={1} />
+                <directionalLight position={[10, -180, -90]} intensity={1} />
+                <directionalLight position={[-10, -30, 20]} intensity={1} />
+                <directionalLight position={[0, 50, 50]} intensity={0.8} />
+                <directionalLight position={[-30, 10, -40]} intensity={0.7} />
+                <directionalLight position={[50, -50, 30]} intensity={0.6} />
+                <directionalLight position={[-50, 50, -30]} intensity={0.6} />
+                <OrbitControls enableZoom={true} />
+                <Model7 url={`/modeling/DBB PLUG VALVE 150LB RF DN250A.glb`} />
+            </Canvas> */}
             <div className="model-control">
                 <div>
                     <button onClick={() => updateModel(-1)}>&lt;</button>

@@ -20,13 +20,13 @@ export default async function Catalog({searchParams : {lang}} : any) {
                     <li>
                         <Link href="/catalog/kcl-company-product-guide-new/index.html" target="_blank">
                             <Image src="/images/sub/catalog/catalog-list-02.jpg" alt="" width={250} height={333}/>
-                            <p>{language?.catalog_02}</p>
+                            <p>{language?.catalog_03}</p>
                         </Link>
                     </li>
                     <li>
                         <Link href="/catalog/CONTROL(FINAL)/index.html" target="_blank">
                             <Image src="/images/sub/catalog/catalog-list-03.jpg" alt="" width={250} height={333}/>
-                            <p>{language?.catalog_03}</p>
+                            <p>{language?.catalog_02}</p>
                         </Link>
                     </li>
                     <li>

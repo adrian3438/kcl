@@ -82,7 +82,13 @@ export default function ProjectList({language, projectGroupList}: Props) {
                 </div>
                 <div className="project-type">
                   <div>
-                    <Image src="/images/sub/projects/ball_valve_icon.png" alt="" width={48} height={48}/>
+                  <Image 
+                    src={`/images/sub/projects/${item?.groupName}.png`} 
+                    alt={item?.groupName || "project image"} 
+                    width={48} 
+                    height={48} 
+                    onError={(e) => (e.currentTarget.src = "/images/sub/projects/default.png")}
+                  />
                     <p>{item?.groupName}</p>
                   </div>
                 </div>
