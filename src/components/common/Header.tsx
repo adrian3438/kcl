@@ -14,21 +14,12 @@ interface Props {
 }
 
 export default function Header({language}: Props) {
-    const [headerLeave, setHeaderLeave] = useState<boolean>(false);
-    function handleMouseLeave() {
-        setHeaderLeave(true);
-    }
-    function handleMouseOver() {
-        setHeaderLeave(false);
-    }
-
     const router = useRouter();
     const query = useSearchParams();
     const currentRoute = usePathname();
     const [cookie , setCookie] = useCookies(['LANG']);
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [lang, setLang] = useState<any>('kr');
-
     function handleLang (e : any, lang : string) {
         e.preventDefault();
         setCookie('LANG', lang, {path : '/'});
@@ -41,9 +32,8 @@ export default function Header({language}: Props) {
 
     useEffect(()=>{setLang(cookie.LANG)} , [setCookie, cookie]);
 
-
     return (
-        <header onMouseLeave={() => handleMouseLeave()} onMouseOver={() => handleMouseOver()}>
+        <header>
             <div className="header-top-bar">
                 <ul className="header-items">
                     <li>
@@ -61,7 +51,7 @@ export default function Header({language}: Props) {
 
             <div className="header-inner">
                 <h1 className="logo"><Link href="/"><Image src="/images/common/logo.png" alt="Since 2001 KCL Valve" width={188} height={69}/></Link></h1>
-                <MainMenu language={language} headerLeave={headerLeave}/>
+                <MainMenu language={language}/>
                 <div>
                     <LanguageButton language={language}/>
                     <MobileMenu language={language}/>

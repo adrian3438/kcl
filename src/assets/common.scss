@@ -26,9 +26,6 @@
 
 
 /* Header */
-
-
-
 header {
   position: fixed;
   top:0;
@@ -75,10 +72,40 @@ header {
         position: relative;
         display: flex;
         justify-content: space-between;
+        height: 72px;
+        align-items: center;
         > li {
+          position: relative;
           > a {
             color: #0F3553;
             font-weight: bold;
+          }
+          &.on {
+            > ul {
+              opacity: 1;
+              visibility: visible;
+              transition: all 0.2s ease-in-out;
+            }
+          }
+          > ul {
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            top: 46px;
+            left: -20px;
+            background-color: #ffffffe8;
+            padding: 30px 20px;
+            > li {
+              margin-top: 20px;
+              &:first-child {
+                margin-top: 0;
+              }
+              > a {
+                white-space: nowrap;
+                font-size: 20px;
+                color: #0F3553;
+              }
+            }
           }
         }
       }
