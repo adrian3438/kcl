@@ -2,7 +2,6 @@ import "@/assets/projects/projects.scss";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import {fetchLanguage} from "@/util/fetchLanguage";
-import Image from "next/image";
 import api from "@/lib/api";
 import ProjectDetailImageList from "@/components/sub/ProjectDetailImageList";
 
