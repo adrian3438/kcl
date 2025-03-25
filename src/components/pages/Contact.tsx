@@ -20,6 +20,10 @@ export default function Contact({language}: Props) {
         type: '',
         title: '',
         message: '',
+        inquiryDetail1: '',
+        inquiryDetail2: '',
+        inquiryDetail3: '',
+        inquiryDetail4: '',
         attachedFile: null,
         agreeTerms: "N",
         adAgree: "N"
@@ -83,6 +87,22 @@ export default function Contact({language}: Props) {
             alert('문의 내용을 입력해 주시기 바랍니다.');
             return;
         }
+        if (!data?.inquiryDetail1) {
+            alert('프로젝트 상세정보를 입력해 주시기 바랍니다.');
+            return;
+        }
+        if (!data?.inquiryDetail3) {
+            alert('프로젝트 상세정보를 입력해 주시기 바랍니다.');
+            return;
+        }
+        if (!data?.inquiryDetail3) {
+            alert('프로젝트 상세정보를 입력해 주시기 바랍니다.');
+            return;
+        }
+        if (!data?.inquiryDetail4) {
+            alert('프로젝트 상세정보를 입력해 주시기 바랍니다.');
+            return;
+        }
         if (!isCheck) {
             alert('개인정보 수집 및 이용동의를 체크해주시기 바랍니다.');
             return;
@@ -98,6 +118,10 @@ export default function Contact({language}: Props) {
             formData.append('inquiryType', data?.type)
             formData.append('inquirySubject', data?.title)
             formData.append('inquiryContents', data?.message)
+            formData.append('inquiryDetail1', data?.inquiryDetail1)
+            formData.append('inquiryDetail2', data?.inquiryDetail2)
+            formData.append('inquiryDetail3', data?.inquiryDetail3)
+            formData.append('inquiryDetail4', data?.inquiryDetail4)
             formData.append('inquiryLang ', language.language === "KR" ? "EN" : "KR");
             if (data?.attachedFile) {
                 formData.append('attachedFile', data?.attachedFile)
@@ -189,13 +213,13 @@ export default function Contact({language}: Props) {
                         <legend><span>4</span> {language.inquiry_text_26} <i>*</i></legend>
                         <div className="text-box-2">
                             <p>{language.inquiry_text_27}</p>
-                            <textarea id="inquiryDetailText" placeholder={language.inquiry_text_31} name="message" onChange={handleChange}></textarea>
+                            <textarea id="inquiryDetailText" placeholder={language.inquiry_text_31} name="inquiryDetail1" onChange={handleChange}></textarea>
                             <p>{language.inquiry_text_28}</p>
-                            <textarea id="inquiryDetailText" placeholder={language.inquiry_text_31} name="message" onChange={handleChange}></textarea>
+                            <textarea id="inquiryDetailText" placeholder={language.inquiry_text_31} name="inquiryDetail2" onChange={handleChange}></textarea>
                             <p>{language.inquiry_text_29}</p>
-                            <textarea id="inquiryDetailText" placeholder={language.inquiry_text_31} name="message" onChange={handleChange}></textarea>
+                            <textarea id="inquiryDetailText" placeholder={language.inquiry_text_31} name="inquiryDetail3" onChange={handleChange}></textarea>
                             <p>{language.inquiry_text_30}</p>
-                            <textarea id="inquiryDetailText" placeholder={language.inquiry_text_31} name="message" onChange={handleChange}></textarea>
+                            <textarea id="inquiryDetailText" placeholder={language.inquiry_text_31} name="inquiryDetail4" onChange={handleChange}></textarea>
                         </div>
                     </fieldset>
 

@@ -27,16 +27,38 @@
 //리스트 페이지
 .project-category {
   margin: 110px 0 50px;
-  border-bottom: 2px solid #D9D6D6;
-  display: inline-block;
-  button {
-    padding: 5px 20px 5px;
-    border: none;
-    background: none;
-    font-size: 15px;
-    cursor: pointer;
-    &.active {
-      border-bottom: 5px solid #00CBFF;
+  overflow-x: auto;
+  padding-bottom: 9px;
+  > div {
+    width: 1560px;
+    display: flex;
+    button {
+      &:first-child {
+        border-left: 1px solid #707070;
+      }
+      flex: 1 1 0;
+      padding: 15px;
+      border: 1px solid #707070;
+      border-left: none;
+      background: none;
+      font-size: 15px;
+      cursor: pointer;
+      font-family: "Pretendard-Medium", sans-serif;
+      &.active {
+        position: relative;
+        color: #fff;
+        background-color: #194B7E;
+        &:after {
+          position: absolute;
+          bottom: -9px;
+          left: 50%;
+          transform: translateX(-50%);
+          content: "";
+          width: 120px;
+          height: 3px;
+          background-color: #FE0000;
+        }
+      }
     }
   }
 }
@@ -197,6 +219,10 @@
       }
     }
   }
+}
+
+@media screen and (max-width: 767px) {
+
 }
 
 @media screen and (max-width: 767px) {

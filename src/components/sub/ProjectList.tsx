@@ -54,16 +54,18 @@ export default function ProjectList({language, projectGroupList}: Props) {
         <li>{language?.projects_01}</li>
       </ul>
       <div className="project-category">
-        <button className={Number(groupId) === 0 ? 'active' : ''} onClick={() => setPage(0)}>All</button>
-        {projectGroupList && projectGroupList?.length > 0 && projectGroupList.map((item: any, index: number) =>
-          <button
-            key={index}
-            onClick={() => setPage(item?.codeId)}
-            className={item?.codeId === Number(groupId) ? "active" : ""}
-          >
-            {item?.codeNameKr}
-          </button>
-        )}
+        <div>
+          <button className={Number(groupId) === 0 ? 'active' : ''} onClick={() => setPage(0)}>All</button>
+          {projectGroupList && projectGroupList?.length > 0 && projectGroupList.map((item: any, index: number) =>
+            <button
+              key={index}
+              onClick={() => setPage(item?.codeId)}
+              className={item?.codeId === Number(groupId) ? "active" : ""}
+            >
+              {item?.codeNameKr}
+            </button>
+          )}
+        </div>
       </div>
 
       <div className="project-list">
@@ -82,11 +84,11 @@ export default function ProjectList({language, projectGroupList}: Props) {
                 </div>
                 <div className="project-type">
                   <div>
-                  <Image 
-                    src={`/images/sub/projects/${item?.groupName}.png`} 
-                    alt={item?.groupName || "project image"} 
-                    width={48} 
-                    height={48} 
+                  <Image
+                    src={`/images/sub/projects/${item?.groupName}.png`}
+                    alt={item?.groupName || "project image"}
+                    width={48}
+                    height={48}
                     onError={(e) => (e.currentTarget.src = "/images/sub/projects/default.png")}
                   />
                     <p>{item?.groupName}</p>

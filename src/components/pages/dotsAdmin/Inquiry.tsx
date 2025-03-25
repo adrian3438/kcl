@@ -186,13 +186,45 @@ export default function InquiryPage ({id} : Props) {
                         </div>
                     </div>
 
+                    <div className="inquiry_details">
+                        <span>앤드 유저 정보 및 이 RFQ의 최종 설치 위치</span>
+                        <div dangerouslySetInnerHTML={{
+                            __html: data?.inquiryDetail1
+                        }}>
+                        </div>
+                    </div>
+
+                    <div className="inquiry_details">
+                        <span>프로젝트 명칭 및 RFQ 상태 세부정보(구매 또는 예산 책정용)</span>
+                        <div dangerouslySetInnerHTML={{
+                            __html: data?.inquiryDetail2
+                        }}>
+                        </div>
+                    </div>
+
+                    <div className="inquiry_details">
+                        <span>귀사 정보(국가, 기업형태: 무역, 엔지니어링, 최종 사용자 등)</span>
+                        <div dangerouslySetInnerHTML={{
+                            __html: data?.inquiryDetail3
+                        }}>
+                        </div>
+                    </div>
+
+                    <div className="inquiry_details">
+                        <span>KCL에 대해 어떻게 알게 연락하게 되었습니까?</span>
+                        <div dangerouslySetInnerHTML={{
+                            __html: data?.inquiryDetail4
+                        }}>
+                        </div>
+                    </div>
+
                     <div className="fileName">
                         <span>첨부파일</span>
                         {data?.attachedFilename ?
-                            <div>
-                                <span onClick={() => fileDownLoad(data?.attachedFilename, data?.attachedFile)}>{data?.attachedFilename}</span>
-                            </div>
-                            : ''
+                          <div>
+                              <span onClick={() => fileDownLoad(data?.attachedFilename, data?.attachedFile)}>{data?.attachedFilename}</span>
+                          </div>
+                          : ''
                         }
                     </div>
                 </div>
