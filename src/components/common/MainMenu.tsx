@@ -43,7 +43,6 @@ export default function MainMenu({language}: Props) {
                         <li><Link href="/media/catalog">{language?.header_4_2}</Link></li>
                         <li><Link href="/media/pq">{language?.header_4_5}</Link></li>
                         <li><Link href="/media/3d-modeling">{language?.header_4_3}</Link></li>
-                        <li><Link href="/media/blog">{language?.header_4_1}</Link></li>
                     </ul>
                 </li>
                 <li onMouseOver={() => setMenuIndex(0)}><Link href="/contact">{language?.header_5}</Link></li>
