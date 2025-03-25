@@ -211,7 +211,7 @@ export default function InquiryPage ({id} : Props) {
                     </div>
 
                     <div className="inquiry_details">
-                        <span>KCL에 대해 어떻게 알게 연락하게 되었습니까?</span>
+                        <span>KCL에 대해 어떻게 알고 연락하게 되었습니까?</span>
                         <div dangerouslySetInnerHTML={{
                             __html: data?.inquiryDetail4
                         }}>

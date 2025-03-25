@@ -71,31 +71,35 @@ export default function ProjectList({language, projectGroupList}: Props) {
       <div className="project-list">
         <ul>
           {projectList && projectList?.length > 0 && projectList.map((item: any, index: number) =>
-            <li key={index}>
-              <Link href={`/projects/${item?.ID}`}>
-                <div className="image-area">
-                  <Image src={item?.thumbnailFile} alt="sample" width={306} height={229}/>
-                </div>
-                <div className="detail">
-                  <p className="project-title">{item?.projectName}</p>
-                  <div className="project-detail" style={{whiteSpace: 'pre-line'}}>
-                    {item?.projectDescription}
-                  </div>
-                </div>
-                <div className="project-type">
-                  <div>
-                  <Image
-                    src={`/images/sub/projects/${item?.groupName}.png`}
-                    alt={item?.groupName || "project image"}
-                    width={48}
-                    height={48}
-                    onError={(e) => (e.currentTarget.src = "/images/sub/projects/default.png")}
-                  />
-                    <p>{item?.groupName}</p>
-                  </div>
-                </div>
-              </Link>
-            </li>
+            <>
+              {item?.activeStatus === 'Y' && (
+                <li key={index}>
+                  <Link href={`/projects/${item?.ID}`}>
+                    <div className="image-area">
+                      <Image src={item?.thumbnailFile} alt="sample" width={306} height={229}/>
+                    </div>
+                    <div className="detail">
+                      <p className="project-title">{item?.projectName}</p>
+                      <div className="project-detail" style={{whiteSpace: 'pre-line'}}>
+                        {item?.projectDescription}
+                      </div>
+                    </div>
+                    <div className="project-type">
+                      <div>
+                        <Image
+                          src={`/images/sub/projects/${item?.groupName}.png`}
+                          alt={item?.groupName || "project image"}
+                          width={48}
+                          height={48}
+                          onError={(e) => (e.currentTarget.src = "/images/sub/projects/default.png")}
+                        />
+                        <p>{item?.groupName}</p>
+                      </div>
+                    </div>
+                  </Link>
+                </li>
+              )}
+            </>
           )}
         </ul>
 
