@@ -26,6 +26,27 @@ export default function History({language}: Props) {
                 <div>
                         <div>
                             <dl>
+                                <dt>2025</dt>
+                                <dd>
+                                    <ul>
+                                        <li><span>02.</span> {language?.history_28_02}</li>
+                                        <li><span>03.</span> {language?.history_28_03}</li>
+                                        <li><span>04.</span> {language?.history_28_04}</li>
+                                        <li><span>04.</span> {language?.history_28_05}</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <p><Image src="/images/sub/history/qatar-steel-logo.png" alt="" width={300} height={194}/>
+                               <Image src="/images/sub/history/qfac_logo.png" alt="" width={299} height={80}/>
+                               <Image src="/images/sub/history/qutar-petroleum-logo.png" alt="" width={300} height={105}/>
+                            </p>
+                        </div>
+                    </div>
+
+
+                <div>
+                        <div>
+                            <dl>
                                 <dt>2024</dt>
                                 <dd>
                                     <ul>

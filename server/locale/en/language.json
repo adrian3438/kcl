@@ -180,12 +180,12 @@
     "history_02": "For the past years, our journey has always been about valves. Every moment has been dedicated to perfecting",
     "history_03": "design, manufacturing, and delivering high-quality valves to meet the industry's needs.",
     "history_04": "History",
-    "history_05": "2005 year is the start of everything of KCL Valve",
+    "history_05": "2001 year is the start of everything of KCL Valve",
 
     "history_06_00_00_01": "Metal Seat POV Ball Valves Russia Project USD 15,000",
     "history_06_00_00_02": "Thailand Butterfly valve export",
     "history_06_00_00_03": "Russian project Metal Seal Ball Valve & Manual valve Export 120 Pcs Supply",
-    "history_06_00_00_04": "PT.PLN INDONESIA POWER KNIGE GATE VALVE 12 SET Export",
+    "history_06_00_00_04": "PT.PLN INDONESIA POWER KNIFE GATE VALVE 12 SET Export",
 
     "history_06_00_01": "Exported Malaysia Plug Valve USD 350,000",
     "history_06_00_02": "UAE Metal Seat Ball Valve Export",
@@ -321,6 +321,11 @@
     "history_27_04": "DAEWOO Shipbuilding & Marine Engineering Co., Ltd / BALL VALVE Supply",
     "history_27_05": "JAPAN / KISHIKAWA IRON -Butterfly Valve Supply",
 
+    "history_28_02": "RUMAILA BASRACOMBINED CYCLE POWER PLANT (Phase-IV) Project METAL SEAT MOV BALL VALVE 10 SET Order Success",
+    "history_28_03": "PT.PLN INDONESIA POWER OMBILIN KNIFE GATE VALVE 3 SET Export",
+    "history_28_04": "CF8C MATERIAL METAL SEAT BALL VALVE EXPORT TO UAE",
+    "history_28_05": "Registered in QATAR Steel, QATAR Fuel (QAFAC) and Qatar Petroleum",
+
 
     "partner_01": "Growing with customers",
     "partner_02": "Many major domestic and overseas customers are the result of KCL’s technology, quality and trust.",
@@ -361,7 +366,7 @@
     "certificates_08_01": "INDONESIA",
     "certificates_08_02": "PT Inti Karya Persada Tehnik (IKPT)",
     "certificates_09_01": "MALAYSIA",
-    "certificates_09_02": "Petronas",
+    "certificates_09_02": "Petronas(Malaysian Oil and Gas Company-Malaysia)",
     "certificates_10_01": "API 607 Class 150 - 300, 2\"-4\" Fire Test, SGS",
     "certificates_10_02": "API 607 Class 600 - 900, 4\"-8\" Fire Test, SGS",
     "certificates_11_01": "CE PED for Ball Valve and Plug Valve",
@@ -388,6 +393,7 @@
     "certificates_15_05": "TAT - FET LIST",
     "certificates_btn_01": "View",
     "certificates_btn_02": "Download",
+    "certificates_btn_03": "----",
 
     "product_01_btn_01": "FEATURES",
     "product_01_btn_02": "MAINTENANCE",
@@ -861,7 +867,7 @@
     "inquiry_text_24": "Submit Inquiry",
     "inquiry_text_25": "* All fields are mandatory",
     "inquiry_text_26": "Project Details ",
-    "inquiry_text_27": "1) End user details and final installation locatio nfor this RFQ ",
+    "inquiry_text_27": "1) End user details and final installation location nfor this RFQ ",
     "inquiry_text_28": "2) Project name and RFQ status details (Buying or Budgetary)",
     "inquiry_text_29": "3) Your company's introduction (Country, Company type: Trading, Engineering, End user etc.)",
     "inquiry_text_30": "4) How did you find out and contact us KCL?",

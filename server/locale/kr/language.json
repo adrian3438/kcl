@@ -373,7 +373,7 @@
     "certificates_08_01": "인도네시아",
     "certificates_08_02": "IKPT",
     "certificates_09_01": "말레이시아",
-    "certificates_09_02": "PETRONAS",
+    "certificates_09_02": "PETRONAS(Malaysian Oil and Gas Company-Malaysia)",
     "certificates_10_01": "API 607 Class 150 - 300, 2\"-4\" 화재 테스트, SGS",
     "certificates_10_02": "API 607 Class 600 - 900, 4\"-8\" 화재 테스트, SGS",
     "certificates_11_01": "CE PED 볼 밸브 및 플러그 밸브",
@@ -400,6 +400,7 @@
     "certificates_15_05": "TAT - FET 목록",
     "certificates_btn_01": "보기",
     "certificates_btn_02": "다운로드",
+    "certificates_btn_03": "----",
 
 
 
