@@ -71,7 +71,7 @@ export default function PostIndicatedGateValve({language}: Props) {
                     <Link href="/file/pigv-rew-160119.pdf" target="_blank">{language?.product_04_btn_02}</Link>
                 </div>
                 <div className="image-area">
-                    <p><Image src="/images/sub/products/post/post-indicated-gate-valve-01.png" alt="" width={746} height={432}/></p>
+                    <p><Image src="/images/sub/products/post/post-indicator-valve-01.jpg" alt="" width={746} height={432}/></p>
                 </div>
             </div>
             <dl className="post-indicated-gate-valve-text">
