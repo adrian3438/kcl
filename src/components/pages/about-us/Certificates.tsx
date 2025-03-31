@@ -244,35 +244,35 @@ export default function Certificates({language}: Props) {
                         <h2>TYPE ACCEPTANCE TEST (TAT) CERTIFICATE LIST</h2>
                         <table className="certificates-table">
                             <tr>
-                                <th>NO</th><th>DATE</th><th>CERTI. NO.</th><th>VALVE TYPE</th><th>CLASS</th><th>SIZE</th><th>DN</th><th>BORE</th><th>BALL TYPE</th><th>BODY MAT'L</th><th>ENDS</th><th>BY</th>
+                                <th>NO</th><th>DATE</th><th>CERTI. NO.</th><th>VALVE TYPE</th><th>CLASS</th><th>SIZE</th><th>DN</th><th>BORE</th><th>BALL TYPE</th><th>BODY MAT&#39;L</th><th>ENDS</th><th>BY</th>
                             </tr>
-                            <tr><td>1</td><td>03-05-18</td><td>20180305-TAT-KCL-001</td><td>BALL VALVE</td><td>600 LB</td><td>4"</td><td>100</td><td>FB</td><td>TRUNNION</td><td>A105</td><td>RF FLANGE</td><td>TUV-SUD</td></tr>
-                            <tr><td>2</td><td>11-01-18</td><td>TSK-IS-2018-EX-92</td><td>DBB BALL VALVE</td><td>600 LB</td><td>2"</td><td>50</td><td>RB</td><td>FLOATING</td><td>A105</td><td>RF FLANGE</td><td>TUV-SUD</td></tr>
-                            <tr><td>3</td><td>11-01-18</td><td>TSK-IS-2018-EX-91</td><td>DBB BALL VALVE</td><td>1500 LB</td><td>2"</td><td>50</td><td>RB</td><td>TRUNNION</td><td>A105</td><td>RF FLANGE</td><td>TUV-SUD</td></tr>
+                            <tr><td>1</td><td>03-05-18</td><td>20180305-TAT-KCL-001</td><td>BALL VALVE</td><td>600 LB</td><td>4&quot;</td><td>100</td><td>FB</td><td>TRUNNION</td><td>A105</td><td>RF FLANGE</td><td>TUV-SUD</td></tr>
+                            <tr><td>2</td><td>11-01-18</td><td>TSK-IS-2018-EX-92</td><td>DBB BALL VALVE</td><td>600 LB</td><td>2&quot;</td><td>50</td><td>RB</td><td>FLOATING</td><td>A105</td><td>RF FLANGE</td><td>TUV-SUD</td></tr>
+                            <tr><td>3</td><td>11-01-18</td><td>TSK-IS-2018-EX-91</td><td>DBB BALL VALVE</td><td>1500 LB</td><td>2&quot;</td><td>50</td><td>RB</td><td>TRUNNION</td><td>A105</td><td>RF FLANGE</td><td>TUV-SUD</td></tr>
 
-                            <tr><td>4</td><td>11-01-18</td><td>TSK-IS-2018-EX-90</td><td>DBB BALL VALVE</td><td>900 LB</td><td>4"</td><td>100</td><td>RB</td><td>TRUNNION</td><td>A105</td><td>RF FLANGE</td><td>TUV-SUD</td></tr>
-                            <tr><td>5</td><td>07-30-19</td><td>TSK-IS-74954837-01</td><td>DBB BALL VALVE</td><td>1500 LB</td><td>1"</td><td>25</td><td>RB</td><td>TRUNNION</td><td>F316</td><td>RF FLANGE</td><td>TUV-SUD</td></tr>
-                            <tr><td>6</td><td>07-30-19</td><td>TSK-IS-74954837-02</td><td>DBB BALL VALVE</td><td>600 LB</td><td>1"</td><td>25</td><td>RB</td><td>FLOATING</td><td>F316</td><td>RF FLANGE</td><td>TUV-SUD</td></tr>
-                            <tr><td>7</td><td>07-30-19</td><td>TSK-IS-74954837-03</td><td>DBB BALL VALVE</td><td>600 LB</td><td>2"</td><td>50</td><td>RB</td><td>FLOATING</td><td>F316</td><td>RF FLANGE</td><td>TUV-SUD</td></tr>
-                            <tr><td>8</td><td>07-30-19</td><td>TSK-IS-74954837-04</td><td>DBB BALL VALVE</td><td>600 LB</td><td>3"</td><td>80</td><td>RB</td><td>FLOATING</td><td>F316</td><td>RF FLANGE</td><td>TUV-SUD</td></tr>
-                            <tr><td>9</td><td>09-07-21</td><td>TSK-IS-74960490-001</td><td>BALL VALVE</td><td>1500 LB</td><td>1"</td><td>25</td><td>RB</td><td>FLOATING</td><td>F316</td><td>RF FLANGE</td><td>TUV-SUD</td></tr>
-                            <tr><td>10</td><td>09-07-21</td><td>TSK-IS-74960490-002</td><td>SWING CHECK VALVE</td><td>1500 LB</td><td>2"</td><td>100</td><td>RB</td><td>BOLTED CAP</td><td>F316</td><td>RF FLANGE</td><td>TUV-SUD</td></tr>
-                            <tr><td>11</td><td>09-07-21</td><td>TSK-IS-74960490-003</td><td>DUAL CHECK VALVE</td><td>900 LB</td><td>6"</td><td>125</td><td>FB</td><td></td><td>CF8M</td><td>RF FLANGE</td><td>TUV-SUD</td></tr>
-                            <tr><td>12</td><td>09-07-21</td><td>TSK-IS-74960490-004</td><td>GATE VALVE</td><td>150 LB</td><td>3/4"</td><td>20</td><td>RB</td><td>BB OS&Y</td><td>LF2</td><td>RF FLANGE</td><td>TUV-SUD</td></tr>
-                            <tr><td>13</td><td>09-07-21</td><td>TSK-IS-74960490-005</td><td>GATE VALVE</td><td>1500 LB</td><td>1"</td><td>25</td><td>RB</td><td>BB OS&Y</td><td>F316</td><td>RF FLANGE</td><td>TUV-SUD</td></tr>
-                            <tr><td>14</td><td>09-07-21</td><td>TSK-IS-74960490-006</td><td>GLOBE VALVE</td><td>150 LB</td><td>1"</td><td>25</td><td>RB</td><td>BB OS&Y</td><td>A105</td><td>RF FLANGE</td><td>TUV-SUD</td></tr>
-                            <tr><td>15</td><td>09-07-21</td><td>TSK-IS-74960490-007</td><td>GATE VALVE</td><td>1500 LB</td><td>2"</td><td>50</td><td>RB</td><td>BB OS&Y</td><td>F316</td><td>RF FLANGE</td><td>TUV-SUD</td></tr>
-                            <tr><td>16</td><td>09-07-21</td><td>TSK-IS-74960490-008</td><td>DBB BALL VALVE</td><td>150 LB</td><td>1/2"</td><td>15</td><td>FB</td><td>FLOATING</td><td>F316</td><td>RF X NPTF</td><td>TUV-SUD</td></tr>
-                            <tr><td>17</td><td>09-07-21</td><td>TSK-IS-74960490-009</td><td>DBB BALL VALVE</td><td>1500 LB</td><td>2"</td><td>50</td><td>FB</td><td>FLOATING</td><td>F316</td><td>RF X NPTF</td><td>TUV-SUD</td></tr>
+                            <tr><td>4</td><td>11-01-18</td><td>TSK-IS-2018-EX-90</td><td>DBB BALL VALVE</td><td>900 LB</td><td>4&quot;</td><td>100</td><td>RB</td><td>TRUNNION</td><td>A105</td><td>RF FLANGE</td><td>TUV-SUD</td></tr>
+                            <tr><td>5</td><td>07-30-19</td><td>TSK-IS-74954837-01</td><td>DBB BALL VALVE</td><td>1500 LB</td><td>1&quot;</td><td>25</td><td>RB</td><td>TRUNNION</td><td>F316</td><td>RF FLANGE</td><td>TUV-SUD</td></tr>
+                            <tr><td>6</td><td>07-30-19</td><td>TSK-IS-74954837-02</td><td>DBB BALL VALVE</td><td>600 LB</td><td>1&quot;</td><td>25</td><td>RB</td><td>FLOATING</td><td>F316</td><td>RF FLANGE</td><td>TUV-SUD</td></tr>
+                            <tr><td>7</td><td>07-30-19</td><td>TSK-IS-74954837-03</td><td>DBB BALL VALVE</td><td>600 LB</td><td>2&quot;</td><td>50</td><td>RB</td><td>FLOATING</td><td>F316</td><td>RF FLANGE</td><td>TUV-SUD</td></tr>
+                            <tr><td>8</td><td>07-30-19</td><td>TSK-IS-74954837-04</td><td>DBB BALL VALVE</td><td>600 LB</td><td>3&quot;</td><td>80</td><td>RB</td><td>FLOATING</td><td>F316</td><td>RF FLANGE</td><td>TUV-SUD</td></tr>
+                            <tr><td>9</td><td>09-07-21</td><td>TSK-IS-74960490-001</td><td>BALL VALVE</td><td>1500 LB</td><td>1&quot;</td><td>25</td><td>RB</td><td>FLOATING</td><td>F316</td><td>RF FLANGE</td><td>TUV-SUD</td></tr>
+                            <tr><td>10</td><td>09-07-21</td><td>TSK-IS-74960490-002</td><td>SWING CHECK VALVE</td><td>1500 LB</td><td>2&quot;</td><td>100</td><td>RB</td><td>BOLTED CAP</td><td>F316</td><td>RF FLANGE</td><td>TUV-SUD</td></tr>
+                            <tr><td>11</td><td>09-07-21</td><td>TSK-IS-74960490-003</td><td>DUAL CHECK VALVE</td><td>900 LB</td><td>6&quot;</td><td>125</td><td>FB</td><td></td><td>CF8M</td><td>RF FLANGE</td><td>TUV-SUD</td></tr>
+                            <tr><td>12</td><td>09-07-21</td><td>TSK-IS-74960490-004</td><td>GATE VALVE</td><td>150 LB</td><td>3/4&quot;</td><td>20</td><td>RB</td><td>BB OS&Y</td><td>LF2</td><td>RF FLANGE</td><td>TUV-SUD</td></tr>
+                            <tr><td>13</td><td>09-07-21</td><td>TSK-IS-74960490-005</td><td>GATE VALVE</td><td>1500 LB</td><td>1&quot;</td><td>25</td><td>RB</td><td>BB OS&Y</td><td>F316</td><td>RF FLANGE</td><td>TUV-SUD</td></tr>
+                            <tr><td>14</td><td>09-07-21</td><td>TSK-IS-74960490-006</td><td>GLOBE VALVE</td><td>150 LB</td><td>1&quot;</td><td>25</td><td>RB</td><td>BB OS&Y</td><td>A105</td><td>RF FLANGE</td><td>TUV-SUD</td></tr>
+                            <tr><td>15</td><td>09-07-21</td><td>TSK-IS-74960490-007</td><td>GATE VALVE</td><td>1500 LB</td><td>2&quot;</td><td>50</td><td>RB</td><td>BB OS&Y</td><td>F316</td><td>RF FLANGE</td><td>TUV-SUD</td></tr>
+                            <tr><td>16</td><td>09-07-21</td><td>TSK-IS-74960490-008</td><td>DBB BALL VALVE</td><td>150 LB</td><td>1/2&quot;</td><td>15</td><td>FB</td><td>FLOATING</td><td>F316</td><td>RF X NPTF</td><td>TUV-SUD</td></tr>
+                            <tr><td>17</td><td>09-07-21</td><td>TSK-IS-74960490-009</td><td>DBB BALL VALVE</td><td>1500 LB</td><td>2&quot;</td><td>50</td><td>FB</td><td>FLOATING</td><td>F316</td><td>RF X NPTF</td><td>TUV-SUD</td></tr>
                         </table>
 
                         <h2>FUGITIVE EMISSION TEST (FET) CERTIFICATE LIST</h2>
                         <table>
                             <tr>
-                                <th>NO</th><th>DATE</th><th>CERTI. NO.</th><th>VALVE TYPE</th><th>CLASS</th><th>SIZE</th><th>DN</th><th>BORE</th><th>BALL TYPE</th><th>BODY MAT'L</th><th>ENDS</th><th>BY</th>
+                                <th>NO</th><th>DATE</th><th>CERTI. NO.</th><th>VALVE TYPE</th><th>CLASS</th><th>SIZE</th><th>DN</th><th>BORE</th><th>BALL TYPE</th><th>BODY MAT&#39;L</th><th>ENDS</th><th>BY</th>
                             </tr>
-                            <tr><td>1</td><td>03-05-18</td><td>20180305-FE-KCL-001</td><td>BALL VALVE</td><td>600 LB</td><td>4"</td><td>100</td><td>FB</td><td>37</td><td>A105</td><td>A</td><td>TUV-SUD</td></tr>
-                            <tr><td>2</td><td>05-28-21</td><td>TSK-IS-74954837-001</td><td>DBB BALL VALVE</td><td>1500 LB</td><td>1/2"</td><td>15</td><td>FB</td><td>12.5</td><td>F316</td><td>A</td><td>TUV-SUD</td></tr>
+                            <tr><td>1</td><td>03-05-18</td><td>20180305-FE-KCL-001</td><td>BALL VALVE</td><td>600 LB</td><td>4&quot;</td><td>100</td><td>FB</td><td>37</td><td>A105</td><td>A</td><td>TUV-SUD</td></tr>
+                            <tr><td>2</td><td>05-28-21</td><td>TSK-IS-74954837-001</td><td>DBB BALL VALVE</td><td>1500 LB</td><td>1/2&quot;</td><td>15</td><td>FB</td><td>12.5</td><td>F316</td><td>A</td><td>TUV-SUD</td></tr>
                         </table>
 
                     </section>
