@@ -15,7 +15,7 @@ export default function PostIndicatedGateValve({language}: Props) {
                     </div>
                     <div className="text-area-detail">
                         <div className="image-area">
-                            <p><Image src="/images/sub/products/post/post-indicated-gate-valve-01.png" alt="" width={746} height={432}/></p>
+                            <p><Image src="/images/sub/products/post/post-indicator-valve-01.jpg" alt="" width={746} height={432}/></p>
                         </div>
                         <ul>
                             <li>
