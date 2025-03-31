@@ -35,6 +35,28 @@ export default function ModelSwiper() {
           <Image src="/images/main/3d_modeling_rev4.jpg" alt="" width={1920} height={944} style={{verticalAlign: 'top'}}/>
         </div>
       </SwiperSlide>
+      
+      <SwiperSlide>
+        <div className="banner-area">
+          <Image src="/images/main/trunnion-ball-valve-300lb-10in.jpg" alt="" width={1920} height={944} style={{verticalAlign: 'top'}}/>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="banner-area">
+          <Image src="/images/main/300LB-24.jpg" alt="" width={1920} height={944} style={{verticalAlign: 'top'}}/>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="banner-area">
+          <Image src="/images/main/DBB-PLUG-VALVE-150LB-RF-DN250A.jpg" alt="" width={1920} height={944} style={{verticalAlign: 'top'}}/>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="banner-area">
+          <Image src="/images/main/sleeved-plug-valve-150lb-rf-2-inch.jpg" alt="" width={1920} height={944} style={{verticalAlign: 'top'}}/>
+        </div>
+      </SwiperSlide>
+      
       <SwiperSlide>
         <div className="banner-area">
           <Image src="/images/main/3d_modeling_rev5.jpg" alt="" width={1920} height={944} style={{verticalAlign: 'top'}}/>
