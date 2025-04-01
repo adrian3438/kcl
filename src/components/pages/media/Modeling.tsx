@@ -98,12 +98,12 @@ const Modeling: FC = () => {
     const [count, setCount] = useState<number>(0);
 
     const ModelingUrl = [
-        "300LB-24",
-        "DBB PLUG VALVE 150LB RF DN250A",  
+        "300LB TRUNNION BALL VALVE 24 inch",
+        "LUBRICATED PLUG VALVE 600LBS RF 20INCH",  
         "LUBRICATED PLUG VALVE 600LBS RTJ 18INCH",
-        "LUBRICATED PLUG VALVE 900LBS RTJ 2INCH",
-        "TRUNNION BALL VALVE 300LB 10INCH",
         "SLEEVED PLUG VALVE 150LB RF 2INCH",
+        "TRUNNION BALL VALVE 300LB 10INCH",
+        "DBB PLUG VALVE 150LB RF DN250A",
         // "DBB PLUG VALVE 150LB RF DN250A",
     ];
 
@@ -171,8 +171,10 @@ const Modeling: FC = () => {
                 <directionalLight position={[-30, 10, -40]} intensity={0.7} />
                 <directionalLight position={[50, -50, 30]} intensity={0.6} />
                 <directionalLight position={[-50, 50, -30]} intensity={0.6} />
-                <OrbitControls enableZoom={true} />
+                <OrbitControls enableZoom={true}/>
+                <group rotation={[Math.PI / 2, 1.55, 0]}>
                 <Model5 url={`/modeling/trunnion-ball-valve-300lb-10in.glb`} />
+                </group>
             </Canvas>
             <Canvas className={`model-canvas ${count === 5 ? "active" : ""}`}>
                 <ambientLight intensity={1} />
