@@ -11,6 +11,7 @@ export default async function ManagementSolution({searchParams : {lang}} : any) 
             <Header language={language} white={true}/>
 
             <div className="sub-banner5" style={{background: "url(/images/sub/company-bg-01.jpg) no-repeat 50% 0", backgroundSize: "100% 100%"}}>
+                <div className="bg"></div>
                 <div className="banner-text">
                     <div>
                         <p className="banner-text-title">{language?.greeting_01}</p>
