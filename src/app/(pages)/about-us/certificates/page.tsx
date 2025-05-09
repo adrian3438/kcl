@@ -8,7 +8,7 @@ export default async function CertificatesPage({searchParams : {lang}} : any) {
     const language = await fetchLanguage(lang);
     return (
         <>
-            <Header language={language}/>
+            <Header language={language} white={true}/>
             <Certificates language={language}/>
             <Footer language={language}/>
         </>

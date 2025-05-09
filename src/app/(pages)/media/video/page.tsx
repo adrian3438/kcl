@@ -9,11 +9,12 @@ export default async function Catalog({searchParams : {lang}} : any) {
     const language = await fetchLanguage(lang);
     return (
         <>
-            <Header language={language}/>
-            <div className="container">
+            <Header language={language} white={true}/>
+            <div className="container media-container">
+                <h2>{language?.header_4_4}</h2>
                 <ul className="location">
                     <li>{language?.header_4}</li>
-                    <li>{language?.header_4_2}</li>
+                    <li>{language?.header_4_4}</li>
                 </ul>
                 <ul className="catalog-list video-list">
 

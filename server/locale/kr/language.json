@@ -27,10 +27,13 @@
 
     "footer_1": "KCL 밸브",
     "footer_2": "(고잔동, ACE 타워) #711, 54, 고잔로, 단원구, 안산시, 경기도, 대한민국",
-    "footer_3": "전화. +82 31 405 7327 | 팩스. +82 31 405 7328",
-    "footer_4": "이메일. jdko@kclvalve.com",
-    "footer_5": "공장: 42-18, 1099번길, 김해대로, 한림면, 김해시, 경상남도, 대한민국",
-    "footer_6": "전화. +82 10 6269 8001",
+    "footer_3_1": "전화",
+    "footer_3_2": "팩스",
+    "footer_3_3": "이메일",
+    "footer_4": "jdko@kclvalve.com",
+    "footer_5": "공장",
+    "footer_5_1": "42-18, 1099번길, 김해대로, 한림면, 김해시, 경상남도, 대한민국",
+    "footer_6": "전화",
     "footer_7": "뉴스레터 가입",
     "footer_8": "이메일",
     "footer_9": "구독하기",
@@ -80,7 +83,7 @@
     "main_01_34": "Countries",
     "main_01_35": "3D CONFIGURATOR",
     "main_01_36": "웹 브라우저에서 KCL 밸브 3D 모델링을 탐색할 수 있습니다",
-    "main_01_37": "컨피규레이터 보기기",
+    "main_01_37": "컨피규레이터 보기",
 
     "solution_01": "설계",
     "solution_02": "KCL이 생산하는 모든 밸브의 핵심에는 세밀하고 혁신적인 설계가 있습니다.",
@@ -112,7 +115,7 @@
     "solution_27": "검사 및 테스트는 품질 보장을 약속하는 핵심 요소입니다. 당사가 제조하는 모든 밸브는 생산 전부터 최종 출하까지 엄격한 검사 과정을 거칩니다. 품질 보증팀은 강도, 성능 및 극한 조건에서의 안전성을 테스트하기 위해 업계 최고의 프로토콜을 따릅니다.",
     "solution_28": "초음파, 방사선, 수압 테스트를 포함한 다양한 비파괴 검사 방법을 활용하여 모든 밸브의 무결성을 보장합니다. 또한, 각 제품은 압력 및 온도 시뮬레이션을 거쳐 어떠한 환경에서도 완벽하게 작동할 수 있도록 합니다. 최첨단 테스트 시설을 통해 가장 까다로운 운영 조건을 재현하며, 이를 통해 밸브가 성능 기대치를 초과하도록 보장합니다.",
     "solution_29": "기술적 테스트를 넘어, 검수팀은 ASME, API, ISO 인증과 같은 국제 표준 준수 여부도 철저히 점검합니다. 품질 관리 전문가들이 재료 선택부터 최종 조립까지 밸브의 모든 세부 사항을 검토하여, 글로벌 산업의 엄격한 요구 사항을 충족하거나 초과하는지 확인합니다. 종합적인 품질 보증 접근 방식을 통해, 우리의 밸브는 오랫동안 신뢰할 수 있는 내구성과 안전성을 제공합니다.",
-    "solution_30": "*검사 범위:",
+    "solution_30": "검사 범위",
     "solution_31": "누출 테스트, 내화 테스트, 극저온 테스트, 압력 테스트, 치수 검사, 제3자 검사",
     "solution_32": "검사 및 테스트",
     "solution_33": "내화 테스트",
@@ -126,7 +129,7 @@
     "solution_41": "또한, 전 세계에 걸친 유통 네트워크를 통해 거의 모든 지역으로 제품을 운송할 수 있습니다.",
     "solution_42": "원격지든 주요 산업 허브든, 당사는 간소화된 통관 절차 및 실시간 운송 추적 시스템을 통해 적시에 제품을 전달달합니다.",
     "solution_43": "물류팀은 항상 고객의 배송 상태를 업데이트하며, 궁금한 점이나 우려 사항을 해결해 드립니다. 우리는 신뢰성과 효율성에 초점을 맞추어 고객이 운영에 집중할 수 있도록 원활한 운운송을 보장합니다.",
-    "solution_44": "*검사 범위:",
+    "solution_44": "검사 범위",
     "solution_45": "출하 전 검사",
     "solution_46": "출하 관리",
 
@@ -332,6 +335,11 @@
     "history_27_04": "대우 조선해양 / BALL 밸브 공급",
     "history_27_05": "일본 / KISHIKAWA IRON -버터플라이 밸브 공급",
 
+    "history_28_02": "루마일라 바스라 복합 화력 발전소 (4단계) 프로젝트 메탈 시트 무브 볼 밸브 10세트 수주 성공",
+    "history_28_03": "인도네시아 전력공사(PT.PLN) 옴빌린 나이프 게이트 밸브 3세트 수출",
+    "history_28_04": "CF8C 소재 메탈 시트 볼 밸브 UAE 수출",
+    "history_28_05": "카타르 철강, 카타르 연료(QAFAC), 카타르 석유(Qatar Petroleum) 등록 완료",
+
 
     "partner_01": "Growing with customers",
     "partner_02": "Many major domestic and overseas customers are the result of KCL’s technology, quality and trust.",
@@ -351,8 +359,9 @@
 
 
     "certificates_01": "인증서",
-    "certificates_02": "AVL (Approved Vendor List)",
+    "certificates_02": "Approved Vendor",
     "certificates_03": "품질",
+    "certificates_04_00": "미국",
     "certificates_04_01": "이란",
     "certificates_04_02": "NIOEC",
     "certificates_04_03": "NIOC - KALA NAFT",
@@ -458,8 +467,8 @@
     "product_01_49": "c. 부품을 다시 조립합니다.",
     "product_01_50": "d. Lever를 돌려 작동 상태를 점검합니다.",
     "product_01_51": "e. 정해진 압력에 따라 테스트합니다.",
-    "product_contact_01": "문의 사항이 있으면, 언제든지 연락 주시기 바랍니다다.",
-    "product_contact_02": "문의하기기",
+    "product_contact_01": "문의 사항이 있으면,\n 언제든지 연락 주시기 바랍니다.",
+    "product_contact_02": "문의하기",
 
 
     "product_02_btn_01": "FEATURES",
@@ -513,25 +522,25 @@
     "product_02_34": "Ball의 각 사이드에 가해지는 압력이 body cavity로부터 막히기 때문에, pressure releasing device는 upstream 과 downstream ",
     "product_02_35": "seat 의 성능을 체크하기 위해 작업자에 의해 사용될 수 있습니다.",
 
-    "product_02_36": "VALVE TYPE :",
+    "product_02_36": "VALVE TYPE",
     "product_02_37": "CASTED BALL VALVE",
     "product_02_38": "FORGED BALL VALVE",
     "product_02_39": "3-WAY BALL VALVE",
     "product_02_40": "EXTENDED BALL VALVE",
     "product_02_41": "CRYOGENIC BALL VALVE ETC.",
-    "product_02_42": "CLASS :",
+    "product_02_42": "CLASS",
     "product_02_43": "150LB ~ 1500LB",
-    "product_02_44": "SIZE:",
+    "product_02_44": "SIZE",
     "product_02_45": "1/2″ ~ 42″",
-    "product_02_46": "MATERIALS :",
+    "product_02_46": "MATERIALS",
     "product_02_47": "WCB, WC6, WC9, CF8, CF8M, CF3, CF3M, etc.",
-    "product_02_48": "OPERATION :",
+    "product_02_48": "OPERATION",
     "product_02_49": "LEVER, HANDWHEEL, GEAR, MOV, POV",
-    "product_02_50": "DESIGN:",
+    "product_02_50": "DESIGN",
     "product_02_51": "ASME B16.34 AND API 6D",
-    "product_02_52": "END CONNECT :",
+    "product_02_52": "END CONNECT",
     "product_02_53": "RF / FF / BW / RTJ",
-    "product_02_54": "TEST STANDARD:",
+    "product_02_54": "TEST STANDARD",
     "product_02_55": "API598",
 
 
@@ -890,6 +899,19 @@
     "inquiry_text_29": "3) 귀사 정보(국가, 기업형태: 무역, 엔지니어링, 최종 사용자 등)",
     "inquiry_text_30": "4) KCL에 대해 어떻게 알고 연락하게 되었습니까?",
     "inquiry_text_31": "해당 영역은 필수 제공 사항입니다.",
+
+    "month_01": "1월",
+    "month_02": "2월",
+    "month_03": "3월",
+    "month_04": "4월",
+    "month_05": "5월",
+    "month_06": "6월",
+    "month_07": "7월",
+    "month_08": "8월",
+    "month_09": "9월",
+    "month_10": "10월",
+    "month_11": "11월",
+    "month_12": "12월",
 
     "language": "kr"
 }

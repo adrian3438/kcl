@@ -15,7 +15,7 @@ export default function CastingValve({language}: Props) {
         <>
             <div>
                 <div className="text-area">
-                    <div className="text-area-btn">
+                    <div className="text-area-btn text-area-btn2">
                         <button className="active">{language?.product_04_btn_01}</button>
                     </div>
                     <div className="text-area-detail">

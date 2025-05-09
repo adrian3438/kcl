@@ -1,22 +1,26 @@
 .location {
   display: flex;
   margin-bottom: 50px;
+
   > li {
     padding-left: 30px;
     margin-left: 20px;
     position: relative;
-    color: #194B7E;
-    font-size: 20px;
+    color: #999;
+    font-size: 16px;
+
     &:after {
       content: ">";
       display: block;
       position: absolute;
-      top: -1px;
+      top: 0;
       left: 0;
     }
+
     &:first-child {
       margin: 0;
       padding: 0;
+
       &:after {
         display: none;
       }
@@ -24,51 +28,64 @@
   }
 }
 
+.certificates-area {
+  padding-top: 219px !important;
+}
+
 .certificates-btns {
   margin-bottom: 46.5px;
-  button {
-    font-size: 50px;
-    border: none;
-    background: none;
-    color: #AAA;
-    padding: 0 0 17px;
-    cursor: pointer;
-    &.active {
-      position: relative;
-      color: #194B7E;
-      &:after {
-        display: block;
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background-color: #1414C8;
+  display: flex;
+  justify-content: space-between;
 
-      }
-    }
-    &:first-child {
-      margin-right: 100px;
+  button {
+    width: 49.5%;
+    padding: 12px 0;
+    border: 1px solid #E0E0E0;
+    background: #fff;
+    color: #666;
+    font-size: 16px;
+    line-height: 130%;
+    cursor: pointer;
+
+    &.active {
+      background: #115BE6;
+      color: #fff;
     }
   }
 }
+
 .certificates {
   > section {
+    &.vendor {
+      margin-bottom: 120px;
+    }
     > dl {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
       gap: 20px 0;
-      margin-bottom: 150px;
+      margin-top: 56px;
+      padding-bottom: 56px;
+      border-bottom: 1px solid #E0E0E0;
       > dt {
         text-align: center;
+
+        img {
+          vertical-align: top;
+        }
+
         > p {
-          margin-top: 8px;
+          padding: 6px 0;
+          background-color: #f5f5f5;
+          color: #666;
+          font-size: 14px;
+          font-family: "Pretendard-Bold", sans-serif;
         }
       }
+
       > dd {
-        width: 77%;
+        width: 88%;
+
         > ul {
           > li {
             display: flex;
@@ -76,57 +93,87 @@
             margin-top: 32px;
             align-items: center;
             font-weight: bold;
-            color: #194B7E;
-            font-size: 30px;
+            color: #333;
+            font-size: 16px;
+            font-family: "Pretendard-Bold", sans-serif;
+
             &:first-child {
               margin-top: 0;
             }
+
             > a {
               display: inline-block;
-              max-width: 229px;
+              max-width: 142px;
               width: 100%;
-              height: 56px;
-              border: 1px solid #ABB2B9;
-              color: #ABB2B9;
-              line-height: 56px;
-              text-indent: 27px;
-              font-size: 26px;
-              font-weight: normal;
-              background: url("/images/sub/certificates/download.png") no-repeat calc(100% - 27.5px) 50%;
-              border-radius: 8px;
-              box-sizing: border-box;
+              padding-right: 18px;
+              height: 50px;
+              border: 1px solid #115BE6;
+              background: #FFF;
+              line-height: 50px;
+              text-indent: 28px;
+              color: #115BE6;
+              background: url("/images/sub/certificates/download.svg") no-repeat calc(100% - 28px) 50%;
+
+
+              &.disable {
+                border-color: #cacaca;
+                color: #cacaca;
+                background: url("/images/sub/certificates/download-disable.svg") no-repeat calc(100% - 28px) 50%;
+              }
+            }
+          }
+        }
+      }
+    }
+    .table-area {
+      margin-bottom: 100px;
+      overflow-x: auto;
+      table {
+        border-collapse: separate;
+        border-spacing: 4px 0;
+        width: 100%;
+        min-width: 800px;
+        th {
+          text-align: center;
+          color: #333;
+          font-size: 16px;
+          padding: 14px 10px;
+          border-top: 1px solid #E0E0E0;
+          background: #F5F5F5;
+          font-family: "Pretendard-Bold", sans-serif;
+        }
+        td {
+          padding: 14px 10px;
+          text-align: center;
+          font-size: 16px;
+          color: #666;
+          font-family: "Pretendard-Regular", sans-serif;
+        }
+        tbody {
+          > tr {
+            &:last-child {
+              td {
+                border-bottom: 1px solid #E0E0E0
+              }
             }
           }
         }
       }
     }
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 20px 0;
-      padding-bottom: 200px;
-  }
-  
-  th, td {
-      border: 1px solid #ddd;
-      padding: 8px;
+    h2 {
+      background-color: #E8EFFD;
+      padding: 20px 10px 15px;
       text-align: center;
-  }
-  
-  th {
-      background-color: #f2f2f2;
-      font-weight: bold;
-  }
-  
-  h2 {
-      background-color: #d2c6a5;
-      padding: 10px;
-      text-align: center;
-  }
-  
+      color: #115BE6;
+      font-size: 16px;
+      line-height: 130%;
+      margin-bottom: 16px;
+    }
+
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .certificates {
     > section {
@@ -138,36 +185,13 @@
     }
   }
 }
-@media screen and (max-width: 767px) {
-  .location {
-    display: none;
-  }
-  .certificates-btns{
-    button {
 
-      font-size: 26px;
-      &:first-child {
-        margin-right: 10px;
-      }
-    }
-  }
+@media screen and (max-width: 767px) {
   .certificates {
     > section {
       > dl {
         > dd {
           width: 100%;
-          > ul {
-            > li {
-              display: block;
-              gap: 15px 0;
-              font-size: 25px;
-              > a {
-                display: block;
-                font-size: 23px;
-                margin-top: 15px;
-              }
-            }
-          }
         }
       }
     }

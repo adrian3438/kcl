@@ -1,54 +1,91 @@
-.inquiry {
-  padding: 89px 0 200px;
+.contact-container {
+  padding-top: 219px !important;
   .content-header {
     h2 {
-      font-size: 45px;
+      position: relative;
+      padding-top: 24px;
+      text-align: center;
       font-weight: bold;
-      color: #0F3553;
+      border-radius: 16px;
+      font-size: 44px;
+      color: #110439;
       margin-bottom: 20px;
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 45px;
+        height: 4px;
+        content: "";
+        background-color: #115BE6;
+      }
+    }
+    h3 {
+      text-align: center;
+      color: #666;
+      font-size: 18px;
+      line-height: 100%;
+      font-family: "Pretendard-Medium", sans-serif;
+      margin-bottom: 12px;
     }
     p {
-      font-size: 22px;
-      color: #FC0A0A
+      color: #115BE6;
+      text-align: center;
+      font-family: "Pretendard-Medium", sans-serif;
+      font-size: 14px;
+      line-height: 100%;
     }
   }
+}
 
+.inquiry {
+  padding: 88px 0 200px;
   form {
-    margin-top: 75px;
     fieldset {
       legend {
-        color: #000;
-        font-size: 34px;
-        font-weight: 600;
+        color: #111;
+        font-size: 18px;
         margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        gap: 0 8px;
+        font-family: "Pretendard-Bold", sans-serif;
+        border-bottom: 1px solid #E0E0E0;
+        width: 100%;
+        padding-bottom: 24px;
         span {
           display: inline-block;
-          margin-right: 10px;
-          width: 51px;
-          height: 51px;
-          border-radius: 9px;
           text-align: center;
-          background-color: #0971D9;
+          line-height: 24px;
+          width: 24px;
+          height: 24px;
+          border-radius: 100px;
+          border: 1px solid #115BE6;
+          background: #115BE6;
           color: #fff;
-          font-size: 22px;
-          line-height: 51px;
-          vertical-align: middle;
+          font-size: 16px;
         }
         i {
-          font-size: 22px;
-          color: #FC0A0A;
+          font-size: 18px;
+          color: #115BE6;
         }
       }
       &.customer-info {
         margin-bottom: 125px;
         > div {
-          max-width: 1418px;
-          margin: 0 auto;
           display: flex;
           gap: 30px 3.5%;
           flex-wrap: wrap;
           > div {
             width: 31%;
+            > p {
+              margin-bottom: 16px;
+              color: #333;
+              font-size: 16px;
+              line-height: 100%;
+              font-family: "Pretendard-Bold", sans-serif;
+            }
             label {
               color: #555;
               display: block;
@@ -57,17 +94,20 @@
               margin-bottom: 20px;
             }
             input {
-              font-size: 20px;
-              color: #555;
+              font-size: 14px;
+              color: #333;
               font-weight: 400;
               outline: none;
-              border: 1px solid #707070;
-              border-radius: 11px;
-              padding: 27px 20px;
+              padding: 14px;
               width: 100%;
               box-sizing: border-box;
+              border: 1px solid #E0E0E0;
+              background: #F5F5F5;
+              &:focus {
+                background-color: #fff;
+              }
               ::placeholder {
-                font-size: 18px;
+                font-size: 14px;
                 color: #ddd;
               }
             }
@@ -75,10 +115,8 @@
         }
       }
       &.service-info {
-        margin-bottom: 125px;
+        margin-bottom: 96px;
         > div {
-          max-width: 1418px;
-          margin: 0 auto;
           display: flex;
           gap: 30px 2%;
           flex-wrap: wrap;
@@ -86,14 +124,13 @@
             width: 30.9%;
             span {
               text-align: center;
-              color: #070707;
-              font-size: 20px;
+              color: #666;
+              font-size: 16px;
               font-weight: 600;
               display: block;
-              border: 1px solid #707070;
-              border-radius: 11px;
+              border: 1px solid #E0E0E0;
               box-sizing: border-box;
-              padding: 27px 0;
+              padding: 16px 0;
               cursor: pointer;
             }
             input {
@@ -101,54 +138,84 @@
               margin-right: 10px;
               vertical-align: top;
               &:checked + span {
-                background-color: #0971D9;
-                color: #fff;
+                border-color: #115BE6;
+                color: #115BE6;
               }
             }
           }
         }
       }
       &.inquiry-detail {
-        margin-bottom: 125px;
+        margin-bottom: 64px;
         .text-box {
+          > p {
+            margin-bottom: 16px;
+            color: #333;
+            font-size: 16px;
+            line-height: 100%;
+            font-family: "Pretendard-Bold", sans-serif;
+          }
           input {
-            font-size: 20px;
-            font-weight: 500;
-            color: #555;
-            line-height: 34px;
-            margin-bottom: 15px;
+            font-size: 14px;
+            color: #333;
+            font-weight: 400;
             outline: none;
-            padding: 0 20px;
-            box-sizing: border-box;
+            padding: 14px;
             width: 100%;
-            border: 1px solid #ddd;
-            height: 74px;
-            border-radius: 5px;
+            box-sizing: border-box;
+            border: 1px solid #E0E0E0;
+            background: #F5F5F5;
+            margin-bottom: 32px;
+            &:focus {
+              background-color: #fff;
+            }
             ::placeholder {
-              font-size: 20px;
-              line-height: 34px;
-              font-weight: 500;
-              color: #999
+              font-size: 14px;
+              color: #ddd;
             }
           }
           textarea {
-            font-size: 20px;
-            color: #555;
-            line-height: 34px;
+            font-size: 14px;
+            color: #333;
+            font-weight: 400;
             outline: none;
-            padding: 20px;
-            box-sizing: border-box;
+            padding: 14px;
             width: 100%;
-            border: 1px solid #ddd;
-            height: 300px;
-            border-radius: 5px;
+            height: 200px;
+            box-sizing: border-box;
+            border: 1px solid #E0E0E0;
+            background: #F5F5F5;
+            margin-bottom: 32px;
+            &:focus {
+              background-color: #fff;
+            }
             ::placeholder {
-              font-size: 20px;
-              color: #999
+              font-size: 14px;
+              color: #ddd;
             }
           }
         }
         .text-box-2{
+          input {
+            font-size: 14px;
+            color: #333;
+            font-weight: 400;
+            outline: none;
+            padding: 14px;
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid #E0E0E0;
+            background: #F5F5F5;
+            margin-bottom: 32px;
+            &:focus {
+              background-color: #fff;
+            }
+            ::placeholder {
+              font-size: 14px;
+              color: #ddd;
+            }
+          }
+
           textarea {
             margin-bottom: 40px;
             font-size: 20px;
@@ -167,19 +234,18 @@
             }
           }
           > p {
-            color: #060606;
-            padding: 4px 0 25px 33px;
-           
+            margin-bottom: 16px;
+            color: #333;
+            font-size: 16px;
+            line-height: 100%;
+            font-family: "Pretendard-Bold", sans-serif;
           }
         }
+      }
+      &.inquiry-file {
+        margin-bottom: 98px;
         .file-box {
-          max-width: 1418px;
-          margin: 0 auto;
           position: relative;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          flex-wrap: wrap;
           > div {
             input[type="file"] {
               position: absolute;
@@ -192,13 +258,12 @@
             }
             label {
               display: inline-block;
-              border: 1px solid #707070;
-              color: #060606;
-              font-size: 20px;
-              padding: 25px 46px 25px 112px;
-              border-radius: 11px;
-              font-weight: 600;
-              background: url("/images/sub/contact/upload.png") no-repeat 39.5px 50%;
+              border: 1px solid #115BE6;
+              color: #115BE6;
+              font-size: 16px;
+              padding: 17px 28px 17px 58px;
+              font-family: "Pretendard-Bold", sans-serif;
+              background: url("/images/sub/contact/upload.png") no-repeat 28px 50%;
             }
             input[type="text"] {
               margin-left: 20px;
@@ -208,23 +273,27 @@
             }
           }
           > p {
-            color: #060606;
-            padding: 4px 0 4px 33px;
+            margin-top: 12px;
+            color: #333;
+            padding: 4px 0 4px 26px;
             background: url("/images/sub/contact/warning.png") no-repeat 0 50%;
+            font-size: 14px;
+            font-family: "Pretendard-Medium", sans-serif;
+            background-size: 20px 20px;
           }
         }
       }
       &.agree {
         margin-bottom: 130px;
-        padding-left: 40px;
+        padding-left: 32px;
         position: relative;
         label {
-          font-size: 20px;
-          line-height: 28px;
+          font-size: 16px;
           font-weight: 600;
-          color: #444;
+          color: #333;
           display: block;
-          margin-bottom: 20px;
+          margin-bottom: 16px;
+          line-height: 100%;
           input {
             position: absolute;
             top: 0;
@@ -233,7 +302,9 @@
         }
         div {
           color: #666;
-          line-height: 30px;
+          font-size: 14px;
+          font-family: "Pretendard-Medium", sans-serif;
+          line-height: 22.4px;
         }
       }
     }

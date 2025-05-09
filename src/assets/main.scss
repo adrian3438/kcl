@@ -2,26 +2,13 @@ main {
   /* 메인 배너 */
   .section-01 {
     position: relative;
-    > section {
-      .swiper-button-next {
-        color: #fff;
-      }
-      .swiper-button-prev {
-        color: #fff;
-      }
-    }
-    .banner-area {
-      img {
-        transform: scale(1);
-      }
-    }
     .swiper-slide-active {
       img {
         transform: scale(1.3);
         transition: transform 6s;
       }
     }
-    .banner-area {
+    > .banner-area {
       position: relative;
       .banner-text {
         position: absolute;
@@ -31,42 +18,87 @@ main {
         width: 100%;
         z-index: 9;
         > div {
-          max-width: 1600px;
+          max-width: 1520px;
           margin: 0 auto;
           > div {
-            max-width: 1275px;
-            padding: 39.5px 59.5px;
+            max-width: 463px;
             box-sizing: border-box;
-            background-color: rgba(3, 3, 3, 0.1);
-            border-radius: 15px;
             > p {
               color: #fff;
-              font-size: 65px;
-              //font-weight: bold;
-              font-family: 'Pretendard-ExtraBold', sans-serif;
-              line-height: 78px;
-
+              font-size: 60px;
+              font-family: 'Montserrat-SemiBold', 'Pretendard-ExtraBold', sans-serif;
+              line-height: 72px;
             }
             > div {
               margin-top: 10px;
               a {
-                box-shadow: 0 4px 7.8px 1px rgba(0, 0, 0, 0.45);
+                box-sizing: border-box;
                 display: inline-block;
-                width: 203px;
-                height: 63px;
-                line-height: 63px;
-                text-align: center;
+                justify-content: space-between;
+                padding: 12px 28px;
+                background-color: #115BE6;
+                font-size: 18px;
+                font-family: "Montserrat-SemiBold", "Pretendard-Bold", sans-serif;
                 color: #fff;
-                font-size: 20px;
-                border-radius: 30px;
-                font-weight: 600;
-                &.btn-01 {
-                  background-color: #017FFF;
-                  margin-right: 26px;
-
+                line-height: normal;
+                img {
+                  vertical-align: middle;
                 }
-                &.btn-02 {
-                  background-color: #01BAFF;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    > section {
+      background-color: #fff;
+      margin: 100px auto 100px;
+      position: relative;
+      max-width: 1728px;
+      .swiper-button-next {
+        color: #666;
+      }
+      .swiper-button-prev {
+        color: #666;
+      }
+      .swiper-slide {
+        overflow: hidden;
+        .swiper-area {
+          margin: 0 84px 50px;
+          overflow: hidden;
+        }
+      }
+      .swiper-text {
+        position: absolute;
+        top: 0;
+        left: 84px;
+        padding: 56px;
+        max-width: 464px;
+        width: 100%;
+        > div {
+          > div {
+            > p {
+              color: #fff;
+              font-family: "Montserrat-Regular", "Pretendard-Bold", sans-serif;
+              font-size: 38px;
+              line-height: 120%;
+              font-weight: normal;
+              margin-bottom: 24px;
+            }
+            > div {
+              > a {
+                box-sizing: border-box;
+                display: inline-block;
+                justify-content: space-between;
+                padding: 12px 28px;
+                background-color: #115BE6;
+                font-size: 18px;
+                font-family: "Montserrat-SemiBold", "Pretendard-Bold", sans-serif;
+                color: #fff;
+                line-height: normal;
+                img {
+                  vertical-align: middle;
                 }
               }
             }
@@ -88,23 +120,15 @@ main {
 
     /* 스와이퍼 커스터마이징 */
     .swiper-pagination {
-      text-align: left;
-      padding-left: 100px;
-      bottom: 30px;
       .swiper-pagination-bullet-active {
-        background-color: #C9C8C8;
+        background-color: #115be6;
+
       }
       .swiper-pagination-bullet {
-        width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 14px));
-        height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 14px));
+        border-radius: 0;
+        width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 30px));
+        height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 5px));
       }
-    }
-
-    /* 스와이퍼 이미지 속성 정리 */
-    img {
-      width: 100%;
-      height: auto;
-      vertical-align: top
     }
   }
 
@@ -170,6 +194,52 @@ main {
     }
   }
 
+  .section-04 {
+    position: relative;
+    > img {
+      width: 100%;
+      height: auto;
+      vertical-align: top;
+    }
+    .section-text {
+      z-index: 9;
+      position: absolute;
+      top: 140px;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 1520px;
+      width: 100%;
+      .section-title {
+        font-family: "Montserrat-SemiBold", "Pretendard-Bold", sans-serif;
+        font-size: 40px;
+        color: #fff;
+        line-height: 60px;
+        margin-bottom: 2px;
+      }
+      .section-text-01 {
+        font-size: 24px;
+        line-height: 36px;
+        opacity: 0.8;
+        color: #fff;
+        margin-bottom: 36px;
+      }
+      a {
+        display: inline-block;
+        box-sizing: border-box;
+        justify-content: space-between;
+        padding: 12px 28px;
+        background-color: #115BE6;
+        font-size: 18px;
+        font-family: "Montserrat-SemiBold", "Pretendard-Bold", sans-serif;
+        color: #fff;
+        line-height: normal;
+        img {
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+
   .section-06 {
     position: relative;
     > img {
@@ -179,95 +249,103 @@ main {
     }
     > div {
       position: absolute;
-      top: 50%;
+      top: 0;
       left: 0;
       width: 100%;
-      transform: translateY(-50%);
-      padding: 0 20px;
+      height: 100%;
       box-sizing: border-box;
       > div {
-        max-width: 1273px;
-        margin: 0 auto;
         display: flex;
+        height: 100%;
         justify-content: space-between;
-        gap: 20px 44px;
         > div {
-          background-color: rgba(44, 20, 199, 0.4);
+          &:nth-child(1) {
+            background: rgba(17, 4, 57, 0.60);
+            > p {
+              background: url("/images/main/section06-bg-01.svg") no-repeat 50% 0;
+            }
+          }
+          &:nth-child(2) {
+            background: rgba(0, 46, 134, 0.60);
+            > p {
+              background: url("/images/main/section06-bg-02.svg") no-repeat 50% 0;
+            }
+          }
+          &:nth-child(3) {
+            background: rgba(0, 10, 48, 0.60);
+            > p {
+              background: url("/images/main/section06-bg-03.svg") no-repeat 50% 0;
+            }
+          }
           color: #fff;
-          font-size: 65px;
-          font-weight: bold;
+          font-size: 28px;
           line-height: 78px;
           text-align: center;
-          border-radius: 15px;
-          padding: 80px 0;
-          flex-basis: 395px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex: 1;
+          flex-wrap: wrap;
+          > p {
+            padding-top: 74px;
+            width: 100%;
+            line-height: 28px;
+            span {
+              display: block;
+              font-family: "Montserrat-SemiBold", "Pretendard-Bold", sans-serif;
+              font-size: 48px;
+              line-height: 48px;
+              margin-bottom: 10px;
+            }
+          }
         }
       }
     }
   }
-
-  .main-section {
-    position: relative;
-    img {
-      width: 100%;
-      height: auto;
-      vertical-align: top
-    }
-    .section-text {
-      z-index: 9;
-      position: absolute;
-      top: 50%;
-      left: 0;
-      transform: translateY(-50%);
-      width: calc(100% - 120px);
-      margin: 0 60px;
-      > div {
-        max-width: 1600px;
-        margin: 0 auto;
-        > div {
-          max-width: 1275px;
-          padding: 39.5px 59.5px 39.5px 59.5px;
-          box-sizing: border-box;
-          background-color: rgba(0, 0, 0, 0.4);
-          border-radius: 15px;
-          > p {
-            color: #fff;
-            font-size: 65px;
-            font-family: 'Pretendard-Bold', sans-serif;
-            &.section-title {
-              line-height: 78px;
-            }
-            &.section-text-01 {
-              font-size: 30px;
-              line-height: 36px;
-            }
-            &.section-text-02 {
-              font-size: 30px;
-              color: #F6F600;
-              line-height: 36px;
-            }
+  .section-07 {
+    max-width: 1521px;
+    margin: 0 auto;
+    padding: 120px 20px;
+    > ul {
+      display: flex;
+      margin: 0 auto;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 32.5px 0;
+      > li {
+        max-width: 491px;
+        width: 33%;
+        > img {
+          width: 100%;
+          height: auto;
+          vertical-align: top;
+        }
+        &.text-section {
+          .section-title {
+            color: #333;
+            font-family: "Montserrat-SemiBold", "Pretendard-Bold", sans-serif;
+            font-size: 40px;
+            line-height: 100%;
+            margin-bottom: 12px;
+          }
+          .section-text-01 {
+            color: #666;
+            font-size: 18px;
+            line-height: normal;
+            font-family: "Pretendard-SemiBold", sans-serif;
+            margin-bottom: 40px;
           }
           > div {
-            margin-top: 20px;
-            a {
-              display: inline-block;
-              box-shadow: 0 4px 7.8px 1px rgba(0, 0, 0, 0.45);
-              height: 63px;
-              padding: 0 30px;
-              line-height: 63px;
-              text-align: center;
-              color: #fff;
-              font-size: 20px;
-              border-radius: 30px;
-              font-weight: 600;
-              &.btn-01 {
-                background-color: #017FFF;
-                margin-right: 26px;
+            background-color: #115BE6;
+            display: inline-flex;
+            padding: 12px 38px;
 
-              }
-              &.btn-02 {
-                background-color: #01BAFF;
-              }
+            font-size: 18px;
+            font-family: "Pretendard-Bold", sans-serif;
+            align-items: center;
+            gap: 0 5px;
+            > a {
+              color: #fff;
             }
           }
         }
@@ -285,6 +363,15 @@ main {
             font-size: 40px;
             line-height: 40px;
           }
+        }
+      }
+    }
+
+    .section-07 {
+      > ul {
+        > li {
+          max-width: none;
+          width: 49%;
         }
       }
     }
@@ -480,6 +567,15 @@ main {
         }
       }
     }
+
+    .section-07 {
+      > ul {
+        > li {
+          max-width: none;
+          width: 100%;
+        }
+      }
+    }
   }
 }
 
@@ -520,7 +616,8 @@ main {
     .main-video-06 {
       width: 100%;
     }
-  }}
+  }
+}
 
   @media screen and (max-width: 767px) {
     main {

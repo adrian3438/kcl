@@ -22,6 +22,7 @@ export default function ProjectList({language, projectGroupList}: Props) {
   //프로젝트 리스트
   const [projectList, setProjectList] = useState([]);
   const [totalCnt, setTotalCnt] = useState(0);
+
   async function getProjectList() {
     try {
       const response = await api.get(`/admin/projects/getProjectList.php?page=${page}&size=${size}&keyword=&groupId=${groupId}&sortColumn=createDate&sortOrder=asc`);
@@ -35,24 +36,24 @@ export default function ProjectList({language, projectGroupList}: Props) {
       alert('Server Error');
     }
   }
+
   useEffect(() => {
     getProjectList();
   }, [page, groupId]);
 
   const path = usePathname()
   const query = useSearchParams()
+
   function setPage(groupId: number) {
-    const newParams : number | any = new URLSearchParams(query.toString())
+    const newParams: number | any = new URLSearchParams(query.toString())
     newParams.set('groupId', groupId);
     newParams.set('page', 1);
     router.push(`${path}?${newParams?.toString()}`)
   }
 
   return (
-    <div className="container">
-      <ul className="location">
-        <li>{language?.projects_01}</li>
-      </ul>
+    <div className="container projects-container">
+      <h2>{language?.projects_01}</h2>
       <div className="project-category">
         <div>
           <button className={Number(groupId) === 0 ? 'active' : ''} onClick={() => setPage(0)}>All</button>
@@ -74,29 +75,30 @@ export default function ProjectList({language, projectGroupList}: Props) {
             <>
               {item?.activeStatus === 'Y' && (
                 <li key={index}>
-                  <Link href={`/projects/${item?.ID}`}>
-                    <div className="image-area">
-                      <Image src={item?.thumbnailFile} alt="sample" width={306} height={229}/>
-                    </div>
-                    <div className="detail">
+                  <div className="image-area">
+                    <Image src={item?.thumbnailFile} alt="sample" width={306} height={229}/>
+                  </div>
+                  <div className="detail">
+                    <div className="project-title-area">
                       <p className="project-title">{item?.projectName}</p>
-                      <div className="project-detail" style={{whiteSpace: 'pre-line'}}>
+                      <div className="project-detail">
                         {item?.projectDescription}
                       </div>
                     </div>
                     <div className="project-type">
-                      <div>
-                        <Image
-                          src={`/images/sub/projects/${item?.groupName}.png`}
-                          alt={item?.groupName || "project image"}
-                          width={48}
-                          height={48}
-                          onError={(e) => (e.currentTarget.src = "/images/sub/projects/default.png")}
-                        />
-                        <p>{item?.groupName}</p>
-                      </div>
+                      <Image
+                        src={`/images/sub/projects/${item?.groupName}.png`}
+                        alt={item?.groupName || "project image"}
+                        width={36}
+                        height={36}
+                        onError={(e) => (e.currentTarget.src = "/images/sub/projects/default.png")}
+                      />
+                      <p>{item?.groupName}</p>
                     </div>
-                  </Link>
+                  </div>
+                  <div className="view-more">
+                    <Link href={`/projects/${item?.ID}`}>{language?.language === 'kr' ? '자세히 보기' : 'View more'}<Image src="/images/sub/projects/right-arrow-color.svg" alt="" width={24} height={24}/></Link>
+                  </div>
                 </li>
               )}
             </>

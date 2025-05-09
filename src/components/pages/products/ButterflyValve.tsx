@@ -11,7 +11,7 @@ export default function ButterflyValve({language}: Props) {
         <>
             <div>
                 <div className="text-area">
-                    <div className="text-area-btn">
+                    <div className="text-area-btn text-area-btn2">
                         <button className="active">{language?.product_05_btn_01}</button>
                     </div>
                     <div className="text-area-detail">
@@ -88,7 +88,7 @@ export default function ButterflyValve({language}: Props) {
                     <Link href="/file/butterflyall-141106.pdf" target="_blank">{language?.product_05_btn_02}</Link>
                 </div>
                 <div className="image-area">
-                    <p><Image src="/images/sub/products/butterfly/butterfly-valve-01.png" alt="" width={872} height={651}/></p>
+                    <p><Image src="/images/sub/products/butterfly/butterfly-valve-01.png" alt="" width={500} height={373}/></p>
                 </div>
             </div>
         </>

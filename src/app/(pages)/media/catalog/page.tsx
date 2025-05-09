@@ -9,14 +9,15 @@ export default async function Catalog({searchParams : {lang}} : any) {
     const language = await fetchLanguage(lang);
     return (
         <>
-            <Header language={language}/>
-            <div className="container">
+            <Header language={language} white={true}/>
+            <div className="container media-container">
+                <h2>{language?.header_4_2}</h2>
                 <ul className="location">
                     <li>{language?.header_4}</li>
                     <li>{language?.header_4_2}</li>
                 </ul>
                 <ul className="catalog-list">
-                 
+
                     <li>
                         <Link href="/catalog/kcl-company-product-guide-new/index.html" target="_blank">
                             <Image src="/images/sub/catalog/catalog-list-02.jpg" alt="" width={250} height={333}/>

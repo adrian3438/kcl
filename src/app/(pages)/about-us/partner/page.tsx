@@ -11,12 +11,12 @@ export default async function Certificates({searchParams: {lang}}: any) {
   return (
     <>
       <Header language={language}/>
-      <div className="sub-banner" style={{background: "url(/images/sub/sub-banner-bg-03.jpg) no-repeat 37% 0", backgroundSize: "auto 100%"}}>
+      <div className="sub-banner" style={{background: "url(/images/sub/sub-banner-bg-03.jpg) no-repeat 37% 0", backgroundSize: "cover"}}>
         <div className="banner-text">
           <div>
             <p className="banner-text-title">{language?.partner_01}</p>
             <p className="banner-text-01">{language?.partner_02}</p>
-            <p className="banner-text-02">{language?.partner_03}</p>
+            <p className="banner-text-01">{language?.partner_03}</p>
           </div>
         </div>
       </div>

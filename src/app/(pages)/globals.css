@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1;
-  font-family: var(--font-pretendard-sans), sans-serif;
+  font-family: "Montserrat-Regular", "Pretendard-Regular", sans-serif;
   overflow-x: hidden;
   font-size: 20px;
   word-break: keep-all;
@@ -39,13 +39,13 @@ body > canvas {
   display: none !important;
 }
 button {
-  font-family: var(--font-pretendard-sans), sans-serif;
+  font-family: "Montserrat-Regular", "Pretendard-Regular", sans-serif;
 }
 input {
-  font-family: var(--font-pretendard-sans), sans-serif;
+  font-family: "Montserrat-Regular", "Pretendard-Regular", sans-serif;
 }
 textarea {
-  font-family: var(--font-pretendard-sans), sans-serif;
+  font-family: "Montserrat-Regular", "Pretendard-Regular", sans-serif;
 }
 ol, ul {
   list-style: none;

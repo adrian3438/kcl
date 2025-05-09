@@ -24,29 +24,11 @@ export default async function CastingValvePage({searchParams: {lang}}: any) {
     return (
         <>
             <Header language={language}/>
-            <div className="sub-banner4" style={{background: "url(/images/sub/products/product-bg-04.jpg) no-repeat 50% 0", backgroundSize: "100% auto"}}>
+            <div className="sub-banner4" style={{background: "url(/images/sub/products/product-bg-04.jpg) no-repeat 50% 0", backgroundSize: "cover"}}>
                 <div className="banner-text">
                     <div>
                         <p className="banner-text-title">{language?.product_04_01}</p>
                         <p className="banner-text-01">{language?.product_04_02}</p>
-                        <div>
-                            <div>
-                                <p>{language?.product_04_04}</p>
-                                <p>{language?.product_04_05}</p>
-                            </div>
-                            <div>
-                                <p>{language?.product_04_06}</p>
-                                <p>{language?.product_04_07}</p>
-                            </div>
-                            <div>
-                                <p>{language?.product_04_08}</p>
-                                <p>{language?.product_04_09}</p>
-                            </div>
-                            <div>
-                                <p>{language?.product_04_10}</p>
-                                <p>{language?.product_04_11}</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -59,9 +41,9 @@ export default async function CastingValvePage({searchParams: {lang}}: any) {
                 <div className="ourClients">
                 <h2>{language?.product_08_63}</h2>
                 <ProductSwiper productImageList={productImageList}/>
-                </div> 
+                </div>
 
-                
+
 
                 <ProductContact language={language}/>
             </div>

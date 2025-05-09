@@ -146,46 +146,52 @@ export default function Contact({language}: Props) {
     }
 
     return (
-        <div className="container">
-            <div className="inquiry">
-                <div className="content-header">
-                    <h2>{language.inquiry_text_01}</h2>
-                    <p>{language.inquiry_text_25}</p>
-                </div>
-                <form method="post">
-                    <fieldset className="customer-info">
-                        <legend><span>1</span> {language.inquiry_text_02} <i>*</i></legend>
-                        <div>
-                            <div>
-                                <input type="text" id="customerInfo01" placeholder={language.inquiry_text_03} name="company" onChange={handleChange}/>
-                            </div>
-                            <div>
-                                <input type="text" id="customerInfo02" placeholder={language.inquiry_text_04} name="name" onChange={handleChange}/>
-                            </div>
-                            <div>
-                                <input type="text" id="customerInfo03" placeholder={language.inquiry_text_05} name="position" onChange={handleChange}/>
-                            </div>
-                            <div>
-                                <input type="text" id="customerInfo05" placeholder={language.inquiry_text_06} name="email" onChange={handleChange}/>
-                            </div>
-                            <div>
-                                <input type="text" id="customerInfo04" placeholder={language.inquiry_text_07} name="phone" onChange={handleChange}/>
-                            </div>
-                        </div>
-                    </fieldset>
+      <div className="container contact-container">
+          <div className="content-header">
+              <h2>{language.language === 'kr' ? '문의하기' : 'Contact'}</h2>
+              <h3>{language.inquiry_text_01}</h3>
+              <p>{language.inquiry_text_25}</p>
+          </div>
+          <div className="inquiry">
+              <form method="post">
+                  <fieldset className="customer-info">
+                      <legend><span>1</span> {language.inquiry_text_02} <i>*</i></legend>
+                      <div>
+                          <div>
+                              <p>{language.inquiry_text_03}</p>
+                              <input type="text" id="customerInfo01" placeholder={language.inquiry_text_03} name="company" onChange={handleChange}/>
+                          </div>
+                          <div>
+                              <p>{language.inquiry_text_04}</p>
+                              <input type="text" id="customerInfo02" placeholder={language.inquiry_text_04} name="name" onChange={handleChange}/>
+                          </div>
+                          <div>
+                              <p>{language.inquiry_text_05}</p>
+                              <input type="text" id="customerInfo03" placeholder={language.inquiry_text_05} name="position" onChange={handleChange}/>
+                          </div>
+                          <div>
+                              <p>{language.inquiry_text_06}</p>
+                              <input type="text" id="customerInfo05" placeholder={language.inquiry_text_06} name="email" onChange={handleChange}/>
+                          </div>
+                          <div>
+                              <p>{language.inquiry_text_07}</p>
+                              <input type="text" id="customerInfo04" placeholder={language.inquiry_text_07} name="phone" onChange={handleChange}/>
+                          </div>
+                      </div>
+                  </fieldset>
 
-                    <fieldset className="service-info">
-                        <legend><span>2</span> {language.inquiry_text_08} <i>*</i></legend>
-                        <div>
-                            <label>
-                                <input type="radio" id="serviceInfo01" name="type" value="P" onChange={handleChange}/>
-                                <span>{language.inquiry_text_09}</span>
-                            </label>
-                            <label>
-                                <input type="radio" id="serviceInfo02" name="type" value="T" onChange={handleChange}/>
-                                <span>{language.inquiry_text_10}</span>
-                            </label>
-                            {/*<label>
+                  <fieldset className="service-info">
+                      <legend><span>2</span> {language.inquiry_text_08} <i>*</i></legend>
+                      <div>
+                          <label>
+                              <input type="radio" id="serviceInfo01" name="type" value="P" onChange={handleChange}/>
+                              <span>{language.inquiry_text_09}</span>
+                          </label>
+                          <label>
+                              <input type="radio" id="serviceInfo02" name="type" value="T" onChange={handleChange}/>
+                              <span>{language.inquiry_text_10}</span>
+                          </label>
+                          {/*<label>
                                 <input type="radio" id="serviceInfo03" name="type" value="" onChange={handleChange}/>
                                 <span>{language.inquiry_text_11}</span>
                             </label>
@@ -193,66 +199,68 @@ export default function Contact({language}: Props) {
                                 <input type="radio" id="serviceInfo04" name="type" value="" onChange={handleChange}/>
                                 <span>{language.inquiry_text_12}</span>
                             </label>*/}
-                            <label>
-                                <input type="radio" id="serviceInfo05" name="type" value="O" onChange={handleChange}/>
-                                <span>{language.inquiry_text_13}</span>
-                            </label>
-                        </div>
-                    </fieldset>
+                          <label>
+                              <input type="radio" id="serviceInfo05" name="type" value="O" onChange={handleChange}/>
+                              <span>{language.inquiry_text_13}</span>
+                          </label>
+                      </div>
+                  </fieldset>
 
-                    <fieldset className="inquiry-detail">
-                        <legend><span>3</span> {language.inquiry_text_14} <i>*</i></legend>
-                        <div className="text-box">
-                            <input type="text" id="inquiryDetailTitle" placeholder={language.inquiry_text_15} name="title" onChange={handleChange}/>
-                            <textarea id="inquiryDetailText" placeholder={language.inquiry_text_16} name="message" onChange={handleChange}></textarea>
-                        </div>
-                    </fieldset>
-
-
-                    <fieldset className="inquiry-detail">
-                        <legend><span>4</span> {language.inquiry_text_26} <i>*</i></legend>
-                        <div className="text-box-2">
-                            <p>{language.inquiry_text_27}</p>
-                            <textarea id="inquiryDetailText" placeholder={language.inquiry_text_31} name="inquiryDetail1" onChange={handleChange}></textarea>
-                            <p>{language.inquiry_text_28}</p>
-                            <textarea id="inquiryDetailText" placeholder={language.inquiry_text_31} name="inquiryDetail2" onChange={handleChange}></textarea>
-                            <p>{language.inquiry_text_29}</p>
-                            <textarea id="inquiryDetailText" placeholder={language.inquiry_text_31} name="inquiryDetail3" onChange={handleChange}></textarea>
-                            <p>{language.inquiry_text_30}</p>
-                            <textarea id="inquiryDetailText" placeholder={language.inquiry_text_31} name="inquiryDetail4" onChange={handleChange}></textarea>
-                        </div>
-                    </fieldset>
+                  <fieldset className="inquiry-detail">
+                      <legend><span>3</span> {language.inquiry_text_14} <i>*</i></legend>
+                      <div className="text-box">
+                          <p>{language?.language === 'kr' ? '문의 제목' : 'Title'}</p>
+                          <input type="text" id="inquiryDetailTitle" placeholder={language.inquiry_text_15} name="title" onChange={handleChange}/>
+                          <p>{language?.language === 'kr' ? '문의 내용' : 'Detail'}</p>
+                          <textarea id="inquiryDetailText" placeholder={language.inquiry_text_16} name="message" onChange={handleChange}></textarea>
+                      </div>
+                  </fieldset>
 
 
-                    <fieldset className="inquiry-detail">
-                        <legend><span>5</span> {language.inquiry_text_17} <i>*</i></legend>
-                        <div className="file-box">
-                            <div>
-                                <input type="file" id="dk_inquiry_pdsFile" name="attachedFile" onChange={handleChange}/>
-                                <label htmlFor="dk_inquiry_pdsFile">{language.inquiry_text_18}</label>
-                                <input className="uploadName" type="text" id="contactUs_fileName" value={fileName}/>
-                            </div>
-                            <p className="warning">
-                                {language.inquiry_text_19}
-                            </p>
-                        </div>
-                    </fieldset>
-                    <fieldset className="agree">
-                        <label>
-                            <input type="checkbox" id="agreeConfirm" name="agreeTerms" onChange={() => setCheck(!isCheck)} checked={isCheck}/>
-                            {language.inquiry_text_20}
-                        </label>
-                        <div>
-                            {language.inquiry_text_21}<br/>
-                            {language.inquiry_text_22}<br/>
-                            {language.inquiry_text_23}
-                        </div>
-                    </fieldset>
-                    <div className="submit">
-                        <button type="button" id="goSubmit" onClick={save}>{language.inquiry_text_24}</button>
-                    </div>
-                </form>
-            </div>
-        </div>
+                  <fieldset className="inquiry-detail">
+                      <legend><span>4</span> {language.inquiry_text_26} <i>*</i></legend>
+                      <div className="text-box-2">
+                          <p>{language.inquiry_text_27}</p>
+                          <input id="inquiryDetailText" placeholder={language.inquiry_text_31} name="inquiryDetail1" onChange={handleChange}></input>
+                          <p>{language.inquiry_text_28}</p>
+                          <input id="inquiryDetailText" placeholder={language.inquiry_text_31} name="inquiryDetail2" onChange={handleChange}></input>
+                          <p>{language.inquiry_text_29}</p>
+                          <input id="inquiryDetailText" placeholder={language.inquiry_text_31} name="inquiryDetail3" onChange={handleChange}></input>
+                          <p>{language.inquiry_text_30}</p>
+                          <input id="inquiryDetailText" placeholder={language.inquiry_text_31} name="inquiryDetail4" onChange={handleChange}></input>
+                      </div>
+                  </fieldset>
+
+
+                  <fieldset className="inquiry-file">
+                      <legend>{language.inquiry_text_17} <i>*</i></legend>
+                      <div className="file-box">
+                          <div>
+                              <input type="file" id="dk_inquiry_pdsFile" name="attachedFile" onChange={handleChange}/>
+                              <label htmlFor="dk_inquiry_pdsFile">{language.inquiry_text_18}</label>
+                              <input className="uploadName" type="text" id="contactUs_fileName" value={fileName}/>
+                          </div>
+                          <p className="warning">
+                              {language.inquiry_text_19}
+                          </p>
+                      </div>
+                  </fieldset>
+                  <fieldset className="agree">
+                      <label>
+                          <input type="checkbox" id="agreeConfirm" name="agreeTerms" onChange={() => setCheck(!isCheck)} checked={isCheck}/>
+                          {language.inquiry_text_20}
+                      </label>
+                      <div>
+                          {language.inquiry_text_21}<br/>
+                          {language.inquiry_text_22}<br/>
+                          {language.inquiry_text_23}
+                      </div>
+                  </fieldset>
+                  <div className="submit">
+                      <button type="button" id="goSubmit" onClick={save}>{language.inquiry_text_24}</button>
+                  </div>
+              </form>
+          </div>
+      </div>
     )
 }

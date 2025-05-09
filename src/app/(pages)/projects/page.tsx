@@ -12,7 +12,7 @@ export default async function Projects({searchParams : {lang}} : any) {
 
     return (
         <>
-            <Header language={language}/>
+            <Header language={language} white={true}/>
             <ProjectList language={language} projectGroupList={projectGroupList}/>
             <Footer language={language}/>
         </>

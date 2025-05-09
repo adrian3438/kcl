@@ -8,12 +8,12 @@ interface Props {
 }
 
 export default function MainMenu({language}: Props) {
-    const [menuIndex, setMenuIndex] = useState<number>(0);
+    const [menuIndex, setMenuIndex] = useState<number>(-1);
 
     return (
-        <nav className="main-menu">
-            <ul className="depth1" onMouseLeave={() => setMenuIndex(0)}>
-                <li onMouseOver={() => setMenuIndex(0)}><Link href="/">{language?.header_0}</Link></li>
+        <nav className={`main-menu ${menuIndex !== -1 ? `on on-${menuIndex}` : ''}`}>
+            <ul className="depth1">
+                <li className={menuIndex === 0 ? 'on' : ''} onMouseOver={() => setMenuIndex(0)} onMouseLeave={() => setMenuIndex(-1)}><Link href="/">{language?.header_0}</Link></li>
                 <li className={menuIndex === 1 ? 'on' : ''} onMouseOver={() => setMenuIndex(1)}><Link href="/about-us/management-solution">{language?.header_1}</Link>
                     <ul>
                         <li><Link href="/about-us/management-solution">{language?.header_1_1}</Link></li>
@@ -36,7 +36,7 @@ export default function MainMenu({language}: Props) {
                         <li><Link href="/product/knife-gate-valve">{language?.header_2_9}</Link></li>
                     </ul>
                 </li>
-                <li onMouseOver={() => setMenuIndex(0)}><Link href="/projects">{language?.header_3}</Link></li>
+                <li className={menuIndex === 3 ? 'on' : ''} onMouseOver={() => setMenuIndex(3)} onMouseLeave={() => setMenuIndex(-1)}><Link href="/projects">{language?.header_3}</Link></li>
                 <li className={menuIndex === 4 ? 'on' : ''} onMouseOver={() => setMenuIndex(4)}><Link href="/media/video">{language?.header_4}</Link>
                     <ul>
                         <li><Link href="/media/video">{language?.header_4_4}</Link></li>
@@ -45,8 +45,9 @@ export default function MainMenu({language}: Props) {
                         <li><Link href="/media/3d-modeling">{language?.header_4_3}</Link></li>
                     </ul>
                 </li>
-                <li onMouseOver={() => setMenuIndex(0)}><Link href="/contact">{language?.header_5}</Link></li>
+                <li className={menuIndex === 5 ? 'on' : ''} onMouseOver={() => setMenuIndex(5)} onMouseLeave={() => setMenuIndex(-1)}><Link href="/contact">{language?.header_5}</Link></li>
             </ul>
+            <div className="nav-bg" onMouseLeave={() => setMenuIndex(-1)}></div>
         </nav>
     )
 }

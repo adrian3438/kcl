@@ -17,35 +17,17 @@ export default async function KnifeGateValvePage({searchParams: {lang}}: any) {
         "/images/sub/products/knife/knife-gate-valve-swipe-5.jpg",
         "/images/sub/products/knife/knife-gate-valve-swipe-6.jpg",
         "/images/sub/products/knife/knife-gate-valve-swipe-7.jpg",
- 
+
     ];
 
     return (
         <>
             <Header language={language}/>
-            <div className="sub-banner4" style={{background: "url(/images/sub/products/product-bg-06.jpg) no-repeat 50% 0", backgroundSize: "100% auto"}}>
+            <div className="sub-banner4" style={{background: "url(/images/sub/products/product-bg-06.jpg) no-repeat 50% 0", backgroundSize: "cover"}}>
                 <div className="banner-text">
                     <div>
                         <p className="banner-text-title">{language?.product_08_01}</p>
                         <p className="banner-text-01">{language?.product_08_02}</p>
-                        <div>
-                            <div>
-                                <p>{language?.product_08_04}</p>
-                                <p>{language?.product_08_05}</p>
-                            </div>
-                            <div>
-                                <p>{language?.product_08_06}</p>
-                                <p>{language?.product_08_07}</p>
-                            </div>
-                            <div>
-                                <p>{language?.product_08_08}</p>
-                                <p>{language?.product_08_09}</p>
-                            </div>
-                            <div>
-                                <p>{language?.product_08_10}</p>
-                                <p>{language?.product_08_11}</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -59,14 +41,14 @@ export default async function KnifeGateValvePage({searchParams: {lang}}: any) {
                 <div className="ourClients">
                 <h2>{language?.product_08_63}</h2>
                 <ProductSwiper productImageList={productImageList}/>
-                </div> 
+                </div>
 
                 <ProductContact language={language}/>
             </div>
 
-              
 
-            
+
+
             <Footer language={language}/>
         </>
     );

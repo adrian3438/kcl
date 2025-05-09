@@ -1,3 +1,27 @@
+.media-container {
+  padding-top: 219px !important;
+  h2 {
+    position: relative;
+    padding-top: 24px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 16px;
+    font-size: 44px;
+    color: #110439;
+    margin-bottom: 20px;
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 45px;
+      height: 4px;
+      content: "";
+      background-color: #115BE6;
+    }
+  }
+}
+
 .location {
   display: flex;
   margin-bottom: 50px;
@@ -5,13 +29,13 @@
     padding-left: 30px;
     margin-left: 20px;
     position: relative;
-    color: #194B7E;
-    font-size: 20px;
+    color: #999;
+    font-size: 16px;
     &:after {
       content: ">";
       display: block;
       position: absolute;
-      top: -1px;
+      top: 0;
       left: 0;
     }
     &:first-child {

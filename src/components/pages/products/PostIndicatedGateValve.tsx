@@ -10,7 +10,7 @@ export default function PostIndicatedGateValve({language}: Props) {
         <>
             <div>
                 <div className="text-area">
-                    <div className="text-area-btn">
+                    <div className="text-area-btn text-area-btn2">
                         <button className="active">{language?.product_07_btn_01}</button>
                     </div>
                     <div className="text-area-detail">
@@ -71,7 +71,7 @@ export default function PostIndicatedGateValve({language}: Props) {
                     <Link href="/file/pigv-rew-160119.pdf" target="_blank">{language?.product_04_btn_02}</Link>
                 </div>
                 <div className="image-area">
-                    <p><Image src="/images/sub/products/post/post-indicator-valve-01.jpg" alt="" width={746} height={432}/></p>
+                    <p><Image src="/images/sub/products/post/post-indicator-valve-01.jpg" alt="" width={500} height={238}/></p>
                 </div>
             </div>
             <dl className="post-indicated-gate-valve-text">

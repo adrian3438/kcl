@@ -13,11 +13,9 @@ export default async function ProjectsDetail({searchParams : {lang}, params: {id
 
     return (
         <>
-            <Header language={language}/>
-            <div className="container">
-                <ul className="location">
-                    <li>{language?.projects_01}</li>
-                </ul>
+            <Header language={language} white={true}/>
+            <div className="container projects-container">
+                <h2>{language?.projects_01}</h2>
                 <div className="project-list-detail">
                     <ul>
                       <ProjectDetailImageList projectImages={projectImages}/>

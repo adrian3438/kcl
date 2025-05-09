@@ -8,7 +8,7 @@ export default async function ModelingPage({searchParams : {lang}} : any) {
     const language = await fetchLanguage(lang);
     return (
         <>
-            <Header language={language}/>
+            <Header language={language} white={true}/>
             <div className="model-container">
                 <Modeling/>
 

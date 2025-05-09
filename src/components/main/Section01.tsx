@@ -1,9 +1,10 @@
 'use client';
 
 import {Swiper, SwiperSlide} from "swiper/react";
-import {Autoplay, Navigation} from 'swiper/modules';
+import {Autoplay, Navigation, Pagination} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import Image from "next/image";
 import Link from "next/link";
 
@@ -19,7 +20,7 @@ export default function Section01({language}: Props) {
                <div><div>
                <p>World leader in valve supply</p>
                              <div>
-                                <Link href="/contact" className="btn-01">{language?.main_01_02}</Link>
+                                <Link href="/contact" className="btn-01">{language?.main_01_02} <Image src="/images/main/right-arrow.svg" alt="" width={24} height={24}/></Link>
                             </div>
                </div></div>
             </div>
@@ -36,17 +37,18 @@ export default function Section01({language}: Props) {
                     delay: 3000,
                 }}
                 navigation={true}
-                modules={[Autoplay, Navigation]}
+                pagination={true}
+                modules={[Autoplay, Navigation, Pagination]}
             >
                 <SwiperSlide>
-                 <div className="banner-area">
+                 <div className="swiper-area">
                     <Image src="/images/main/main-banner-02.jpg" alt="" width={1920} height={944}/>
-                        <div className="banner-text">
+                        <div className="swiper-text">
                             <div>
                                 <div>
                                     <p>{language?.main_01_04}</p>
                                     <div>
-                                        <Link href="/contact" className="btn-01">{language?.main_01_05}</Link>
+                                        <Link href="/contact" className="btn-01">{language?.main_01_05} <Image src="/images/main/right-arrow.svg" alt="" width={24} height={24}/></Link>
                                     </div>
                                 </div>
                             </div>
@@ -54,14 +56,14 @@ export default function Section01({language}: Props) {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className="banner-area">
+                    <div className="swiper-area">
                         <Image src="/images/main/main-banner-03.jpg" alt="" width={1920} height={944}/>
-                        <div className="banner-text">
+                        <div className="swiper-text">
                             <div>
                                 <div>
                                     <p>{language?.main_01_07}</p>
                                     <div>
-                                        <Link href="/contact" className="btn-01">{language?.main_01_08}</Link>
+                                        <Link href="/contact" className="btn-01">{language?.main_01_08} <Image src="/images/main/right-arrow.svg" alt="" width={24} height={24}/></Link>
                                     </div>
                                 </div>
                             </div>
@@ -69,14 +71,14 @@ export default function Section01({language}: Props) {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className="banner-area">
+                    <div className="swiper-area">
                         <Image src="/images/main/main-banner-04.jpg" alt="" width={1920} height={944}/>
-                        <div className="banner-text">
+                        <div className="swiper-text">
                             <div>
                                 <div>
                                     <p>{language?.main_01_10}</p>
                                     <div>
-                                        <Link href="/contact" className="btn-01">{language?.main_01_11}</Link>
+                                        <Link href="/contact" className="btn-01">{language?.main_01_11} <Image src="/images/main/right-arrow.svg" alt="" width={24} height={24}/></Link>
                                     </div>
                                 </div>
                             </div>
@@ -84,14 +86,14 @@ export default function Section01({language}: Props) {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className="banner-area">
+                    <div className="swiper-area">
                         <Image src="/images/main/main-banner-05.jpg" alt="" width={1920} height={944}/>
-                        <div className="banner-text">
+                        <div className="swiper-text">
                             <div>
                                 <div>
                                     <p>{language?.main_01_13}</p>
                                     <div>
-                                        <Link href="/contact" className="btn-01">{language?.main_01_14}</Link>
+                                        <Link href="/contact" className="btn-01">{language?.main_01_14} <Image src="/images/main/right-arrow.svg" alt="" width={24} height={24}/></Link>
                                     </div>
                                 </div>
                             </div>
@@ -99,14 +101,14 @@ export default function Section01({language}: Props) {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className="banner-area">
+                    <div className="swiper-area">
                         <Image src="/images/main/main-banner-06.jpg" alt="" width={1920} height={944}/>
-                        <div className="banner-text">
+                        <div className="swiper-text">
                             <div>
                                 <div>
                                     <p>{language?.main_01_16}</p>
                                     <div>
-                                        <Link href="/contact" className="btn-01">{language?.main_01_17}</Link>
+                                        <Link href="/contact" className="btn-01">{language?.main_01_17} <Image src="/images/main/right-arrow.svg" alt="" width={24} height={24}/></Link>
                                     </div>
                                 </div>
                             </div>
@@ -114,14 +116,14 @@ export default function Section01({language}: Props) {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className="banner-area">
+                    <div className="swiper-area">
                         <Image src="/images/main/main-banner-07.jpg" alt="" width={1920} height={944}/>
-                        <div className="banner-text">
+                        <div className="swiper-text">
                             <div>
                                 <div>
                                     <p>{language?.main_01_19}</p>
                                     <div>
-                                        <Link href="/contact" className="btn-01">{language?.main_01_20}</Link>
+                                        <Link href="/contact" className="btn-01">{language?.main_01_20} <Image src="/images/main/right-arrow.svg" alt="" width={24} height={24}/></Link>
                                     </div>
                                 </div>
                             </div>
@@ -129,14 +131,14 @@ export default function Section01({language}: Props) {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className="banner-area">
+                    <div className="swiper-area">
                         <Image src="/images/main/main-banner-01.jpg" alt="" width={1920} height={944}/>
-                        <div className="banner-text">
+                        <div className="swiper-text">
                             <div>
                                 <div>
                                     <p>{language?.main_01_01}</p>
                                     <div>
-                                        <Link href="/contact" className="btn-01">{language?.main_01_02}</Link>
+                                        <Link href="/contact" className="btn-01">{language?.main_01_02} <Image src="/images/main/right-arrow.svg" alt="" width={24} height={24}/></Link>
                                     </div>
                                 </div>
                             </div>

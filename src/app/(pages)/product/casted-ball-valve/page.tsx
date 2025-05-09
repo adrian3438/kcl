@@ -23,29 +23,11 @@ export default async function CastedBallValvePage({searchParams: {lang}}: any) {
     return (
         <>
             <Header language={language}/>
-            <div className="sub-banner4" style={{background: "url(/images/sub/products/product-bg-03.jpg) no-repeat 50% 0", backgroundSize: "100% auto"}}>
+            <div className="sub-banner4" style={{background: "url(/images/sub/products/product-bg-03.jpg) no-repeat 50% 0", backgroundSize: "cover"}}>
                 <div className="banner-text">
                     <div>
                         <p className="banner-text-title">{language?.product_02_01}</p>
                         <p className="banner-text-01">{language?.product_02_02}</p>
-                        <div>
-                            <div>
-                                <p>{language?.product_02_04}</p>
-                                <p>{language?.product_02_05}</p>
-                            </div>
-                            <div>
-                                <p>{language?.product_02_06}</p>
-                                <p>{language?.product_02_07}</p>
-                            </div>
-                            <div>
-                                <p>{language?.product_02_08}</p>
-                                <p>{language?.product_02_09}</p>
-                            </div>
-                            <div>
-                                <p>{language?.product_02_10}</p>
-                                <p>{language?.product_02_11}</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -58,9 +40,9 @@ export default async function CastedBallValvePage({searchParams: {lang}}: any) {
                 <div className="ourClients">
                 <h2>{language?.product_08_63}</h2>
                 <ProductSwiper productImageList={productImageList} />
-                </div> 
+                </div>
 
-                
+
 
                 <ProductContact language={language}/>
             </div>

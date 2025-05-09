@@ -1,7 +1,18 @@
 .history {
-  padding-top: 100px;
+  position: relative;
+  padding-top: 40px;
   margin-bottom: 100px;
-  background: url("/images/sub/history/line.png") repeat-y 50% 0;
+  background: url("/images/sub/history/line.png") repeat-y calc(50% - 0.3px) 0;
+  > span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 12px;
+    background-color: #cacaca;
+    border-radius: 50%;
+  }
   > div {
     display: flex;
     > div {
@@ -9,104 +20,203 @@
       margin-bottom: 100px;
       > dl {
         > dt {
-          color: #194B7E;
-          font-size: 35px;
-          font-weight: bold;
-          margin-bottom: 80px;
+          color: #041839;
+          font-size: 24px;
+          font-family: "Pretendard-Bold", sans-serif;
+          margin-bottom: 20px;
+          line-height: 100%;
         }
         > dd {
           color: #194B7E;
           font-size: 22px;
           > ul {
             > li {
+              text-align: left;
+              display: flex;
+              gap: 0 10px;
               position: relative;
-              padding-left: 40px;
               margin-top: 10px;
               line-height: 28px;
+              color: #333;
+              font-size: 16px;
               &:first-child {
                 margin-top: 0;
               }
               > span {
-                position: absolute;
-                top: 0;
-                left: 0;
+                font-family: "Pretendard-Bold", sans-serif;
               }
             }
           }
         }
       }
       > p {
-        margin-top: 50px;
-        max-width: 300px;
+        display: inline-flex;
+        align-items: center;
+        box-sizing: border-box;
+        margin-top: 20px;
+        padding: 20px 24px;
+        border: 1px solid #e0e0e0;
+        border-radius: 16px;
+        gap: 10px 10px;
+        flex-wrap: wrap;
         img {
-          width: 100%;
-          height: auto;
-        }
-      }
-    }
-    &:nth-child(odd) {
-      justify-content: flex-end;
-      > div {
-        padding-left: 29px;
-        background:url("/images/sub/history/history-circle.png") no-repeat 0 0;
-        > dl {
-          padding-left: 90px;
-        }
-        > p {
-          padding-left: 90px;
+          width: auto;
+          max-height: 42px;
+          height: 100%;
         }
       }
     }
     &:nth-child(even) {
+      justify-content: flex-end;
       > div {
-        padding-left: 27px;
-        background:url("/images/sub/history/history-circle.png") no-repeat 100% 0;
+        position: relative;
+        padding-left: 29px;
+        &:before {
+          content: "";
+          position: absolute;
+          top: 5px;
+          left: 23px;
+          width: 12px;
+          height: 12px;
+          background-color: #041839;
+          border-radius: 50%;
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          top: 10px;
+          left: 30px;
+          width: 128px;
+          height: 2px;
+          background-color: #041839;
+        }
         > dl {
-          padding-right: 90px;
+          padding-left: 147px;
         }
         > p {
-          padding-right: 90px;
+          margin-left: 147px;
+        }
+      }
+    }
+    &:nth-child(odd) {
+      > div {
+        position: relative;
+        text-align: right;
+        &:before {
+          content: "";
+          position: absolute;
+          top: 5px;
+          //right: 21px;
+          right: -6px;
+          width: 12px;
+          height: 12px;
+          background-color: #041839;
+          border-radius: 50%;
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          top: 10px;
+          right: 0;
+          width: 128px;
+          height: 2px;
+          background-color: #041839;
+        }
+        > dl {
+          padding-right: 147px;
+          > dt {
+            text-align: right;
+          }
+          > dd {
+            > ul {
+              > li {
+                justify-content: flex-end;
+              }
+            }
+          }
+        }
+        > p {
+          margin-right: 147px;
+          justify-content: flex-end;
         }
       }
     }
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-
+  .history {
+    > div {
+      > div {
+        > p {
+          img {
+            //max-width: 400px;
+          }
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width: 767px) {
   .history {
-    background: url("/images/sub/history/line.png") repeat-y 28px 0;
+    background: url("/images/sub/history/line.png") repeat-y 4px 0;
+    > span {
+      left: 0;
+      transform: translateX(0);
+    }
     > div {
-      > div {
-        width: auto;
-      }
       &:nth-child(odd) {
         > div {
-          padding-left: 29px;
-          background:url("/images/sub/history/history-circle.png") no-repeat 0 0;
+          text-align: left;
+          &:before {
+            right: auto;
+            left: 0;
+          }
+          &:after {
+            width: 30px;
+            right: auto;
+            left: 7px;
+          }
           > dl {
-            padding-left: 40px;
+            padding-left: 50px;
+            padding-right: 0;
+            > dt {
+              text-align: left;
+            }
+            > dd {
+              > ul {
+                > li {
+                  justify-content: flex-start;
+                }
+              }
+            }
           }
           > p {
-            padding-left: 40px;
+            margin-right: 0;
+            margin-left: 50px;
           }
         }
       }
       &:nth-child(even) {
+        justify-content: flex-start;
         > div {
-          padding-right: 0;
-          padding-left: 29px;
-          background:url("/images/sub/history/history-circle.png") no-repeat 0 0;
+          padding-left: 0;
+          &:before {
+            left: 0;
+          }
+          &:after {
+            width: 30px;
+            left: 7px;
+          }
           > dl {
-            padding-left: 40px;
-            padding-right: 0;
+            padding-left: 50px;
           }
           > p {
-            padding-left: 40px;
-            padding-right: 0;
+            margin-left: 50px;
           }
         }
+      }
+      > div {
+        width: auto;
       }
     }
   }
