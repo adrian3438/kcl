@@ -75,7 +75,7 @@ export default function Header({language, white}: Props) {
         </ul>
       </div>
 
-      <div className="header-inner" onMouseOver={() => setIsScrolled(true)}>
+      <div className={`header-inner ${language?.language}`} onMouseOver={() => setIsScrolled(true)}>
         <h1 className="logo">
           <Link href="/">
             {isScrolled || white ?

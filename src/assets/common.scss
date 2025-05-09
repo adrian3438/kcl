@@ -117,7 +117,6 @@ header {
   top:0;
   left:0;
   width: 100%;
-  //background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
   border-bottom: 1px solid #E2E2E2;
   z-index: 10;
   box-sizing: border-box;
@@ -183,6 +182,18 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    &.en {
+      .main-menu {
+        max-width: 737px;
+        .depth1 {
+          > li {
+            > a {
+              padding: 0 20px;
+            }
+          }
+        }
+      }
+    }
     .main-menu {
       z-index: 10;
       position: relative;
