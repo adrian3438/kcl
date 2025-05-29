@@ -366,101 +366,28 @@ main {
             line-height: 40px;
           }}}}}}
 
-@media screen and (max-width: 768px) {
-main {
-  /* 메인 배너 */
-  .section-01 {
-    position: relative;
-    .swiper-slide-active {
-      img {
-        transform: scale(1.3);
-        transition: transform 6s;
-      }
-    }
-    > .banner-area {
-      position: relative;
-      .banner-text {
-        position: absolute;
-        top: 60%;
-        left: 2%;
-        transform: translateY(-50%);
-        width: 100%;
-        z-index: 9;
-        > div {
-          max-width: 768px;
-          margin: 0 auto;
-          > div {
-            max-width: 463px;
-            box-sizing: border-box;
-            > p {
-              color: #fff;
-              font-size: 15px;
-              font-family: 'Montserrat-SemiBold', 'Pretendard-ExtraBold', sans-serif;
-              line-height: 55px;
-            }
-            > div {
-              margin-top: 0px;
-              a {
-                box-sizing: border-box;
-                display: inline-block;
-                justify-content: space-between;
-                padding: 5px 8px;
-                background-color: #115BE6;
-                font-size: 10px;
-                font-family: "Montserrat-SemiBold", "Pretendard-Bold", sans-serif;
-                color: #fff;
-                line-height: normal;
-                img {
-                  vertical-align: middle;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-
-    > section {
-      background-color: #fff;
-      margin: 18px auto 20px;
-      position: relative;
-      max-width: 768px;
-      .swiper-button-next {
-        color: #666;
-      }
-      .swiper-button-prev {
-        color: #666;
-      }
-      .swiper-slide {
-        overflow: hidden;
-        .swiper-area {
-          margin: 0 0px 0px;
-          overflow: hidden;
-        }
-      }
-      .swiper-text {
-        position: absolute;
-        top: 0;
-        left: -5px;
-        padding: 20px;
-        max-width: 450px;
-        width: 100%;
+@media screen and (min-width: 768px) and (max-width: 1024px)  {
+  main {
+    .swiper-text {
         > div {
           > div {
             > p {
               color: #fff;
               font-family: "Montserrat-Regular", "Pretendard-Bold", sans-serif;
-              font-size: 15px;
-              line-height: 15px;
+              font-size: 38px;
+              line-height: 120%;
               font-weight: normal;
               margin-bottom: 24px;
-            }
-            > div {
-              > a {
+            }}}}}}
+
+@media screen and (max-width: 767px) {
+  main {
+    .section-01 > .banner-area .banner-text > div > div > div >
+            a {
                 box-sizing: border-box;
                 display: inline-block;
                 justify-content: space-between;
-                padding: 5px 8px;
+                padding: 10px 15px;
                 background-color: #115BE6;
                 font-size: 10px;
                 font-family: "Montserrat-SemiBold", "Pretendard-Bold", sans-serif;
@@ -470,255 +397,60 @@ main {
                   vertical-align: middle;
                 }
               }
-            }
-          }
-        }
-      }
-    }
-
-    > span {
-      position: absolute;
-      left: 50%;
-      bottom: 20px;
-      transform: translateX(-50%);
-      width: 36px;
-      height: 60px;
-      background: url("/images/common/mouse-down.png") no-repeat 0 0;
-      z-index: 9;
-    }
-
-    /* 스와이퍼 커스터마이징 */
-    .swiper-pagination {
-      .swiper-pagination-bullet-active {
-        background-color: #115be6;
-
-      }
-      .swiper-pagination-bullet {
-        border-radius: 0;
-        width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 30px));
-        height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 5px));
-      }
-    }
-  }
-
-  /* 2nd Section */
-  .section-02 {
-    padding: 25px 0;
-    margin: 0 30px;
-    display: flex;
-    gap: 25px;
-    overflow: hidden;
-    > div {
+              
+    .section-06 {
       > div {
-        position: relative;
-        > a {
-          position: absolute;
-          left: 40px;
-          bottom: 40px;
-          color: #fff;
-          padding-left: 30px;
-          background: url("/images/main/video-arrow.png") no-repeat 0 100%;
-          &:hover {
-            p {
-              &:last-child {
-                text-decoration: underline;
-              }
-            }
-          }
-          p {
-            &:first-child {
-              font-size: 15px;
-              font-weight: bold;
-            }
-            &:last-child {
-              font-size: 10px;
-            }
-          }
-        }
-      }
-      &:first-child {
-        width: 100%;
-        .main-video-01 {
-          width: 100%;
-          vertical-align: top;
-        }
-        .main-video-02 {
-          margin-top: 25px;
-          width: 100%;
-          vertical-align: top;
-        }
-      }
-      &:last-child {
-        width: 100%;
-        overflow: hidden;
-        .main-video-03 {
-          width: 306.4%;
-          height: 100%;
-          vertical-align: top;
-          position: relative;
-          z-index: -1;
-          transform: translateX(-33.7%);
-        }
-      }
-    }
-  }
-
-  .section-04 {
-    position: relative;
-    > img {
-      width: 100%;
-      height: auto;
-      vertical-align: top;
-    }
-    .section-text {
-      z-index: 9;
-      position: absolute;
-      top: 80px;
-      left: 53%;
-      transform: translateX(-50%);
-      max-width: 768px;
-      width: 100%;
-      .section-title {
-        font-family: "Montserrat-SemiBold", "Pretendard-Bold", sans-serif;
-        font-size: 25px;
-        color: #fff;
-        line-height: 20px;
-        margin-bottom: 2px;
-      }
-      .section-text-01 {
-        font-size: 15px;
-        line-height: 36px;
-        opacity: 0.8;
-        color: #fff;
-        margin-bottom: 6px;
-      }
-      a {
-        display: inline-block;
-        box-sizing: border-box;
-        justify-content: space-between;
-        padding: 5px 8px;
-        background-color: #115BE6;
-        font-size: 10px;
-        font-family: "Montserrat-SemiBold", "Pretendard-Bold", sans-serif;
-        color: #fff;
-        line-height: normal;
-        img {
-          vertical-align: middle;
-        }
-      }
-    }
-  }
-
-  .section-06 {
-    position: relative;
-    > img {
-      width: 100%;
-      height: auto;
-      vertical-align: top;
-    }
-    > div {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      box-sizing: border-box;
-      > div {
-        display: flex;
-        height: 100%;
-        justify-content: space-between;
         > div {
-          &:nth-child(1) {
-            background: rgba(17, 4, 57, 0.60);
-            > p {
-              background: url("/images/main/section06-bg-01.svg") no-repeat 50% 0;
-            }
-          }
-          &:nth-child(2) {
-            background: rgba(0, 46, 134, 0.60);
-            > p {
-              background: url("/images/main/section06-bg-02.svg") no-repeat 50% 0;
-            }
-          }
-          &:nth-child(3) {
-            background: rgba(0, 10, 48, 0.60);
-            > p {
-              background: url("/images/main/section06-bg-03.svg") no-repeat 50% 0;
-            }
-          }
-          color: #fff;
-          font-size: 18px;
-          line-height: 78px;
-          text-align: center;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex: 1;
-          flex-wrap: wrap;
-          > p {
-            padding-top: 74px;
-            width: 100%;
-            line-height: 28px;
-            span {
-              display: block;
-              font-family: "Montserrat-SemiBold", "Pretendard-Bold", sans-serif;
-              font-size: 28px;
-              line-height: 48px;
-              margin-bottom: 10px;
-            }
-          }
-        }
-      }
-    }
-  }
-  .section-07 {
-    max-width: 768px;
-    margin: 0 auto;
-    padding: 15px 20px;
-    > ul {
-      display: flex;
-      margin: 0 auto;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 32.5px 0;
-      > li {
-        max-width: 491px;
-        width: 100%;
-        > img {
-          width: 100%;
-          height: auto;
-          vertical-align: top;
-        }
-        &.text-section {
-          .section-title {
-            color: #333;
-            font-family: "Montserrat-SemiBold", "Pretendard-Bold", sans-serif;
-            font-size: 20px;
-            line-height: 100%;
-            margin-bottom: 12px;
-          }
-          .section-text-01 {
-            color: #666;
-            font-size: 18px;
-            line-height: normal;
-            font-family: "Pretendard-SemiBold", sans-serif;
-            margin-bottom: 40px;
-          }
           > div {
-            background-color: #115BE6;
-            display: inline-flex;
-            padding: 12px 38px;
+            font-size: 10px;
+            line-height: 15px;
+            
+          }}}}}}
 
-            font-size: 18px;
-            font-family: "Pretendard-Bold", sans-serif;
-            align-items: center;
-            gap: 0 5px;
-            > a {
-              color: #fff;
-            }
-          }
-        }
-      }
-    }
-  }
-}}
+@media screen and (max-width: 767px) {
+  main {
+    .section-01 {
+      width: 100%;
+
+      .banner-area {
+        .banner-text {
+          > div {
+            > div {
+              padding: 10px 9.5px 10px;
+              > p {
+                font-size: 12px;
+                line-height: 12px;
+                
+            
+              }}}}}}}}
+
+@media screen and (min-width: 768px) and (max-width: 1920px) {
+  main {
+    .section-01
+     .main-video-01 {
+      margin-top: 100px;
+      width: 100%;
+      vertical-align: top;
+    }}}
+
+@media screen and (min-width: 768px) and (max-width: 1920px)  {
+    main {
+      .section-01
+       .main-video-01 {
+        width: 100%;
+      }}}
+
+@media screen and (max-width: 767px) {
+  main {
+    .section-01
+     .main-video-01 {
+      margin-top: 100px;
+      width: 100%;
+    }}}
+
+@media screen and (max-width: 767px) {
+    main {
+      .section-01
+       .main-video-01 {
+        width: 100%;
+      }}}
