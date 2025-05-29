@@ -396,7 +396,7 @@ main {
               color: #fff;
               font-size: 15px;
               font-family: 'Montserrat-SemiBold', 'Pretendard-ExtraBold', sans-serif;
-              line-height: 55px;
+              line-height: 60px;
             }
             > div {
               margin-top: 0px;
@@ -422,7 +422,7 @@ main {
 
     > section {
       background-color: #fff;
-      margin: 18px auto 20px;
+      margin: 1px auto 1px;
       position: relative;
       max-width: 768px;
       .swiper-button-next {
@@ -433,6 +433,7 @@ main {
       }
       .swiper-slide {
         overflow: hidden;
+        max-height: 260px;
         .swiper-area {
           margin: 0 0px 0px;
           overflow: hidden;
@@ -441,7 +442,7 @@ main {
       .swiper-text {
         position: absolute;
         top: 0;
-        left: -5px;
+        left: -10px;
         padding: 20px;
         max-width: 450px;
         width: 100%;
