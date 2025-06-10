@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "@/app/(pages)/globals.css";
 import "@/assets/common.scss"
 import Script from "next/script";
+import ScrollBtn from "@/components/common/ScrollBtn";
+
 
 export const metadata: Metadata = {
   title: "KCL VALVE",
@@ -59,6 +61,7 @@ export default function RootLayout({
 
       <body>
         {children}
+        <ScrollBtn />
       </body>
     </html>
   );

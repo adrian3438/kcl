@@ -1,0 +1,63 @@
+.inquiryWrap {
+  z-index: 999;
+  display: flex;
+  justify-content: right;
+  position: sticky;
+  right: 40px;
+  bottom: 0px;
+
+  .btnBox {
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+    display: flex;
+    justify-content: right;
+    > div {
+      background-color: #b1b1b1;
+      border-radius: 10px 0 0 10px;
+      flex-direction: column;
+      justify-content: flex-end;
+      display: flex;
+      flex-wrap: wrap;
+      width: 50px;
+      button {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 50px;
+        background: none;
+        border: none;
+        text-indent: -9999px;
+        overflow: hidden;
+        cursor: pointer;
+        &:first-child {
+          border-radius: 10px 0 0 0;
+          background: url("/images/common/topBtn.png") no-repeat 50% 50%;
+          &:hover {
+            transition: background 0.2s ease-out;
+            background: url("/images/common/topBtn_hover.png") no-repeat 50% 50% #105cff;
+          }
+        }
+        &:last-child {
+          border-radius: 0 0 0 10px;
+          background: url("/images/common/bottomBtn.png") no-repeat 50% 50%;
+          &:hover {
+            transition: background 0.2s ease-out;
+            background: url("/images/common/bottomBtn_hover.png") no-repeat 50% 50% #105cff;
+          }
+          &:before {
+            content: '';
+            display: block;
+            width: 12px;
+            height: 1px;
+            background-color: #f7f7f7;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+          }
+        }
+      }
+    }
+  }
+}

@@ -79,6 +79,7 @@
       background: url("/images/sub/solution/solution-icon-03.svg") no-repeat 0 0;
     }
   }
+  
   .text-area {
     width: 50%;
     h2 {
@@ -121,6 +122,11 @@
   display: flex;
   justify-content: space-between;
   gap: 20px;
+   &.bg-04 {
+    h2 {
+      background: url("/images/sub/solution/solution-icon-05.svg") no-repeat 0 0;
+    }
+  }
   .text-area {
     width: 50%;
     h2 {
