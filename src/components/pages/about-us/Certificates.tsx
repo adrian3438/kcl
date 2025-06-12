@@ -33,7 +33,7 @@ export default function Certificates({language}: Props) {
               </dt>
               <dd>
                 <ul>
-                  <li>FLUOR (United States of America)<a className="disable">{language?.certificates_btn_02}</a></li>
+                  <li>FLUOR (United States of America)<a href="/images/sub/certificates/FLUOR (United States of America).pdf" download>{language?.certificates_btn_02}</a></li>
                 </ul>
               </dd>
             </dl>
@@ -50,7 +50,7 @@ export default function Certificates({language}: Props) {
                   <li>{language?.certificates_04_04}<a href="/images/sub/certificates/iran-03.jpg" download>{language?.certificates_btn_02}</a></li>
                   <li>{language?.certificates_04_05}<a href="/images/sub/certificates/iran-04.jpg" download>{language?.certificates_btn_02}</a></li>
 
-                  <li>MOP OF IRAN (Ministry Oil Petroleum-Iran)<a className="disable">{language?.certificates_btn_02}</a></li>
+                  <li>MOP OF IRAN (Ministry Oil Petroleum-Iran)<a href="/images/sub/certificates/MOP OF IRAN.pdf" download>{language?.certificates_btn_02}</a></li>
                   <li>POGC (Pars Oil and Gas Company-Iran)<a className="disable">{language?.certificates_btn_02}</a></li>
 
                 </ul>
@@ -71,11 +71,11 @@ export default function Certificates({language}: Props) {
                   <li>{language?.certificates_05_07}<a href="/images/sub/certificates/uae-06.jpg" download>{language?.certificates_btn_02}</a></li>
                   <li>{language?.certificates_05_08}<a href="/images/sub/certificates/uae-07.jpg" download>{language?.certificates_btn_02}</a></li>
 
-                  <li>ADNOC (Abu Dhabi National Oil Company- UAE)<a className="disable">{language?.certificates_btn_02}</a></li>
-                  <li>BOROUGE (Abu Dhabi Polymers Company- UAE)<a className="disable">{language?.certificates_btn_02}</a></li>
-                  <li>TAKREER (Abu Dhabi Oil Refining Company- UAE)<a className="disable">{language?.certificates_btn_02}</a></li>
-                  <li>RUWAIS (A Subsidiary of ADNOC- UAE)<a className="disable">{language?.certificates_btn_02}</a></li>
-                  <li>GASCO (Abu Dhabi Gas Company-Can be checked online- UAE)<a className="disable">{language?.certificates_btn_02}</a></li>
+                  <li>ADNOC (Abu Dhabi National Oil Company- UAE)<a href="/images/sub/certificates/ADNOC (Abu Dhabi National Oil Company- UAE).pdf" download>{language?.certificates_btn_02}</a></li>
+                  <li>BOROUGE (Abu Dhabi Polymers Company- UAE)<a href="/images/sub/certificates/BOROUGE (Abu Dhabi Polymers Company- UAE).pdf" download>{language?.certificates_btn_02}</a></li>
+                  <li>TAKREER (Abu Dhabi Oil Refining Company- UAE)<a href="/images/sub/certificates/TAKREER (Abu Dhabi Oil Refining Company- UAE).pdf" download>{language?.certificates_btn_02}</a></li>
+                  <li>RUWAIS (A Subsidiary of ADNOC- UAE)<a href="/images/sub/certificates/RUWAIS (A Subsidiary of ADNOC- UAE).pdf" download>{language?.certificates_btn_02}</a></li>
+                  <li>GASCO (Abu Dhabi Gas Company-Can be checked online- UAE)<a href="/images/sub/certificates/GASCO(Egyptian Natural Gas Co-Egypt).pdf" download>{language?.certificates_btn_02}</a></li>
                 </ul>
               </dd>
             </dl>
@@ -86,7 +86,7 @@ export default function Certificates({language}: Props) {
               </dt>
               <dd>
                 <ul>
-                  <li>{language?.certificates_06_02}<a className="disable">{language?.certificates_btn_02}</a></li>
+                  <li>{language?.certificates_06_02}<a href="/images/sub/certificates/RasGas Company Limited.pdf" download>{language?.certificates_btn_02}</a></li>
                   <li>QATAR Steel<a className="disable">{language?.certificates_btn_02}</a></li>
                   <li>QATAR Fuel (QAFAC)<a className="disable">{language?.certificates_btn_02}</a></li>
                   <li>QATAR Petroleum<a className="disable">{language?.certificates_btn_02}</a></li>
@@ -114,7 +114,7 @@ export default function Certificates({language}: Props) {
               <dd>
                 <ul>
                   <li>KPC (KHALDA PETROLEUM COPMPANY-Egypt)<a className="disable">{language?.certificates_btn_02}</a></li>
-                  <li>GASCO(Egyptian Natural Gas Co-Egypt)<a className="disable">{language?.certificates_btn_02}</a></li>
+                  <li>GASCO(Egyptian Natural Gas Co-Egypt)<a href="/images/sub/certificates/GASCO(Egyptian Natural Gas Co-Egypt).pdf" download>{language?.certificates_btn_02}</a></li>
                 </ul>
               </dd>
             </dl>
