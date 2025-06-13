@@ -109,7 +109,7 @@ export default function Certificates({language}: Props) {
             <dl>
               <dt>
                 <Image src="/images/sub/certificates/egypt-flag.png" alt="EGYPT" width={138} height={79}/>
-                <p>{language?.certificates_07_01}</p>
+                <p>{language?.certificates_07_03}</p>
               </dt>
               <dd>
                 <ul>
@@ -122,7 +122,7 @@ export default function Certificates({language}: Props) {
             <dl>
               <dt>
                 <Image src="/images/sub/certificates/iraq-flag.png" alt="IRAQ" width={138} height={79}/>
-                <p>{language?.certificates_07_01}</p>
+                <p>{language?.certificates_07_04}</p>
               </dt>
               <dd>
                 <ul>
