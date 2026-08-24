@@ -21,7 +21,7 @@ export default function Footer({language}: Props) {
                 <ul>
                   <li><span>{language?.footer_3_1}</span>+82 31-405-7327</li>
                   <li><span>{language?.footer_3_2}</span>+82 31-405-7328</li>
-                  <li><span>{language?.footer_3_3}</span>jbko@kclvalve.com</li>
+                  <li><span>{language?.footer_3_3}</span>jdko@kclvalve.com</li>
                 </ul>
               </div>
             </div>
